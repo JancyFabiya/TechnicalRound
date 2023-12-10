@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {     
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+    margin: 0;   
+   
+}
+
+/* Navbar */
+
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 1.3rem 10%;
+    /* background: #FFFFFF;
+    backdrop-filter: blur(50px); */
+    box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #FFFFFF;
+    backdrop-filter: blur(50px); */
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+    transition: .5s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+.logo {
+    width: 143px;
+    height: 76px;
+}
+
+.navbar a {
+    /* font-size: 24px; */
+    font-size: 1.15rem;
+    color: rgba(30, 30, 30, 1);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 2.5rem;
+}
+
+.navbar a:hover {
+    color: #5D70D6;
+    text-decoration: underline;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: rgba(30, 30, 30, 1);
+    cursor: pointer;
+    display: none;
+}
+/* Style the button and dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    /* padding: 10px; */
+    /* background-color: #3498db; */
+    /* color: rgba(226, 229, 245, 1); */
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E2E5F5;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    /* min-width: 160px; */
+    width: 263.08px;
+    height: 170px;
+    z-index: 1;
+    border-radius: 4px;
+
+}
+
+/* Style the dropdown links inside the container */
+.dropdown-content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    size: 20px;
+    color: #4D4D4D;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    color: #5D70D6;
+    text-decoration: underline;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown-container.active .dropdown-content {
+    display: block;
+}
+
+
+
+/* SEO heading */
+#seo-heading{
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue',sans-serif;
+    padding: 5%;
+    background: linear-gradient(135deg,rgb(35,45,131),rgb(61,34,125),rgb(121,35,130));
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    text-transform: uppercase;
+}
+#seo-heading h1{
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 112px;
+}
+#seo-heading button{
+    width: 505.67px;
+    height: 76px;
+    /* padding: 12px,40px,12px,40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: transparent;
+    border-width: 3px;
+    /* border-radius: 12px; */
+    /* border-style: solid; */
+    border-image: linear-gradient(to right, rgb(91,79,192), rgb(187,187,198));
+    border-image-slice: 1;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 72px;
+
+
+
+}
+#seo-heading button:hover{
+    cursor: pointer;
+    background: rgb(93,112,214);
+    
+}
+
+
+/* outperform */
+#outperform{
+    width: 100%;
+    height: auto;
+    background: #E2E5F5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: normal;
+    padding: 5%;
+    color: #1E1E1E;
+    font-family: 'Bebas Neue',sans-serif;
+
+
+}
+
+#outperform h2{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+#outperform p{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 2%;
+}
+
+.outperform-button{
+    background: #4845D2;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 287px;
+    height: 64px;
+    border-radius: 12px;
+}
+
+
+/* Clients Trust us */
+
+#client-trust{
+    background: #1E1E1E;
+    color:#FFFFFF ;
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+.client-trust-column h2{
+    font-family: 'Bebas Neue',sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+.client-trust-column p{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 2%;
+}
+.card-content{
+    width: 217px;
+    height: 128px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #4D4D4D;
+}
+.card-content h3{
+    font-family: 'inter',sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: #9EADFF;
+}
+.card-content p{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.cards{
+    display: flex;
+    gap: 2%;
+}
+
+/* Brands we worked with */
+#clients {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.client h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    /* font-weight: 400; */
+    color: #4D4D4D;
+    margin-bottom: 20px;
+
+}
+
+.image-row {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+    justify-content: center;
+    gap: 56px;
+    /* Adjust the gap between images */
+    margin-bottom: 20px;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* .centered-heading {
+    margin-bottom: 10px;
+
+    /* text-align: center; *
+}
+.two-line-heading{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: #4D4D4D;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; *
+} */
+.client-image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(93, 112, 214, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgba(234, 237, 255, 1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        color: gray;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+    .dropdown-container {
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #E2E5F5;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .dropdown-container.active .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        /* Adjust the font size as needed */
+        color: #4D4D4D;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+}

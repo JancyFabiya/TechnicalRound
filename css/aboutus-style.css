@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {     
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+    margin: 0;   
+   
+}
+
+/* Navbar */
+
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 1.3rem 10%;
+    /* background: #FFFFFF;
+    backdrop-filter: blur(50px); */
+    box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #FFFFFF;
+    backdrop-filter: blur(50px); */
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+    transition: .5s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+.logo {
+    width: 143px;
+    height: 76px;
+}
+
+.navbar a {
+    /* font-size: 24px; */
+    font-size: 1.15rem;
+    color: rgba(30, 30, 30, 1);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 2.5rem;
+}
+
+.navbar a:hover {
+    color: #5D70D6;
+    text-decoration: underline;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: rgba(30, 30, 30, 1);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Style the button and dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    /* padding: 10px; */
+    /* background-color: #3498db; */
+    /* color: rgba(226, 229, 245, 1); */
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E2E5F5;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    /* min-width: 160px; */
+    width: 263.08px;
+    height: 170px;
+    z-index: 1;
+    border-radius: 4px;
+
+}
+
+/* Style the dropdown links inside the container */
+.dropdown-content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    size: 20px;
+    color: #4D4D4D;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    color: #5D70D6;
+    text-decoration: underline;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown-container.active .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Transformation of your business */
+.transformation{
+    width: 100%;
+    height: auto;
+   
+  
+}
+.trans-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2% 5% 3% 5%;
+    gap: 1%;
+}
+.transformation h3{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 62.5px;
+
+    
+}
+.trans-text{
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+.transformation p {
+    margin-top: 5%;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+
+/* Our Values */
+
+#ourValues{
+    width: 100%;
+    height: auto;
+    background: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+.blue-word {
+    color: #5D70D6;
+  }
+  
+  .black-word {
+    color: #1E1E1E
+    ;
+  }
+  #ourValues h2{
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 5%;
+  }
+  .ourValues-para{
+    font-weight: 500;
+    font-size: 24px;
+    padding: 5% 10% 5% 10%;
+    line-height: 36px;
+  }
+  .ourValues-card-container{
+    /* position: relative; */
+    display: flex;
+    /* grid-column: 4; */
+    gap: 2%;
+  }
+  /* .ourValues-card-container:nth-child(2),
+  .ourValues-card-container:nth-child(4){
+     margin-top: 105%;
+  } */
+
+  .ourValues-card{
+    /* grid: 1; */
+    background: #4D4D4D;
+    width: 256px;
+    height: 269px;
+    border-radius: 2%;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* gap: 5%; */
+    /* justify-content: center; */
+  }
+  /* .ourValues-card div{
+    gap: 5%;
+  } */
+  .ourValues-card-icon{
+    padding-top: 15%;
+    padding-bottom: 10%;
+
+  }
+  .ourValues-card-title h6{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .ourValues-p {
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 21.5px;
+  }
+  /* .tall-card { */
+    /* grid: 2; */
+    /* position: absolute;
+    top: 0;
+    /* left: 50%; *
+    transform: translateX(-50%); */
+  /* } */
+
+
+  /* Partner with us */
+
+  #partner{
+    width: 100%;
+    height: auto;
+  
+
+  }
+  .partner-title{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 5%;
+  }
+  
+  .partner-main-text h3{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 57.29px;
+    padding-top: 5%;
+  }
+  .partner-main-text p{
+    font-weight: 500;
+    font-size: 24px;
+    padding: 5% 0 5% 0;
+    line-height: 36px;
+  }
+.partner-content{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-left: 3%;
+    /* margin-right: 3%; */
+
+}
+.partner-content-text {
+margin-bottom: 12%;
+}
+.partner-content-text p{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+}
+.partner-content-text span{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+
+/* Want Digital Partner */
+#digital-partner{
+    width: 100%;
+    height: auto;
+    background: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+#digital-partner h2{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 57.29px;
+    padding-top: 5%;
+}
+#digital-partner p{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 72px;
+}
+#digital-partner button{
+    width: 449px;
+    height: 64px;
+    background: #4845D2;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36.46px;
+    color: #E2E5F5;
+    border-radius: 2%;
+    border: none;
+}
+#digital-partner button:hover{
+    cursor: pointer;
+    background: black;
+}
+
+/* Clients trust */
+#clients {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.client h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 80px;
+    /* font-weight: 400; */
+    color: #1E1E1E;
+    margin-bottom: 20px;
+
+}
+
+.image-row {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+    justify-content: center;
+        gap: 56px; /* Adjust the gap between images */
+    margin-bottom: 20px;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+}
+/* .centered-heading {
+    margin-bottom: 10px;
+
+    /* text-align: center; *
+}
+.two-line-heading{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: #4D4D4D;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; *
+} */
+.client-image-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+/* wonderful team */
+#wonderful-team{
+    height: auto;
+    width: 100;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+
+}
+#wonderful-team h2{
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+#wonderful-team p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 2%;
+
+}
+
+/* Our Clients say */
+#testimonials{
+    height: auto;
+    width: 100%;
+    background-color: #E2E5F5;
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden;
+
+
+}
+#testimonials h2{
+    font-size: 80px;
+    /* font-weight: 400; */
+    padding: 40px;
+
+    color: #4D4D4D;
+    margin-bottom: 20px;
+}
+.testimonials-card {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    width: 504.5px; /* Adjust the width as needed */
+    height: 420px;
+    padding: 20px;
+    background:linear-gradient(rgba(255, 255, 255, 1),rgba(79, 65, 164, 0.57),rgba(255, 255, 255, 0.1));
+    border: 1px solid linear-gradient(rgba(255, 255, 255, 1),rgba(163, 119, 255, 1));
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    margin: 20px;
+    position: relative;
+    
+}
+.testimonials-card-container{
+    background-color:rgba(250, 250, 250, 1);
+    width: 459px;
+    float: left;
+    height: 367px;
+    padding: 30px;
+    border-radius: 21.77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.testimonials-card-texting{
+    width: 42%;
+}
+.testimonials-content {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.99px;
+}
+
+.testimonials-rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.testimonials-mini-heading {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.testimonials-card-texting h6{
+    color: rgba(128, 128, 128, 1);
+    font-size: 10px;
+    font-weight: lighter;
+}
+.testimonials-card-img {
+    /* margin-top: 180px; */
+    margin-left: 37px;
+    width: 243.42px;
+    height: 364.5px;
+    /* position: relative; */
+    /* margin-right: 18px; */
+    /* position: absolute;
+    right: -1px;
+    top: -10px;
+    img {
+      max-width: 243.42px;
+    } */
+  }
+
+  .testimonials-card-collection{
+    display: flex;
+   
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            scrollbar-width: none; /* Firefox - hide scrollbar */
+            -ms-overflow-style: none; /* IE/Edge - hide scrollbar */
+          
+  }
+  .testimonials-card-collection::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera - hide scrollbar */
+  }
+
+  /* photo ads */
+  #photo-Ads{
+    width: 100%;
+    height: auto;
+    
+  }
+  #photo-Ads img{
+    width: 100%;
+
+  }
+
+  /* transform */
+
+  #transform{
+    width: 100%;
+    height: auto;
+    background: #E2E5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+#transform h2{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 57.29px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+#transform button{
+    width: 449px;
+    height: 64px;
+    background: #4845D2;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36.46px;
+    color: #E2E5F5;
+    border-radius: 2%;
+    border: none;
+}
+#transform button:hover{
+    cursor: pointer;
+    background: black;
+}
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(93, 112, 214, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgba(234, 237, 255, 1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        color: gray;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+    .dropdown-container {
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+   
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #E2E5F5;
+        z-index: 1;
+        border-radius: 4px;
+    }
+    .dropdown-container.active .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem; /* Adjust the font size as needed */
+        color: #4D4D4D;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+}
