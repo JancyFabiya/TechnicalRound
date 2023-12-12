@@ -146,8 +146,8 @@ body {
 
 
 
-/* SEO heading */
-#seo-heading {
+/* SMM heading */
+#smm-heading {
     width: 100%;
     height: auto;
     color: #FFFFFF;
@@ -155,20 +155,21 @@ body {
     padding: 5%;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
     display: flex;
+    flex-direction: column;
     /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     gap: 2%;
     text-transform: uppercase;
 }
 
-#seo-heading h1 {
-    font-size: 120px;
+#smm-heading h2 {
+    font-size: 60px;
     font-weight: 400;
-    line-height: 112px;
+    line-height: 96px;
 }
 
-#seo-heading button {
+#smm-heading button {
     width: 505.67px;
     height: 76px;
     /* padding: 12px,40px,12px,40px; */
@@ -192,15 +193,15 @@ body {
 
 }
 
-#seo-heading button:hover {
+#smm-heading button:hover {
     cursor: pointer;
     background: rgb(93, 112, 214);
 
 }
 
 
-/* outperform */
-#outperform {
+/* <!-- Services Offer --> */
+#services-offer {
     width: 100%;
     height: auto;
     background: #E2E5F5;
@@ -215,7 +216,7 @@ body {
 
 }
 
-#outperform h2 {
+#services-offer h2 {
     font-weight: bold;
     font-size: 60px;
     line-height: 76px;
@@ -223,222 +224,188 @@ body {
     margin-bottom: 2%;
 }
 
-#outperform p {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 2%;
-}
-
-.outperform-button {
-    background: #4845D2;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 287px;
-    height: 64px;
-    border-radius: 12px;
-}
 
 
-/* Clients Trust us */
-
-#client-trust {
-    background: #1E1E1E;
-    color: #FFFFFF;
-    display: flex;
-    padding: 5%;
-    align-items: center;
-}
-
-.client-trust-column h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 76px;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-}
-
-.client-trust-column p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 2%;
-}
-
-.card-content {
-    width: 217px;
-    height: 128px;
-    border-radius: 12px;
+.services-card-content {
+    width: 249px;
+    height: 259px;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #4D4D4D;
+    background: transparent;
+    border-width: 3px;
+    border: 2px solid;
+    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
+    border-image-slice: 1;
+    padding: 2%;
 }
-
-.card-content h3 {
-    font-family: 'inter', sans-serif;
-    font-weight: 600;
-    font-size: 56px;
-    color: #9EADFF;
+.services-card-content div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
-
-.card-content p {
-    font-family: 'DM Sans', sans-serif;
+.services-card-content span{
+    color: #4845d2;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 72px;
     font-weight: 400;
-    font-size: 24px;
-    color: #FFFFFF;
 }
-
-.cards {
+.services-card-content h6 {
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+.services-cards{
     display: flex;
     gap: 2%;
-}
-
-/* Brands we worked with */
-#clients {
-    background-color: #F5F5F5;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 40px;
-}
-
-.client {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.client h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    /* font-weight: 400; */
-    color: #4D4D4D;
-    margin-bottom: 20px;
-
-}
-
-.image-row {
-    display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
     justify-content: center;
-    gap: 56px;
-    /* Adjust the gap between images */
-    margin-bottom: 20px;
 }
 
-.image-row img {
-    max-width: 100%;
-    height: auto;
-}
 
-/* .centered-heading {
-    margin-bottom: 10px;
-
-    /* text-align: center; *
-}
-.two-line-heading{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; *
-} */
-.client-image-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-/* Our SEO Services */
-#SEO-services {
+/* OUR PROCESS */
+#our-process{
     width: 100%;
     height: auto;
-    background: #E2E5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5%;
-
 }
-
-#SEO-services h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #4D4D4D;
-    font-weight: 400;
-    font-size: 64px;
-
-}
-
-.SEO-services-card-body {
-    width: 246px;
-    height: 299px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 12px;
-
-    /* border-width: 2px; */
-    /* border-radius: 12px; */
-    /* border-style: solid; */
-    border-image: linear-gradient(to top, #5057FFAD, #5A5A5A);
-    border-image-slice: 1;
-    padding: 5%;
-    margin-top: 4%;
-
-}
-
-.SEO-services-cards {
-    display: flex;
-    gap: 4%;
-
-}
-
-.SEO-services-cards i {
+#our-process h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    text-transform: uppercase;
     margin-bottom: 2%;
 }
-
-.SEO-services-cards h5 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    text-transform: uppercase;
-    margin-bottom: 4%;
-
-}
-
-.SEO-services-cards p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21.5px;
-
-}
-
-.SEO-services-card-body:hover {
-    cursor: pointer;
+.our-process-card-content {
+    width: 249px;
+    height: 259px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-width: 3px;
     border: 2px solid;
-    border-radius: 12px;
-
-    /* border-width: 2px; */
-    /* border-radius: 12px; */
-    /* border-style: solid; */
-    border-image: linear-gradient(to top, #5057FFAD, #5A5A5A);
+    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
     border-image-slice: 1;
+    padding: 2%;
+}
+.our-process-cards{
+    display: flex;
+    gap: 2%;
+    margin-bottom: 4%;
+}
+.our-process-card-content h6{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    align-items: center;
+}
+.our-process-card-content p{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.5px;
+    align-items: center;
+}
+
+
+/* Testimonials */
+#testimonials{
+    width: 100%;
+    height: auto;
+    background: #DDDDDD;
+
+}
+#testimonials h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    font-family: 'Bebas Neue',sans-serif;
+    padding: 5%;
+    color: #1E1E1E;
+}
+.testimonials-card-content {
+    width: 100%;
+    max-width: 607px;
+    height: 336px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background: #1E1E1E;
+    /* border-width: 3px;
+    border: 2px solid;
+    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
+    border-image-slice: 1; */
+    padding: 4%;
+    margin-bottom: 3%;
+    position: relative; /* Added position relative for absolute positioning */
+
+}
+.testimonials-cards{
+    display: flex;
+    gap: 2%;
+    margin-bottom: 4%;
+    
+}
+.testimonials-card-content h4{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    /* align-items: center; */
+    color: #FFFFFF;
+}
+.testimonials-card-content h6{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* align-items: center; */
+    color: #7A7A7A;
+}
+.testimonials-card-content p{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    /* align-items: center; */
+    color:#B7B7B7 ;
+}
+.testimonials-card-content .testimonial-logo{
+    position: absolute;
+    font-size: 10rem;
+    color: #5D70D6;
+    opacity: 0.5;
+    top: 10px; /* Align to the top with some padding */
+    right: 10px; /* Align to the right with some padding */
+
+  
+}
+
+.testimonial-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-title img {
+    width: 50px; /* Adjust image width as needed */
+    height: 50px; /* Adjust image height as needed */
+    border-radius: 50%; /* Make the image round */
+    margin-right: 10px;
 }
 
 /* Industries we cater */
@@ -450,7 +417,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 #Industries h3 {
@@ -499,7 +466,42 @@ body {
     overflow: hidden;
     /* border-radius: 50%; */
 }
+.industries-blue-bottom{
+    width: 100%;
+    height: auto;
+    background: #8c9bf0;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+.industries-blue-bottom h4{
+    font-family: 'Bebas Neue',sans-serif;
+    color: #1E1E1E;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 2%;
 
+}
+.industries-blue-bottom div {
+    width: 385px;
+    height: 66px;
+    border-radius: 8px;
+    background: #5D70D6;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1%;
+    /* font-size: 24px; */
+    /* padding: 1%; */
+}
 /* FAQ */
 
 #FAQ {

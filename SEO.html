@@ -48,7 +48,10 @@
             Get heard<br>
             Go Viral<br></h1>
         <button>get FREE brand analysis
-            <span><i class='bx bxs-right-top-arrow-circle' style='color:#ffffff'></i></span>
+            <span>
+                <!-- <i class='bx bxs-right-top-arrow-circle' style='color:#ffffff'></i> -->
+                <iconify-icon icon="iconoir:arrow-up-right" style="color: white;"></iconify-icon>
+            </span>
         </button>
 
     </section>
@@ -88,7 +91,7 @@
     </section>
 
     <!-- Brands we worked with -->
-     <section id="clients">
+    <section id="clients">
         <div class="client">
             <div>
                 <h2>BRANDS WE WORKED WITH</h2>
@@ -125,64 +128,136 @@
         <h3>OUR SEO SERVICES</h3>
         <div class="SEO-services-cards">
             <div class="SEO-services-card-body">
-                <i class='bx bx-search-alt' style='color:#4845d2'  ></i>
+                <i class='bx bx-search-alt' style='color:#4845d2;font-size: 40px'></i>
                 <h5>full scope seo</h5>
-                <p>We work closely with 
-                    you to understand your intelligence and data needs and pinpoint what's needed for seamless integration.</p>
+                <p>We work closely with
+                    you to understand your intelligence and data needs and pinpoint what's needed for seamless
+                    integration.</p>
             </div>
 
 
             <div class="SEO-services-card-body">
-                <i  >
-                    <img src="image/🦆 icon _Model alt_.jpg" alt="">
+                <i>
+                    <img src="image/__icon__Model_alt_-removebg-preview.png" alt="">
                 </i>
                 <h5>link building</h5>
-                <p>We craft practical solutions using Power BI, giving you a visual roadmap of how data can drive your business forward.</p>
+                <p>We craft practical solutions using Power BI, giving you a visual roadmap of how data can drive your
+                    business forward.</p>
             </div>
 
 
             <div class="SEO-services-card-body">
- <i  >
-                    <img src="image/🦆 icon _list check_.jpg" alt="">
-                </i>              
-                  <h5>content creation</h5>
-                <p>We rigorously test these solutions, ensuring they not only function flawlessly but align seamlessly with your business goals.</p>
+                <i>
+                    <img src="image/__icon__list_check_-removebg-preview.png" alt="">
+                </i>
+                <h5>content creation</h5>
+                <p>We rigorously test these solutions, ensuring they not only function flawlessly but align seamlessly
+                    with your business goals.</p>
             </div>
 
 
-           
+
         </div>
 
     </section>
 
     <!-- Industries we cater -->
     <section id="Industries">
-        <div>
-            <img src="image/Rectangle 155.jpg" alt="">
+       
+        <h3>INDUSTRIES WE CATER</h3>
+        <div class="industries-img">
+            <div class="image-container">
+                <img class="default-image"src="image/Rectangle 155.jpg" alt="Default Image">
+                <img class="hover-image" src="image/RealEstate.jpg" alt="Hover Image">
+               </div>
+               <div class="image-container">
+                <img class="default-image"src="image/Component 17.jpg" alt="Default Image">
+                <img class="hover-image" src="image/Gaming.jpg" alt="Hover Image">
+               </div>
+               <div class="image-container">
+                <img class="default-image"src="image/Component 18.jpg" alt="Default Image">
+                <img class="hover-image" src="image/Fitness&wellness.jpg" alt="Hover Image">
+               </div>
+               <div class="image-container">
+                <img class="default-image"src="image/Component 19.jpg" alt="Default Image">
+                <img class="hover-image" src="image/E-Commerce.jpg" alt="Hover Image">
+               </div>
+               <div class="image-container">
+                <img class="default-image"src="image/Component 16.jpg" alt="Default Image">
+                <img class="hover-image" src="image/Ed.Tech.jpg" alt="Hover Image">
+               </div>
+               <div class="image-container">
+                <img class="default-image"src="image/Component 21.jpg" alt="Default Image">
+                <img class="hover-image" src="image/greenEnergy.jpg" alt="Hover Image">
+               </div>
         </div>
-        <div>
-            <img src="image/Component 17.jpg" alt="">
-        </div>
-        <div>
-            <img src="image/Component 18.jpg" alt="">
-        </div>
-        <div>
-            <img src="image/Component 19.jpg" alt="">
-        </div>
-        <div>
-            <img src="image/Component 16.jpg" alt="">
-        </div>
-        <div>
-            <img src="image/Component 16.jpg" alt="">
-        </div>
+        
+       
+      
 
     </section>
 
     <!-- FAQ -->
     <section id="FAQ">
+        <h1>FAQ</h1>
+        <div class="accordion-button">
+           <button class="accordion" onclick="togglePanel()">Q.1 What is SEO?</button>
+        <div class="panel">
+          <p>SEO, or Search Engine Optimization, is how we make sure your business gets noticed online. With our help, your website wan't just show up on search engines - it'll catch the eye of the customers you're looking for.</p>
+        </div>  
+        </div>
+       
+        <div class="accordion-button">
+        
+        <button class="accordion" >Q.2 How to measure the success of my SEO campaigns?
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </div>
+        
+        <div class="accordion-button">
 
+        <button class="accordion">Q.3  How long does it take to see results from Full scope SEO services?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </div>
     </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 
+        <!-- <script>
+            function togglePanel() {
+              var button = event.target;
+              var panel = button.nextElementSibling;
+          
+              button.classList.toggle("active");
+              
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                button.style.border = '2px solid #eee'; /* Restore initial border size */
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                button.style.border = '2px solid #ccc'; /* Increase border size on click */
+              }
+            }
+          </script> -->
+          <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </body>
 
