@@ -169,7 +169,7 @@ body {
     line-height: 96px;
 }
 
-#pm-heading div {
+#pm-heading button {
     width: 505.67px;
     height: 76px;
     /* padding: 12px,40px,12px,40px; */
@@ -193,312 +193,197 @@ body {
 
 }
 
-#pm-heading div:hover {
+#pm-heading button:hover {
     cursor: pointer;
     background: rgb(93, 112, 214);
 
 }
 
+/* why-pm */
 
-/* <!-- Services Offer --> */
-#services-offer {
+#why-pm{
     width: 100%;
     height: auto;
+    padding: 3%;
+
+}
+#why-pm h2{
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blue-word {
+    color: #5D70D6;
+  }
+  
+  .black-word {
+    color: #1E1E1E
+    ;
+  }
+.why-pm-cards{
+    display: flex;
+    justify-content: center;
+
+}
+.why-pm-card-content{
+    background: #DDDDDD;
+    border-radius:  12px; ;
+    margin: 2%;
+    padding: 2%;
+    width: 360px;
+    height: 291px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.why-pm-card-content h6{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.why-pm-card-content li{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/* Services we Offer */
+#services-offer{
     background: #E2E5F5;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: normal;
-    padding: 5%;
-    color: #1E1E1E;
-    font-family: 'Bebas Neue', sans-serif;
-
-
-}
-
-#services-offer h2 {
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 76px;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-}
-
-
-
-.services-card-content {
-    width: 249px;
-    height: 259px;
-    border-radius: 14px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    border-width: 3px;
-    border: 2px solid;
-    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
-    border-image-slice: 1;
-    padding: 2%;
-}
-.services-card-content div{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    
-}
-.services-card-content span{
-    color: #4845d2;
-    font-family: 'Bebas Neue',sans-serif;
-    font-size: 72px;
-    font-weight: 400;
-}
-.services-card-content h6 {
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-}
-.services-cards{
-    display: flex;
-    gap: 2%;
-    justify-content: center;
-}
-
-
-/* OUR PROCESS */
-#our-process{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 4%;
 }
-#our-process h2 {
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 76px;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-}
-.our-process-card-content {
-    width: 249px;
-    height: 259px;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border-width: 3px;
-    border: 2px solid;
-    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
-    border-image-slice: 1;
-    padding: 2%;
-}
-.our-process-cards{
-    display: flex;
-    gap: 2%;
-    margin-bottom: 4%;
-}
-.our-process-card-content h6{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    align-items: center;
-}
-.our-process-card-content p{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21.5px;
-    align-items: center;
-}
-
-
-/* Testimonials */
-#testimonials{
-    width: 100%;
-    height: auto;
-    background: #DDDDDD;
-
-}
-#testimonials h2 {
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 76px;
-    text-transform: uppercase;
-    margin-bottom: 2%;
+#services-offer h3{
     font-family: 'Bebas Neue',sans-serif;
-    padding: 5%;
-    color: #1E1E1E;
+    font-weight: 600;
+    font-size: 40px;
 }
-.testimonials-card-content {
-    width: 100%;
-    max-width: 607px;
-    height: 336px;
-    border-radius: 12px;
+.services-offer-cards{
+    display: flex;
+   
+    gap: 8%;
+    margin: 3%;
+   
+}
+.services-offer-card-body{
+ background: white;
+    width: 256px;
+    height: 341px;
+    border-radius: 10px;
+    padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    background: #1E1E1E;
-    /* border-width: 3px;
-    border: 2px solid;
-    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
-    border-image-slice: 1; */
-    padding: 4%;
-    margin-bottom: 3%;
-    position: relative; /* Added position relative for absolute positioning */
+    font-family: 'DM Sans',sans-serif;
+
+    /* border-image: ; */
+}
+.services-offer-card-body h5{
+    font-weight: bold;
+    font-size: 18px;
+    color: #1E1E1E;
+    margin-top: 4%;
+    margin-bottom: 6%;
 
 }
-.testimonials-cards{
-    display: flex;
-    gap: 2%;
-    margin-bottom: 4%;
-    
-}
-.testimonials-card-content h4{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    /* align-items: center; */
-    color: #FFFFFF;
-}
-.testimonials-card-content h6{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 500;
+.services-offer-card-body li{
+    font-weight:lighter;
     font-size: 16px;
-    line-height: 32px;
-    /* align-items: center; */
-    color: #7A7A7A;
-}
-.testimonials-card-content p{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 32px;
-    /* align-items: center; */
-    color:#B7B7B7 ;
-}
-.testimonials-card-content .testimonial-logo{
-    position: absolute;
-    font-size: 10rem;
-    color: #5D70D6;
-    opacity: 0.5;
-    top: 10px; /* Align to the top with some padding */
-    right: 10px; /* Align to the right with some padding */
-
-  
-}
-
-.testimonial-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.testimonial-title img {
-    width: 50px; /* Adjust image width as needed */
-    height: 50px; /* Adjust image height as needed */
-    border-radius: 50%; /* Make the image round */
-    margin-right: 10px;
+    color: #4D4D4D;
+    line-height: 33.5px;
 }
 
 /* Industries we cater */
-
-#Industries {
+#we-cater{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* padding: 5%; */
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
-#Industries h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #4D4D4D;
-    font-weight: 400;
-    font-size: 64px;
-
-}
-
-.industries-img {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    gap: 2%;
-    padding: 4%;
-
-
-}
-
-.default-image,
-.hover-image {
-    /* width: 100%;
-    height: 100%; */
-    object-fit: cover;
-    /* Preserve aspect ratio while covering the container */
-    transition: opacity 0.3s ease;
-    /* Add a smooth transition effect */
-}
-
-.hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    /* Initially hide the hover image */
-}
-
-.image-container:hover .hover-image {
-    opacity: 1;
-    /* Show the hover image on hover */
-}
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-    /* border-radius: 50%; */
-}
-.industries-blue-bottom{
-    width: 100%;
-    height: auto;
-    background: #8c9bf0;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3%;
-}
-.industries-blue-bottom h4{
+#we-cater h2{
     font-family: 'Bebas Neue',sans-serif;
+    font-weight: bold;
+    font-size: 64px;
     color: #1E1E1E;
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 2%;
+}
+.we-cater-cards{
+    display: flex;
+   
+    gap: 8%;
+    margin: 3%;
 
 }
-.industries-blue-bottom div {
-    width: 360px;
-    height: 56px;
-    border-radius: 8px;
-    background: #5D70D6;
-    border: none;
+.we-cater-card-content{
+    border: 1px solid;
+    width: 246px;
+    height: 299px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 2%;
+}
+.we-cater-card-content h4{
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+.we-cater-card-content p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21.5px;
+    color: #1E1E1E;
+}
+.we-cater-blue-bottom{
+    width: 100%;
+    height: auto;
+    background: #E2E5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+.we-cater-blue-bottom h4{
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #4D4D4D;
+    margin-bottom: 3%;
+}
+.we-cater-blue-bottom div{
     color: white;
+    background: #5D70D6;
+    width: 365px;
+    height: 66px;
+    gap: 2%;
+    padding: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1%;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* padding: 1%; */
+    border-radius: 12px;
 }
 /* FAQ */
 
@@ -573,58 +458,7 @@ body {
 }
 
 
-/* SMM heading */
-#smm-heading {
-    width: 100%;
-    height: auto;
-    color: #FFFFFF;
-    font-family: 'Bebas Neue', sans-serif;
-    padding: 5%;
-    background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    gap: 2%;
-    text-transform: uppercase;
-}
 
-#smm-heading h2 {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 96px;
-}
-
-#smm-heading button {
-    width: 505.67px;
-    height: 76px;
-    /* padding: 12px,40px,12px,40px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    background: transparent;
-    border-width: 3px;
-    /* border-radius: 12px; */
-    /* border-style: solid; */
-    border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
-    border-image-slice: 1;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 72px;
-
-
-
-}
-
-#smm-heading button:hover {
-    cursor: pointer;
-    background: rgb(93, 112, 214);
-
-}
 
 
 
