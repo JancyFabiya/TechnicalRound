@@ -144,9 +144,221 @@ body {
     display: block;
 }
 
+/* 360 data */
+#data{
+    width: 100%;
+    height: auto;
+    background: url('/image/dataMng.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'DM Sans',sans-serif;
+    padding: 4%;
+
+}
+
+#data h1{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 72px;
+    color: #1E1E1E;
+}
+#data p{
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 42.5px;
+}
+
+/* our services  */
+#our-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    font-family: 'DM Sans',sans-serif;
+}
+#our-services h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+}
+.blue-word{
+    color: #4845D2;
+}
+.black-word{
+    color: #1E1E1E;
+}
+.services-main{
+    display: grid;
+    grid-template-columns: auto auto  auto;
+    justify-content: center;
+    gap: 2%;
+    padding: 4%;
+}
+.bi-parts{
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi-parts span{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 52px;
+}
+
+/* Experience */
+#experience{
+    background: #E2E5F5;
+    font-family: 'DM Sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+}
+#experience h2{
+     color: #1E1E1E;
+     font-size: 36px;
+     font-weight: bold;
+     line-height: 52px;
+}
+.experience-btn{
+    background-color: #4845D2;
+    width: 332px;
+    height: 64px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 72px;
+}
+
+/* DE & DM */
+
+#de-dm{
+    width: 100%;
+    height: auto;
+    font-family: 'DM Sans',sans-serif;
+
+
+}
+#de-dm h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    color: #1E1E1E;
+}
+.services-main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.bi-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bi-parts span{
+     color: #000000;
+     font-size: 24px;
+     font-weight: lighter;
+     line-height: 40px;
+     text-align: center;
+}
+/* Technology We Work On */
+
+#tech{
+    /* position: absolute;
+    z-index: -1; */
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
+    font-family: 'DM Sans',sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 72px;
+    color: #E2E5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#tech h2{
+    margin-top: 5%;
+}
+.tech-img{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    gap: 2%;
+    padding: 4%;
+}
+.img-container{
+    width: 177px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    /* background: #7A7A7A; */
+}
+.image{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+   transition: opacity 0.3s ease;
+   /* background: #7A7A7A; */
+}
+/* Challenges Faced */
+#challenges{
+    background: #F5F5F5;
+    padding: 4%;
+}
+
+
+/* Gray Part */
+#gray{
+    height: auto;
+    width: 100%;
+    background: #DDDDDD;
+    padding: 4%;
+    font-family: 'DM Sans',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gray h3{
+    color:#1E1E1E ;
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 42.5px;
+}
+.gray-btn{
+   width: 262px;
+   height: 48px;
+   border-radius: 15px; 
+   background: #1E1E1E;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-weight: bold;
+}
 /* Industries we have */
 
-#Industries {
+#industries {
     width: 100%;
     height: auto;
     display: flex;
@@ -156,7 +368,7 @@ body {
     /* padding: 5%; */
 }
 
-#Industries h3 {
+#industries h3 {
     font-family: 'Bebas Neue', sans-serif;
     color: #4D4D4D;
     font-weight: 400;
@@ -238,13 +450,42 @@ body {
     /* font-size: 24px; */
     /* padding: 1%; */
 }
+
+/* Blue Part */
+
+#blue-part{
+    height: auto;
+    width: 100%;
+    background: #5D70D6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+}
+#blue-part h3{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+}
+.blue-part{
+    background: #E2E5F5;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 64px;
+    border-radius: 8px;
+}
+
+
 /* FAQ */
 
 #FAQ {
     width: 100%;
     height: auto;
-    background: #1E1E1E;
-    color: #FFFFFF;
+    background: #E2E5F5;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -258,11 +499,12 @@ body {
     font-size: 100px;
     line-height: 72px;
     margin-bottom: 5%;
+    color: #4D4D4D;
 }
 
 .accordion {
     background-color: transparent;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -284,7 +526,7 @@ body {
 .accordion:after {
     content: '\02C4';
     /* Unicode character for Modifier Letter Up Arrowhead */
-    color: white;
+    color: 000000;
     font-weight: bold;
     float: right;
     margin-left: 5px;

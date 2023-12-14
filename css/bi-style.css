@@ -145,9 +145,187 @@ body {
 }
 
 
+/* Business Intelligence */
+
+#bi{
+    width: 100%;
+    height: auto;
+    background: url('/image/bi.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'DM Sans',sans-serif;
+
+}
+#bi div{
+    padding: 4%;
+}
+
+#bi h2{
+    color: #1E1E1E;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 72px;
+}
+#bi p{
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 42.5px;
+    margin-top: 2%;
+}
+
+/* our services */
+
+#our-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    font-family: 'DM Sans',sans-serif;
+}
+
+#our-services h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+   
+
+}
+.blue-word{
+    color: #4845D2;
+}
+.black-word{
+    color: #1E1E1E;
+}
+.services-main{
+    display: grid;
+    grid-template-columns: auto auto  auto;
+    /* justify-content: space-around; */
+    gap: 20%;
+    padding: 4%;
+}
+
+.bi-parts{
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi-parts span{
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 25px; 
+}
+
+/* Transform your business */
+#trns-business{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background: #E2E5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'DM Sans',sans-serif;
+}
+#trns-business h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #1E1E1E;
+}
+#trns-business div{
+    width: 332px;
+    height: 64px;
+    border-radius: 12px;
+    background: #4845D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Challenges Faced */
+
+#challenges{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    font-family: 'DM Sans',sans-serif;
+
+}
+#challenges h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+}
+.challenges-main{
+    display: grid;
+    grid-template-columns: auto auto  auto;
+    /* align-items: center;
+    justify-content:stretch ; */
+    gap: 20%;
+    padding: 4%;
+}
+.challenges-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.challenges-parts span{
+    margin-top: 4%;
+}
+
+/* Our Approach */
+#our-approach{
+    /* background: #F5F5F5; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    font-family: 'DM Sans';
+}
+#our-approach h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.approach-main{
+    display: flex;
+    gap: 2%;
+}
+.approach-parts{
+   width: 246px;
+   height: 299px;
+   border-radius: 8px;
+   background: #F5F5F5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 3%; 
+   padding: 3%;
+}
+.approach-parts h5{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.approach-parts p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.5px;
+}
 /* Industries we have */
 
-#Industries {
+#industries {
     width: 100%;
     height: auto;
     display: flex;
@@ -155,9 +333,10 @@ body {
     align-items: center;
     justify-content: center;
     /* padding: 5%; */
+    background: #F5F5F5;
 }
 
-#Industries h3 {
+#industries h3 {
     font-family: 'Bebas Neue', sans-serif;
     color: #4D4D4D;
     font-weight: 400;
@@ -174,6 +353,7 @@ body {
 
 
 }
+
 
 .default-image,
 .hover-image {
@@ -207,28 +387,29 @@ body {
     width: 100%;
     height: auto;
     background: #8c9bf0;
-    margin-bottom: 3%;
+    margin-bottom: 23%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 3%;
 }
+
+
 .industries-blue-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
-    color: #1E1E1E;
+    font-family: 'DM Sans',sans-serif;
     font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 2%;
+    font-weight: bold;
+    line-height: 52px;
+    color: white;
 
 }
 .industries-blue-bottom div {
-    width: 385px;
-    height: 66px;
+    width: 280px;
+    height: 69px;
     border-radius: 8px;
-    background: #5D70D6;
+    background: #E2E5F5;
     border: none;
-    color: white;
+    color: 000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,8 +426,7 @@ body {
 #FAQ {
     width: 100%;
     height: auto;
-    background: #1E1E1E;
-    color: #FFFFFF;
+    background: #E2E5F5;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -260,11 +440,12 @@ body {
     font-size: 100px;
     line-height: 72px;
     margin-bottom: 5%;
+    color: #4D4D4D;
 }
 
 .accordion {
     background-color: transparent;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -286,7 +467,7 @@ body {
 .accordion:after {
     content: '\02C4';
     /* Unicode character for Modifier Letter Up Arrowhead */
-    color: white;
+    color: 000000;
     font-weight: bold;
     float: right;
     margin-left: 5px;

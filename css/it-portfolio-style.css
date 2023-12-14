@@ -145,6 +145,51 @@ body {
 }
 
 
+/* our-projects */
+
+#our-projects{
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    font-family: 'DM Sans', sans-serif;
+}
+#our-projects h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 72px;
+    margin-bottom: 3%;
+}
+.prjt-mini-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.prjt-mini-title span{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+.prjt-img{
+    display: grid;
+    grid-template-columns: auto auto  auto;
+    justify-content: center;
+    gap: 2%;
+    padding: 4%;
+}
+.blue-word{
+    color: #4845D2;
+
+}
+.black-word{
+    color: #1E1E1E;
+}
+
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
