@@ -1328,22 +1328,23 @@ header .Schedule-icons div:last-child {
 }
 
 
-/* Footer */
-#footer {
-    width: 100%;
-    height: auto;
-    background: #090C31;
-    font-family: 'DM Sans', sans-serif;
-    color: #FFFFFF;
-}
+
 
 /* Footer */
 
-#footer-container{
+/* #footer-container{
     width: 100%;
     height: auto;
     position: relative;
-}
+    
+ 
+
+} */
+/* .header-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+} */
 
 
 
