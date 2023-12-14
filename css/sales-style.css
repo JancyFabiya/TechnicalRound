@@ -198,10 +198,8 @@ body {
     display: grid;
     grid-template-columns: auto auto  auto;
     justify-content: center;
-    /* align-items: center; */
     gap: 2%;
     padding: 4%;
-    margin-bottom: 4%;
 }
 .bi-parts{
     display: flex;
@@ -321,6 +319,87 @@ body {
     justify-content: center;
     gap: 3%;
 }
+
+/* Our Approach */
+#approach{
+    /* background: #F5F5F5; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    font-family: 'DM Sans';
+}
+#approach h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.approach-cards{
+    display: flex;
+    gap: 2%;
+}
+.approach-card{
+   width: 246px;
+   height: 299px;
+   border-radius: 8px;
+   background: #F5F5F5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 3%; 
+   padding: 3%;
+}
+.approach-card h6{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.approach-card p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.5px;
+}
+
+/* What you get */
+
+#get-form{
+    width: 100%;
+    height: auto;
+    font-family: 'DM Sans',sans-serif;
+    padding: 5%;
+    background: #E2E5F5;
+
+
+}
+#get-form h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    color: #1E1E1E;
+    margin-bottom: 4%;
+}
+.challenges-main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.challenges-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.challenges-parts h6{
+     color: #000000;
+     font-size: 24px;
+     font-weight: lighter;
+     line-height: 40px;
+     text-align: center;
+}
+
 /* Industries we have */
 
 #industries {
