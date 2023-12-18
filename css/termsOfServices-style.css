@@ -142,6 +142,10 @@ body {
 .dropdown-container.active .dropdown-content {
     display: block;
 }
+
+/* Policy Heading */
+
+
 #policy-headline{
     width: 100%;
     height: auto;
@@ -325,6 +329,55 @@ body {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* Policy Headline */
+
+    #policy-headline h1 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+        line-height: 60px; /* Adjust the line height accordingly */
+        padding-top: 5px; /* Adjust the padding accordingly */
+    }
+
+    #policy-headline p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+        line-height: 30px; /* Adjust the line height accordingly */
+        padding-bottom: 5px; /* Adjust the padding accordingly */
+    }
+
+    /* policy body */
+
+    #policy-body {
+        flex-direction: column;
+        gap: 5%;
+        padding: 5%;
+    }
+
+    .policy-body-buttons div {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .policy-body-text h4 {
+        font-size: 30px;
+    }
+
+    .policy-body-text h6 {
+        font-size: 24px;
+    }
+
+    .policy-body-text p {
+        font-size: 16px;
+    }
+
+    .policy-body-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .policy-body-bottom button {
+        width: 100%;
     }
 }
 

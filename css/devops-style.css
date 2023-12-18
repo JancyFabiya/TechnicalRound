@@ -570,4 +570,75 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* Devops Consulting  */
+
+    #devos{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    /* Our Services */
+    .services-main {
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        width: 100%;
+    }
+    /* blue-part */
+    #blue-part{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Challenges Faced */
+
+    .bi-parts {
+        flex: 0 0 30%; /* Adjust the width for larger screens */
+    }
+    .mobile-main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4%;
+        gap: 2%;
+    }
+
+            /* Industries we have */
+#industries h3 {
+    font-size: 40px;
+}
+
+.industries-img {
+    grid-template-columns: auto;
+}
+
+.industries-blue-bottom h4 {
+    font-size: 24px;
+}
+/* Pblue part */
+#Pblue-part{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+}
+
+
+@media only screen and (min-width: 1024px) {
+    /* Our Services */
+    .services-main {
+        grid-template-columns: repeat(3, auto);
+    }
+    /* blue-part */
 }

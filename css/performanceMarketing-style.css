@@ -201,14 +201,15 @@ body {
 
 /* why-pm */
 
-#why-pm{
+#why-pm {
     width: 100%;
     height: auto;
     padding: 3%;
 
 }
-#why-pm h2{
-    font-family: 'Bebas Neue',sans-serif;
+
+#why-pm h2 {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -216,20 +217,22 @@ body {
 
 .blue-word {
     color: #5D70D6;
-  }
-  
-  .black-word {
-    color: #1E1E1E
-    ;
-  }
-.why-pm-cards{
+}
+
+.black-word {
+    color: #1E1E1E;
+}
+
+.why-pm-cards {
     display: flex;
     justify-content: center;
 
 }
-.why-pm-card-content{
+
+.why-pm-card-content {
     background: #DDDDDD;
-    border-radius:  12px; ;
+    border-radius: 12px;
+    ;
     margin: 2%;
     padding: 2%;
     width: 360px;
@@ -239,16 +242,17 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.why-pm-card-content h6{
-    font-family: 'DM Sans',sans-serif;
+
+.why-pm-card-content h6 {
+    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.why-pm-card-content li{
-    font-family: 'DM Sans',sans-serif;
+.why-pm-card-content li {
+    font-family: 'DM Sans', sans-serif;
     font-weight: normal;
     font-size: 20px;
     margin-top: 1%;
@@ -257,7 +261,7 @@ body {
 
 
 /* Services we Offer */
-#services-offer{
+#services-offer {
     background: #E2E5F5;
     display: flex;
     flex-direction: column;
@@ -266,20 +270,23 @@ body {
     height: auto;
     padding: 4%;
 }
-#services-offer h3{
-    font-family: 'Bebas Neue',sans-serif;
+
+#services-offer h3 {
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 600;
     font-size: 40px;
 }
-.services-offer-cards{
+
+.services-offer-cards {
     display: flex;
-   
+
     gap: 8%;
     margin: 3%;
-   
+
 }
-.services-offer-card-body{
- background: white;
+
+.services-offer-card-body {
+    background: white;
     width: 256px;
     height: 341px;
     border-radius: 10px;
@@ -288,11 +295,12 @@ body {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 
     /* border-image: ; */
 }
-.services-offer-card-body h5{
+
+.services-offer-card-body h5 {
     font-weight: bold;
     font-size: 18px;
     color: #1E1E1E;
@@ -300,15 +308,16 @@ body {
     margin-bottom: 6%;
 
 }
-.services-offer-card-body li{
-    font-weight:lighter;
+
+.services-offer-card-body li {
+    font-weight: lighter;
     font-size: 16px;
     color: #4D4D4D;
     line-height: 33.5px;
 }
 
 /* Industries we cater */
-#we-cater{
+#we-cater {
     width: 100%;
     height: auto;
     display: flex;
@@ -318,20 +327,22 @@ body {
     padding-bottom: 4%;
 }
 
-#we-cater h2{
-    font-family: 'Bebas Neue',sans-serif;
+#we-cater h2 {
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
     font-size: 64px;
     color: #1E1E1E;
 }
-.we-cater-cards{
+
+.we-cater-cards {
     display: flex;
-   
+
     gap: 8%;
     margin: 3%;
 
 }
-.we-cater-card-content{
+
+.we-cater-card-content {
     border: 1px solid;
     width: 246px;
     height: 299px;
@@ -342,20 +353,28 @@ body {
     padding: 3%;
     gap: 2%;
 }
-.we-cater-card-content h4{
-    font-family: 'Poppins',sans-serif;
+
+/* .we-cater-card-content img{
+    width: 25px;
+    height: 25px;
+} */
+
+.we-cater-card-content h4 {
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 18px;
     color: #1E1E1E;
 }
-.we-cater-card-content p{
-    font-family: 'Poppins',sans-serif;
+
+.we-cater-card-content p {
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 21.5px;
     color: #1E1E1E;
 }
-.we-cater-blue-bottom{
+
+.we-cater-blue-bottom {
     width: 100%;
     height: auto;
     background: #E2E5F5;
@@ -364,16 +383,18 @@ body {
     align-items: center;
     padding-top: 4%;
     padding-bottom: 4%;
-    
+
 }
-.we-cater-blue-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
+
+.we-cater-blue-bottom h4 {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 56px;
     font-weight: bold;
     color: #4D4D4D;
     margin-bottom: 3%;
 }
-.we-cater-blue-bottom div{
+
+.we-cater-blue-bottom div {
     color: white;
     background: #5D70D6;
     width: 365px;
@@ -385,6 +406,7 @@ body {
     justify-content: center;
     border-radius: 12px;
 }
+
 /* FAQ */
 
 #FAQ {
@@ -553,5 +575,153 @@ body {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* PM Heading */
+    #pm-heading h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #pm-heading button {
+        width: 100%;
+    }
+
+    /* Why pm */
+
+    .why-pm-card-content {
+        width: 100%;
+    }
+
+    .why-pm-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    /* SERVICES WE OFFER */
+    .services-offer-card-body {
+        width: 100%;
+    }
+
+    .services-offer-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    .services-offer-card-body {
+        width: 286px;
+
+
+    }
+
+    /* Industries we cater */
+    #we-cater h2 {
+        font-size: 40px;
+    }
+
+    .we-cater-card-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .we-cater-blue-bottom div {
+        width: 100%;
+    }
+    /* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+}
+
+/* Media Query for Phones and smaller screens */
+@media only screen and (max-width: 480px) {
+
+    /* PM Heading */
+
+    #pm-heading h2 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    #pm-heading button {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    /* why Pm */
+    .why-pm-card-content {
+        width: 100%;
+    }
+
+    .why-pm-card-content h6 {
+        font-size: 20px;
+    }
+
+    .why-pm-card-content li {
+        font-size: 16px;
+    }
+
+    .why-pm-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    /* SERVICES WE OFFER */
+    .services-offer-cards {
+        gap: 4%;
+    }
+
+    .services-offer-card-body {
+        width: 100%;
+    }
+
+    #services-offer h3 {
+        font-size: 30px;
+    }
+
+    .services-offer-card-body h5 {
+        font-size: 16px;
+        margin-bottom: 4%;
+    }
+
+    .services-offer-card-body li {
+        font-size: 14px;
+    }
+
+    .services-offer-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    /* Industries we cater */
+
+    #we-cater h2 {
+        font-size: 30px;
+    }
+
+    .we-cater-card-content {
+        width: 100%;
+       
+    }
+
+   
+
+    .we-cater-blue-bottom h4 {
+        font-size: 40px;
+    }
+
+    .we-cater-blue-bottom div {
+        width: 100%;
     }
 }

@@ -313,5 +313,82 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* Policy Heading */
+    #policy-headline h1 {
+        font-size: 40px;
+        line-height: 60px;
+        padding-top: 5%;
+    }
+
+    #policy-headline p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 5%;
+    }
+    
+
+    /* Policy Body */
+
+    #policy-body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .policy-body-buttons{
+        width: 100%;
+    }
+    .policy-body-buttons div {
+        width: 100%;
+    }
+
+    .policy-body-text h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .policy-body-text h6 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .policy-body-text p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #policy-headline h1 {
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: 7%;
+    }
+
+    #policy-headline p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 7%;
+    }
+
+    /* Policy Body */
+
+    .policy-body-text h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .policy-body-text h6 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .policy-body-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
 }
 

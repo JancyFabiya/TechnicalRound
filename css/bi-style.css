@@ -263,19 +263,20 @@ body {
     font-weight: bold;
     line-height: 52px;
 }
-.challenges-main{
+.challenges-main {
     display: grid;
-    grid-template-columns: auto auto  auto;
-    /* align-items: center;
-    justify-content:stretch ; */
-    gap: 20%;
-    padding: 4%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
-.challenges-parts{
+
+.challenges-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .challenges-parts span{
     margin-top: 4%;
@@ -341,6 +342,7 @@ body {
     color: #4D4D4D;
     font-weight: 400;
     font-size: 64px;
+    margin-top: 4%;
 
 }
 
@@ -374,6 +376,7 @@ body {
 }
 
 .image-container:hover .hover-image {
+    cursor: pointer;
     opacity: 1;
     /* Show the hover image on hover */
 }
@@ -382,12 +385,14 @@ body {
     position: relative;
     overflow: hidden;
     /* border-radius: 50%; */
+    border-radius: 12px;
+
 }
 .industries-blue-bottom{
     width: 100%;
     height: auto;
     background: #8c9bf0;
-    margin-bottom: 23%;
+    margin-bottom: 15%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -492,12 +497,24 @@ body {
     height: 80px;
 
 }
+
+
+/* Footer */
+iframe {
+    width: 100%;
+    height: 448px;
+    border: 0; /* Set border to 0 to remove iframe border */
+}
+
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
         padding: 1.3rem 5%;
     }
 }
+
+
 
 @media (max-width: 768px) {
     .icons {
@@ -582,4 +599,171 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* Business Intelligence */
+
+    #bi h2 {
+        font-size: 48px; /* Adjust the font size for smaller screens */
+        line-height: 56px;
+    }
+
+    #bi p {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        line-height: 34.5px;
+    }
+
+
+    /* Our Services */
+
+    #our-services h3 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .services-main {
+        grid-template-columns: auto auto;
+        gap: 10%;
+    }
+
+    .bi-parts {
+        gap: 10%;
+    }
+
+    .bi-parts span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* Transform your Business */
+
+    #trns-business {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    #trns-business h3 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
+    #trns-business div {
+        width: 100%; /* Make the button full width on smaller screens */
+    }
+
+    /* Challenges Faced */
+
+    .challenges-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Our Approach */
+
+    .approach-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .approach-parts {
+        width: 100%;
+        max-width: 400px; /* Adjust the max-width as needed */
+        margin-bottom: 4%;
+    }
+
+
+    /* Industries we have */
+
+    .industries-img {
+        grid-template-columns: 1fr; /* Set a single column for smaller screens */
+    }
+
+    .industries-img .image-container {
+        width: 100%; /* Make each image container take full width */
+        margin-bottom: 10px; /* Add some spacing between stacked images */
+    }
+
+    #industries h3 {
+        text-align: center; /* Center-align for screens up to 768px */
+    }
+  
+    .industries-blue-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .industries-blue-bottom div {
+        margin-top: 10px; /* Add space between the divs */
+    }
+
+    /* FAQ */
+
+    #FAQ {
+        padding: 3%; /* Adjust padding as needed */
+    }
+
+    #FAQ h1 {
+        font-size: 60px; /* Adjust font size as needed */
+        line-height: 52px; /* Adjust line height as needed */
+    }
+
+    .accordion-button {
+        width: 100%; /* Make the buttons full width in mobile view */
+    }
+
+    .accordion {
+        padding: 15px; /* Adjust padding as needed */
+    }
+    /* footer */
+    iframe {
+        height: 300px; /* Adjust the height as needed for smaller screens */
+    }
+
 }
+
+@media (max-width: 480px) {
+   
+    /* Business Intelligence */
+   
+   
+    #bi h2 {
+        font-size: 36px; /* Adjust the font size for even smaller screens */
+        line-height: 44px;
+    }
+
+    #bi p {
+        font-size: 20px; /* Adjust the font size for even smaller screens */
+        line-height: 30.5px;
+    }
+
+    /* Our Services */
+
+    #our-services h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .services-main {
+        grid-template-columns: auto;
+        gap: 5%;
+        margin-bottom: 10%;
+    }
+
+    .bi-parts {
+        gap: 5%;
+    }
+
+    .bi-parts span {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    /* Adjust background-size for mobile view */
+    #our-services {
+        background-size: auto; /* or contain, or specify a size that works for your design */
+    }
+}
+
+

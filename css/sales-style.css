@@ -169,6 +169,8 @@ body {
     font-weight: lighter;
     text-align: start;
 }
+
+
 /* our services */
 #our-services{
     width: 100%;
@@ -686,5 +688,124 @@ body {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* SalesForce */
+
+    #salesforce h1 {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    #salesforce p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    /* Our Services */
+
+    .services-main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-bottom: 5%;
+
+    }
+
+    .bi-parts span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /* Expertise */
+
+    .services-main {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    }
+
+    .bi-parts span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /* Blue Part */
+    #blue-part{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Challenges Faced */
+
+    .challenges-main {
+        flex-direction: column; /* Stack challenges-parts vertically on smaller screens */
+        align-items: center;
+    }
+
+    /* Our Approach */
+
+    .approach-card {
+        width: 100%; /* Make cards take up the full width on smaller screens */
+        margin-bottom: 2%; /* Add some spacing between cards */
+        flex-direction: column; /* Stack challenges-parts vertically on smaller screens */
+        align-items: center;
+    }
+    
+            /* Industries we have */
+#industries h3 {
+    font-size: 40px;
+}
+
+.industries-img {
+    grid-template-columns: auto;
+}
+
+.industries-blue-bottom h4 {
+    font-size: 24px;
+}
+/* Pblue part */
+#Pblue-part{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+}
+
+@media only screen and (max-width: 480px) {
+    /* SalesForce */
+
+    #salesforce h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #salesforce p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* Our Services */
+    .services-main {
+        grid-template-columns: 1fr;
+        margin-bottom: 5%;
+    }
+
+    .bi-parts span {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* Expertise */
+    .services-main {
+        grid-template-columns: 2fr;
+    }
+
+    .bi-parts span {
+        font-size: 18px;
+        line-height: 22px;
     }
 }

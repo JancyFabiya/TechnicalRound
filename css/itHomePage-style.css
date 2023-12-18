@@ -201,6 +201,7 @@ body {
 
 }
 
+
 /* Works Counter */
 
 #works-counter{
@@ -323,11 +324,11 @@ body {
     margin-bottom: 3%;
     color: #7A7A7A;
 }
-.our-services-cards{
+/* .our-services-cards{
     display: flex;
     gap: 4%;
     margin-bottom: 4%;
-}
+} */
 .our-services-card{
     background: white;
     border: 4px silver;
@@ -354,6 +355,15 @@ body {
     line-height: 20px;
     color: #414141;
     margin-bottom: 5%;
+
+}
+
+.our-services-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-bottom: 4%;
 
 }
 
@@ -817,5 +827,61 @@ body {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* Transform your business */
+
+    #trans-busns h1 {
+        font-size: 48px;
+    }
+
+    #trans-busns h4 {
+        font-size: 18px;
+    }
+
+    .trans-busns-button {
+        font-size: 16px;
+    }
+
+    /* Our Services , contacts ,overlapping*/
+
+    .our-services-text h2 {
+        font-size: 40px;
+    }
+
+    .our-services-text p {
+        font-size: 18px;
+    }
+
+    .our-services-card {
+        width: 90%;
+        height: auto;
+    }
+
+    #contact-btn {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    .our-services-text h2 {
+        font-size: 30px;
+    }
+
+    .our-services-text p {
+        font-size: 16px;
+    }
+
+    .our-services-card {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact-btn {
+        width: 100%;
+        /* padding-left: 5%; */
     }
 }

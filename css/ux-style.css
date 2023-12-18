@@ -527,4 +527,115 @@ color: #1E1E1E;
         text-decoration: none;
         display: block;
     }
+
+    /* Software and Application */
+
+    #software {
+        padding: 8%;
+        text-align: center;
+    }
+
+    #software h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    #software p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    /* our services */
+
+    #our-services h3 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .services-main {
+        grid-template-columns: auto auto;
+    }
+
+    .bi-parts {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3%;
+    }
+
+    /* Our Professional */
+
+    #professional {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #professional h3 {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 10px;
+    }
+
+    .professional-btn {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    /* Seize - Ux Consulting */
+    .ux-parts p {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .ux-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Industries we have */
+
+    .industries-img {
+        grid-template-columns: 1fr; /* Set a single column for smaller screens */
+    }
+
+    .industries-img .image-container {
+        width: 100%; /* Make each image container take full width */
+        margin-bottom: 10px; /* Add some spacing between stacked images */
+    }
+
+    #industries h3 {
+        text-align: center; /* Center-align for screens up to 768px */
+    }
+  
+    .industries-blue-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .industries-blue-bottom div {
+        margin-top: 10px; /* Add space between the divs */
+    }
+
+    /* FAQ */
+
+    #FAQ {
+        padding: 3%; /* Adjust padding as needed */
+    }
+
+    #FAQ h1 {
+        font-size: 60px; /* Adjust font size as needed */
+        line-height: 52px; /* Adjust line height as needed */
+    }
+
+    .accordion-button {
+        width: 100%; /* Make the buttons full width in mobile view */
+    }
+
+    .accordion {
+        padding: 15px; /* Adjust padding as needed */
+    }
+    /* footer */
+    iframe {
+        height: 300px; /* Adjust the height as needed for smaller screens */
+    }
+
 }

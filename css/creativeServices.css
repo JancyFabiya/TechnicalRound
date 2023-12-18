@@ -365,6 +365,10 @@ body {
     flex-wrap: wrap;
 
 }
+
+
+
+
 /* Works Counter */
 
 #works-counter{
@@ -376,12 +380,17 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-.number-set h3{
+.works-number-set{
+    display: flex;
+    gap: 2%;
+}
+.number-set h3,span{
     color: #5D70D6;
     font-family: 'Poppins',sans-serif ;
     font-size: 80px;
     font-weight: bolder;
     line-height: 72px;
+
 }
 .number-set h6{
     color: #D8DEFF;
@@ -582,6 +591,23 @@ body {
 
 }
 
+/* footer */
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
@@ -671,5 +697,197 @@ body {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* CS Heading */
+
+    #cs-heading {
+        padding: 3%; /* Adjust padding for smaller screens */
+    }
+
+    #cs-heading h2 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        line-height: 56px; /* Adjust line height for smaller screens */
+    }
+
+    #cs-heading button {
+        width: 100%; /* Make the button full width on smaller screens */
+        max-width: 505.67px; /* Limit the maximum width of the button */
+        font-size: 20px; /* Adjust font size for smaller screens */
+        line-height: 48px; /* Adjust line height for smaller screens */
+    }
+
+    /* Our Work */
+
+    .our-work-first-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-work-first-row h2 {
+        font-size: 60px;
+    }
+
+    .our-work-first-row span {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .our-work-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-work-img img {
+        width: 80%; /* Adjust the width of the images */
+        max-width: 300px; /* Set a maximum width if needed */
+        margin-bottom: 20px;
+    }
+    .our-work-bottom h4{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .our-work-bottom div {
+        width: 100%;
+        max-width: 221px;
+    }
+
+    /* Creative services for you */
+
+    .icon-set {
+        gap: 4%;
+    }
+
+    .icon-set span {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 2%;
+    }
+    /* Brands (Our Client) */
+    .image-row {
+        gap: 10px; /* Adjust the gap between images for even smaller screens */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .client h2 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+    }
+
+    /* work count */
+
+    #works-counter {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
+
+    .number-set {
+        flex: 0 0 100%; /* Take up full width on smaller screens */
+    }
+
+    .number-set h3,span {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .number-set h6 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+   /* Client Say  */
+
+    /* Apply styles for screens with a minimum width of 768px */
+    #testimonials h2 {
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .testimonials-card-content {
+    
+        width: 100%;
+    }
+
+    .testimonial-title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-title img {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .testimonials-cards{
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+    }
+
+/* Bring your imagination */
+
+.imgination-row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagination-col h4 {
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+
+}
+
+.imagination-col h6 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* FAQ */
+
+#FAQ {
+    padding: 10%;
+}
+
+#FAQ h1 {
+    font-size: 60px;
+    line-height: 48px;
+}
+
+.accordion-button {
+    width: 100%;
+}
+
+.accordion {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.panel {
+    padding: 0 15px;
+}
+
+    /* footer  */
+
+    @media (max-width: 768px) {
+        .iframe-container {
+            padding-top: 75%; /* Adjust the aspect ratio for smaller screens if needed */
+        }
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    /* footer  */
+    .iframe-container {
+        padding-top: 100%; /* Adjust the aspect ratio for even smaller screens if needed */
     }
 }

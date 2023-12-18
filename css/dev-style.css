@@ -307,6 +307,7 @@ body {
     color: #4D4D4D;
     font-weight: 400;
     font-size: 64px;
+    text-align: center;
 
 }
 
@@ -346,7 +347,7 @@ body {
 .image-container {
     position: relative;
     overflow: hidden;
-    /* border-radius: 50%; */
+    border-radius: 12px;
 }
 .industries-blue-bottom{
     width: 100%;
@@ -579,4 +580,75 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* Web Development */
+    #web {
+        padding: 2%; /* Adjust padding for smaller screens */
+    }
+
+    #web h1 {
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 2%; /* Adjust margin for smaller screens */
+    }
+
+    #web p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    /* Our Services */
+    .services-main {
+        grid-template-columns: repeat(2, auto);
+    }
+    /* blue-part */
+   
+        #blue-part {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Mobile App */
+
+        .mobile-main {
+            grid-template-columns: repeat(1, auto);
+        }
+
+        /* Industries we have */
+#industries h3 {
+    font-size: 40px;
+}
+
+.industries-img {
+    grid-template-columns: auto;
+}
+
+.industries-blue-bottom h4 {
+    font-size: 24px;
+}
+/* Pblue part */
+#Pblue-part{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Our Services */
+    .services-main {
+        grid-template-columns: repeat(3, auto);
+    }
+    /* blue-part */
 }

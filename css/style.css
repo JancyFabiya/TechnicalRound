@@ -381,7 +381,7 @@ body {
     height: auto;
     width: 100%;
     background-color: #E2E5F5;
-    padding: 40px;
+    padding: 4%;
     font-family: 'Bebas Neue', sans-serif;
 
 
@@ -420,10 +420,10 @@ body {
 }
 
 .Portfolio-card {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 550px;
     height: 295px;
     background: url('/image/Property\ 1=Rectangle\ 115.jpg') no-repeat;
@@ -1439,5 +1439,309 @@ header .Schedule-icons div:last-child {
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* Main Card */
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 30px; /* Adjust the padding for smaller screens */
+    }
+
+    .card h2 {
+        font-size: 48px; /* Adjust the font size for smaller screens */
+    }
+
+    .card p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+
+
+    /* our client */
+    #clients {
+        padding: 20px; /* Adjust the padding for smaller screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .client h2 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+        margin-bottom: 15px; /* Adjust the margin for smaller screens */
+    }
+
+    .image-row {
+        gap: 20px; /* Adjust the gap between images for smaller screens */
+        margin-bottom: 10px; /* Adjust the margin between rows for smaller screens */
+        flex-direction: column; /* Change the direction to column for smaller screens */
+        align-items: center; /* Center items in the column */
+        justify-content: center;
+        gap: 15px; /* Adjust the gap between images for smaller screens */
+    }    /* .client-image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+    .image-row img {
+        max-width: 80%; /* Adjust the max-width of images for smaller screens */
+        height: auto;
+    }
+
+    /* portfolio */
+    .portfolio-first-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-first-row span {
+        margin-top: 20px;
+    }
+
+    .portfolio-card-rows {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Portfolio-card {
+        width: 100%;
+    }
+
+    .Portfolio-card img {
+        border-radius: 8px; /* Reset border-radius for images */
+    }
+
+
+    /* Services */
+
+    #services {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #services div {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        align-items: center; /* Center items in the column */
+    }
+
+    .services-card {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .services-card h4 {
+        writing-mode: horizontal-tb; /* Horizontal writing mode on smaller screens */
+        text-orientation: mixed; /* Mixed text orientation on smaller screens */
+        transform: rotate(0deg); /* Reset text rotation on smaller screens */
+        margin-left: 0; /* Reset margin-left for horizontal alignment */
+    }
+
+    .services-card.expanded {
+        flex: 0 0 100%;
+        max-width: 100%; /* Remove the maximum width when expanded on smaller screens */
+    }
+
+    .services-card p,
+    .services-card span {
+        display: block; /* Show hidden content on smaller screens */
+    }
+
+    /* Testimonials */
+
+    #testimonials h2 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonials-card {
+        width: 100%; /* Set width to 100% for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing on smaller screens */
+    }
+
+    .testimonials-card-container {
+        width: 100%; /* Set width to 100% for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonials-card-img {
+        margin-top: 20px; /* Adjust margin-top for spacing on smaller screens */
+    }
+
+    .testimonials-play-button {
+        margin-left: 0; /* Reset margin-left for positioning on smaller screens */
+        margin-top: 10px; /* Adjust margin-top for positioning on smaller screens */
+    }
+
+    .testimonials-card-collection {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+
+    .testimonials-questions {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonials-questions h4 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .testimonials-questions button {
+        width: 100%; /* Set width to 100% for smaller screens */
+    }
+
+    /* Our Team */
+    #our-team h2 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .our-team-card {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        margin: 0 auto; /* Center the card */
+        margin-bottom: 20px; /* Adjust margin for spacing on smaller screens */
+        border-radius: 15px; /* Adjust border-radius for smaller screens */
+    }
+
+    .our-team-play-button {
+        width: 40px; /* Adjust width for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+        font-size: 25px; /* Adjust font size for smaller screens */
+        margin-left: 50%; /* Center the play button horizontally */
+        margin-top: 50%; /* Center the play button vertically */
+        transform: translate(-50%, -50%); /* Center the play button properly */
+    }
+
+    /* Media Coverage */
+
+    #media h2 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .media-card {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        margin: 0 auto; /* Center the card */
+        margin-bottom: 20px; /* Adjust margin for spacing on smaller screens */
+        border-radius: 12px; /* Adjust border-radius for smaller screens */
+    }
+
+    .media-icon {
+        padding-top: 6%; /* Adjust padding for smaller screens */
+        padding-left: 5%; /* Adjust padding for smaller screens */
+        gap: 3%; /* Adjust gap between icons for smaller screens */
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+        white-space: nowrap; /* Prevent icons from wrapping to the next line */
+    }
+
+    .slick-slide {
+        margin: 0 10px; /* Adjust margin between slides for smaller screens */
+    }
+
+    /* Build Something */
+    #build h2 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .build-image-container {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-bottom: 30px; /* Adjust margin for spacing on smaller screens */
+    }
+
+    .build-default-image,
+    .build-hover-image {
+        max-width: 100%; /* Make sure images don't overflow their container */
+        height: auto; /* Allow images to scale proportionally */
+    }
+
+    /* Schedule a call */
+    #Schedule h2 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+        padding-top: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .Schedule-topper-text h5 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        padding-bottom: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .Schedule-div {
+        margin-left: 5%; /* Adjust margin for smaller screens */
+    }
+
+    .Schedule-div div {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .schedule-wrapper {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .calendar,
+    .clock-body,
+    .form-style-9 {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .clock-body h6 {
+        margin-right: 0; /* Adjust margin for smaller screens */
+    }
+
+    /* #time-inputs {
+        flex-direction: column; /* Display inputs in a column for smaller screens *
+        align-items: center;
+    } */
+
+    #time-inputs input,
+    #time-inputs select {
+        width: 100%; /* Adjust width for smaller screens */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    #clock-container,
+    #clock-canvas {
+        width: 100%; /* Adjust width for smaller screens */
+        /* margin: 5px 0; */
+    }
+    /* #clock-canvas {
+        width: 100%;
+        height: 100%;
+    } */
+
+    .clock-bottom {
+        flex-direction: column; /* Display bottom buttons in a column for smaller screens */
+        align-items: center;
+    }
+
+    .clock-bottom-inner {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .form-style-9 {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .clock-body{
+        margin: 0;
+    }
+    /* .calendar,
+    .clock-body {
+        margin: 0; /* Remove margin for smaller screens *
+    }
+
+    .calendar {
+        margin-bottom: 20px; /* Add margin for separation *
+    } */
+    
+    .Schedule-date-time{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

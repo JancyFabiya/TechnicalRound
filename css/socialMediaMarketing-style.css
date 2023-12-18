@@ -665,4 +665,151 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* SMM Heading */
+    #smm-heading h2 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    #smm-heading button {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    /* Services Offer */
+
+    #services-offer h2 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .services-card-content span {
+        font-size: 36px;
+    }
+
+    .services-card-content h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .services-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    /* OUR PROCESS */
+
+    #our-process h2 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .our-process-card-content h6 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .our-process-card-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .our-process-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+                    /* Industries we have */
+#industries h3 {
+    font-size: 40px;
 }
+
+.industries-img {
+    grid-template-columns: auto;
+}
+
+.industries-blue-bottom h4 {
+    font-size: 24px;
+}
+.industries-blue-bottom div {
+    width: 100%; /* Adjust the width to fit the screen */
+}
+/* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+
+/* Testimonials */
+.testimonials-cards {
+    flex-direction: column; /* Change to column direction on smaller screens */
+    align-items: center;
+}
+#testimonials h2{
+    width: 100%;
+    font-size: 46px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    /* SMM Heading */
+
+    #smm-heading h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    #smm-heading button {
+        width: 100%;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    /* Services Offer */
+
+    #services-offer h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+.services-cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+    .services-card-content span {
+        font-size: 24px;
+    }
+
+    .services-card-content h6 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* OUR PROCESS */
+    #our-process h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+.our-process-cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .our-process-card-content h6 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .our-process-card-content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    /* Testimonials */
+
+    .testimonials-cards {
+        align-items: center;
+    }
+}
+

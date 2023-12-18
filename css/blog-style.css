@@ -5,14 +5,14 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-body {     
+body {
     /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; */
     min-height: 100vh;
-    margin: 0;   
-   
+    margin: 0;
+
 }
 
 /* Navbar */
@@ -93,6 +93,7 @@ body {
     cursor: pointer;
     display: none;
 }
+
 /* Style the button and dropdown container */
 .dropdown-container {
     position: relative;
@@ -146,10 +147,10 @@ body {
 
 /* <!-- Policy Headline --> */
 
-#policy-headline{
+#policy-headline {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(100,71,196),rgb(162,131,240),rgb(155,117,242));
+    background: linear-gradient(rgb(100, 71, 196), rgb(162, 131, 240), rgb(155, 117, 242));
     display: flex;
     flex-direction: column;
     padding-left: 8%;
@@ -160,28 +161,31 @@ body {
 
 
 }
-#policy-headline h1{
+
+#policy-headline h1 {
     font-weight: 700;
     font-size: 54px;
     line-height: 83.33px;
     padding-top: 3%;
     text-transform: uppercase;
 
-    
+
 }
-#policy-headline p{
+
+#policy-headline p {
     font-weight: 500;
     font-size: 28px;
     line-height: 42.5px;
     padding-bottom: 3%;
 }
-.blog-button button{
+
+.blog-button button {
     width: 60px;
     height: 24px;
     border-radius: 40px;
     background: #F5F5F5;
     color: #1E1E1E;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 10px;
     font-weight: 400;
     border: none;
@@ -189,19 +193,21 @@ body {
 }
 
 /* policy-body */
-#policy-body{
+#policy-body {
     width: 100%;
     height: auto;
     background: #E2E5F5;
-   
-    
+
+
 }
-.policy-body-row{
+
+.policy-body-row {
     display: flex;
     padding: 5%;
-   gap: 3%;
+    gap: 3%;
 }
-.policy-body-buttons div{
+
+.policy-body-buttons div {
     width: 308px;
     height: 56px;
     border-radius: 8px;
@@ -212,28 +218,32 @@ body {
     align-items: center;
     padding-left: 6%;
 }
-.policy-body-text h4{
+
+.policy-body-text h4 {
     color: #1E1E1E;
     font-weight: 700;
     font-size: 40px;
     line-height: 42.5px;
     padding-bottom: 2%;
 }
-.policy-body-text h6{
+
+.policy-body-text h6 {
     color: #1E1E1E;
     font-weight: 500;
     font-size: 32px;
     line-height: 42.5px;
     padding-bottom: 2%;
 }
-.policy-body-text p{
+
+.policy-body-text p {
     color: #4D4D4D;
     font-weight: 500;
     font-size: 20px;
     line-height: 42.5px;
     padding-bottom: 5%;
 }
-.policy-body-bottom{
+
+.policy-body-bottom {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -242,77 +252,88 @@ body {
 
 
 }
-.policy-body-arrow{
+
+.policy-body-arrow {
     display: flex;
     justify-content: space-between;
     padding-bottom: 3%;
 
 }
-.policy-body-bottom h4{
+
+.policy-body-bottom h4 {
     font-weight: 700;
     font-size: 40px;
     line-height: 42.5px;
     padding-bottom: 2%;
 }
-.policy-cards{
+
+.policy-cards {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4%;
 }
-.policy-card{
+
+.policy-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 4%;
 }
-.policy-card button{
+
+.policy-card button {
     width: 167px;
-    height:50px;
-    background:#4845D2 ;
+    height: 50px;
+    background: #4845D2;
     border-radius: 12px;
     color: #FFFFFF;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 500;
     border: none;
-    
+
 
 }
-.policy-card-content{
+
+.policy-card-content {
     width: 210px;
     height: 286px;
     background: #F5F5F5;
     border-radius: 12px;
     margin-bottom: 8%;
 }
-.policy-card-content img{
+
+.policy-card-content img {
     width: 100%;
 }
-.policy-card-content div{
+
+.policy-card-content div {
     padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
-.policy-card-content h6{
+
+.policy-card-content h6 {
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
     color: #1E1E1E;
 
 }
-.policy-card-content p{
+
+.policy-card-content p {
     font-weight: lighter;
     font-size: 12px;
     line-height: 20px;
     color: #1E1E1E;
-margin-top: 2%;
+    margin-top: 2%;
 }
+
 /* .policy-body-bottom button{
     width: 191px;
     height: 60px;
@@ -396,12 +417,13 @@ margin-top: 2%;
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
     }
+
     .dropdown-container {
         position: relative;
         text-align: center;
         width: 100%;
     }
-   
+
 
     .dropdown-content {
         display: none;
@@ -413,6 +435,7 @@ margin-top: 2%;
         z-index: 1;
         border-radius: 4px;
     }
+
     .dropdown-container.active .dropdown-content {
         display: block;
     }
@@ -420,11 +443,117 @@ margin-top: 2%;
     .dropdown-content a {
         font-family: 'Lato', sans-serif;
         font-weight: 500;
-        font-size: 1.1rem; /* Adjust the font size as needed */
+        font-size: 1.1rem;
+        /* Adjust the font size as needed */
         color: #4D4D4D;
         padding: 10px 14px;
         text-decoration: none;
         display: block;
     }
-}
 
+    /* Policy Headline */
+
+
+    #policy-headline {
+        padding-left: 4%;
+        /* Adjust the padding for smaller screens */
+    }
+
+    #policy-headline h1 {
+        font-size: 36px;
+        /* Adjust the font size for h1 on smaller screens */
+        line-height: 56px;
+        /* Adjust the line height for h1 on smaller screens */
+    }
+
+    #policy-headline p {
+        font-size: 18px;
+        /* Adjust the font size for p on smaller screens */
+        line-height: 28px;
+        /* Adjust the line height for p on smaller screens */
+        padding-bottom: 2%;
+        /* Adjust the padding for p on smaller screens */
+    }
+
+    .blog-button button {
+        width: 50px;
+        /* Adjust the button width for smaller screens */
+        height: 20px;
+        /* Adjust the button height for smaller screens */
+        font-size: 8px;
+        /* Adjust the font size for buttons on smaller screens */
+    }
+
+
+    /* policy body */
+
+
+    #policy-body {
+        padding: 5%;
+    }
+
+    .policy-body-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .policy-body-buttons div {
+        width: 100%;
+        /* Make buttons full width on smaller screens */
+        margin-bottom: 2%;
+        /* Adjust the margin for buttons on smaller screens */
+    }
+
+    .policy-body-text h4 {
+        font-size: 28px;
+        /* Adjust the font size for h4 on smaller screens */
+        line-height: 32px;
+        /* Adjust the line height for h4 on smaller screens */
+    }
+
+    .policy-body-text h6 {
+        font-size: 20px;
+        /* Adjust the font size for h6 on smaller screens */
+        line-height: 26px;
+        /* Adjust the line height for h6 on smaller screens */
+    }
+
+    .policy-body-text p {
+        font-size: 16px;
+        /* Adjust the font size for p on smaller screens */
+        line-height: 22px;
+        /* Adjust the line height for p on smaller screens */
+    }
+
+    .policy-body-text img {
+        max-width: 100%;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .policy-body-bottom h4 {
+        font-size: 28px;
+        /* Adjust the font size for h4 on smaller screens */
+        line-height: 32px;
+        /* Adjust the line height for h4 on smaller screens */
+    }
+
+    .policy-cards {
+        flex-direction: column;
+        /* Arrange cards in a column on smaller screens */
+        gap: 4%;
+    }
+
+    .policy-card {
+        width: 100%;
+        /* Make cards full width on smaller screens */
+    }
+
+    .policy-card button {
+        width: 167px;
+        height: 50px;
+        margin-top: 2%;
+        /* Adjust the margin for buttons on smaller screens */
+    }
+}

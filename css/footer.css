@@ -14,20 +14,26 @@
     padding: 80px 13% 70px;
 
 } */
-.footer{
-    /* width: 100%;
-    height: auto; */
+.footer {
     display: grid;
     padding: 3%;
-    /* grid-template-columns: repeat(auto-fit,minmax(200px,auto)); */
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
     background: #090C31;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    /* height: auto; */
+    min-height: 300px; /* Set a minimum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+.footer-content {
+    /* ... other styles ... */
+    margin-bottom: 20px; /* Add a margin to create a gap */
+}
+.footer-content iframe {
+    width: 100%;
+    height: 350px; /* Adjust the height as needed */
 }
 .footer-content h4{
     color:#fff;
@@ -82,11 +88,17 @@
 .bottom p{
     color: white;
 }
+
 .bottom-div {
-    /* display: flex;
-    gap: 1%; */
-  
     color: white;
+
+    display: flex;
+    gap: 10px; /* Add a gap between the contents */
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.bottom-div a:first-child {
+    margin-right: 10px; /* Add a margin to create a gap */
 }
 /* iframe{
     margin-right: 3%;
@@ -96,7 +108,7 @@
     height: auto;
 
 } */
-@media (max-width:1690px){
+/* @media (max-width:1690px){
     section{
         padding: 50px 5% 40px;
     }
@@ -114,5 +126,64 @@
         grid-template-columns: repeat(auto-fit,minmax(150px,auto));
         gap: 2.5rem;
         
+    }
+} */
+
+
+
+/* @media (max-width: 1690px) {
+    section {
+        padding: 50px 5% 40px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2.5rem;
+    }
+} */
+
+
+@media (max-width: 1690px) {
+    .footer {
+        padding: 50px 5% 40px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
+}
+
+/* @media (max-width: 700px) {
+    .footer {
+        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+} */
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+    .footer-content iframe {
+        height: 250px; /* Adjust the height for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 500px) {
+    .footer-content iframe {
+        height: 200px; /* Adjust the height for even smaller screens */
     }
 }

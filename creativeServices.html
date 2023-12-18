@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+
     <title>Seize the ads</title>
     <link rel="stylesheet" href="css/creativeServices.css">
 </head>
@@ -162,7 +164,7 @@
 
 
    <!-- Works Counter -->
-   <section id="works-counter">
+   <!-- <section id="works-counter">
     <div class="number-set">
         <h3>5+</h3>
         <h6>Years Of Experience</h6>
@@ -183,9 +185,40 @@
         <h6>Happy Clients</h6>
     </div>
 
-   </section>
+   </section> -->
 
+   <section id="works-counter">
+    <div class="number-set">
+        <div class="works-number-set">
+            <h3 id="experience">0</h3><span>+</span>
 
+        </div>
+        <h6>Years Of Experience</h6>
+    </div>
+
+    <div class="number-set">
+        <h3 id="projects">0</h3>
+        <h6>Projects Delivered</h6>
+    </div>
+
+    <div class="number-set">
+       
+        <div class="works-number-set">
+            <h3 id="specialists">0</h3><span>+</span>
+
+        </div>
+        <h6>Specialists</h6>
+    </div>
+
+    <div class="number-set">
+        
+        <div class="works-number-set">
+            <h3 id="Clients">0</h3><span>+</span>
+
+        </div>
+        <h6>Happy Clients</h6>
+    </div>
+</section>
 
    <!-- Client Say -->
  
@@ -308,7 +341,34 @@
 <iframe src="/includes/footer.html" width="100%" height="448px" frameborder="0"></iframe>
 
 
+<!-- work COunt -->
+<script>
+    function countTo(target, elementId) {
+        let currentCount = 0;
+        const targetCount = target;
+        const element = document.getElementById(elementId);
 
+        const interval = setInterval(() => {
+            currentCount++;
+            element.textContent = currentCount;
+
+            if (currentCount === targetCount) {
+                clearInterval(interval);
+            }
+        }, 20);
+    }
+
+    setTimeout(() => {
+        countTo(5, 'experience');
+        countTo(251, 'projects');
+        countTo(100, 'specialists');
+        countTo(199, 'Clients');
+    }, 500); // Delay the start to ensure proper execution
+</script>
+
+
+
+<!-- FAQ -->
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -324,7 +384,16 @@
                 }
             });
         }
+
+
+
+        
     </script>
+
+
+
+
+   
 
     <!-- <script>
             function togglePanel() {

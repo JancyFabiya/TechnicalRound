@@ -663,4 +663,176 @@ body {
         text-decoration: none;
         display: block;
     }
+
+    /* SEO Heading */
+
+    #seo-heading{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #seo-heading h1 {
+        font-size: 60px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+    }
+
+    #seo-heading button {
+        width: 100%;
+        font-size: 20px; /* Adjust font size for smaller screens */
+        line-height: 52px;
+    }
+    /* Outperform */
+
+    #outperform h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+    }
+
+    #outperform p {
+        font-size: 10px; /* Adjust font size for smaller screens */
+        line-height: 26px;
+    }
+
+    .outperform-button {
+        width: 100%; /* Occupy full width on smaller screens */
+        margin-top: 10px; /* Adjust spacing */
+    }
+    /* Clients Trust Us */
+
+    #client-trust{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    .client-trust-column h2 {
+        width: 100%;
+        font-size: 40px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+        text-align: center;
+
+    }
+
+    .client-trust-column p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        line-height: 26px;
+    }
+
+    .card-content h3 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .card-content p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    img{
+        width: 100%;
+    }
+
+    /* Brands we worked with */
+
+    .image-row {
+        gap: 10px; /* Adjust the gap between images for smaller screens */
+    }
+
+    .client h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+    }
+    .image-row img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    /* Our SEO Services */
+
+    .SEO-services-card-body {
+        max-width: 100%; /* Occupy full width on smaller screens */
+    }
+    .SEO-services-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+                /* Industries we have */
+#industries h3 {
+    font-size: 40px;
+}
+
+.industries-img {
+    grid-template-columns: auto;
+}
+
+.industries-blue-bottom h4 {
+    font-size: 24px;
+}
+/* FAQ */
+
+.accordion-button {
+    width: 90%; /* Adjust width for smaller screens */
+}
+}
+
+@media only screen and (max-width: 768px) {
+     /* SEO Heading */
+
+     #seo-heading{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #seo-heading h1 {
+        font-size: 60px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+    }
+
+    #seo-heading button {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        line-height: 52px;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    /* outPerform */
+
+    #outperform h2 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        line-height: 44px;
+    }
+
+    #outperform p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        line-height: 24px;
+    }
+
+    .outperform-button {
+        width: 100%; /* Occupy full width on smaller screens */
+        margin-top: 10px; /* Adjust spacing */
+    }
+    /* Brands we worked with */
+
+    .image-row {
+        gap: 5px; /* Further adjust the gap between images for smaller screens */
+    }
+
+    .client h2 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        line-height: 42px;
+    }
+    /* Our SEO Services */
+    #SEO-services h3 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        line-height: 56px;
+    }
+
+    .SEO-services-card-body {
+        max-width: 100%; /* Occupy full width on smaller screens */
+    }
+    .SEO-services-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

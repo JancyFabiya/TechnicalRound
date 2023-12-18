@@ -611,6 +611,30 @@ margin-bottom: 12%;
         padding: 1.3rem 5%;
     }
 }
+/* Tablet styles (for screens between 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+   /* photo Ads */
+    #photo-Ads img {
+       
+       width: 100%;
+        /* Adjust styles for tablets here */
+    }
+
+    /* Transform */
+
+    #transform h2 {
+        width: 100%;
+        align-items: center;
+
+        /* Adjust styles for tablets here */
+    }
+
+    #transform button {
+        width: 100%;
+        /* Adjust styles for tablets here */
+    }
+}
 
 @media (max-width: 768px) {
     .icons {
@@ -691,5 +715,205 @@ margin-bottom: 12%;
         padding: 10px 14px;
         text-decoration: none;
         display: block;
+    }
+
+    /* Transformation of your business */
+
+    .trans-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .trans-text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        
+
+    }
+    .trans-text h3{
+        font-size: 42px;
+    }
+    .trans-img img{
+        width: 100%;
+    }
+
+    /* Our Values */
+
+    #ourValues h2 {
+        font-size: 42px; /* Adjust the font size for smaller screens */
+        padding-top: 8%;
+      }
+    
+      .ourValues-para {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+        padding: 5% 8% 5% 8%;
+        line-height: 28px;
+      }
+    
+      .ourValues-card-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+      }
+    
+      .ourValues-card {
+        width: 100%; /* Make cards full width on smaller screens */
+        margin-bottom: 5%; /* Add some space between stacked cards */
+      }
+
+
+      /* partner with us */
+      .partner-main-text h3 {
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .partner-main-text p {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .partner-content {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .partner-content-text {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .partner-content-img img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    /* want digital partner */
+
+    #digital-partner h2 {
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    #digital-partner p {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    #digital-partner button {
+        width: 80%; /* Adjust the width as needed */
+        margin-top: 20px; /* Add space between the paragraph and the button */
+    }
+
+
+    /* Clients trust */
+
+    .client h2 {
+        font-size: 40px;
+    }
+
+   
+  
+    .client-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .client {
+        align-items: center;
+    }
+
+    /* wonderful team */
+    #wonderful-team {
+        width: 100%;
+    }
+
+    #wonderful-team h2 {
+        font-size: 40px; /* Adjust the font size for h2 on mobile */
+        padding-bottom: 2%; /* Adjust as needed */
+    }
+
+    #wonderful-team p {
+        font-size: 20px; /* Adjust the font size for p on mobile */
+        padding-bottom: 2%; /* Adjust as needed */
+    }
+
+    #wonderful-team img {
+        width: 100%;
+    }
+
+    /* Our Clients Say */
+
+    #testimonials h2 {
+        font-size: 40px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .testimonials-card {
+        width: 100%; /* Adjust the width for full width on smaller screens */
+        max-width: 400px; /* Set a maximum width to control the card size */
+        margin: 10px auto; /* Center the cards on smaller screens */
+        height: auto; /* Adjust the height as needed */
+        padding: 10px;
+    }
+
+    .testimonials-card-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .testimonials-card-img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .testimonials-card-collection {
+        flex-wrap: wrap; /* Allow the cards to stack vertically on smaller screens */
+        overflow-x: hidden; /* Hide the horizontal scrollbar */
+    }
+
+    /* photo ads */
+
+    #photo-Ads img {
+        width: 100%;
+        /* Adjust styles for mobile devices here */
+    }
+
+    /* Transform */
+
+    /* #transform h2 {
+        align-items: center;
+        font-size: 40px; /* Example: Adjust font size for mobile *
+    }
+
+    #transform button {
+      
+        width: 100%; /* Example: Make the button full width on mobile *
+    } */
+    #transform h2 {
+        align-items: center;
+        text-align: center;
+        font-size: 40px; /* Example: Adjust font size for mobile */
+    }
+
+    #transform button {
+        width: 80%; /* Example: Adjust button width */
+        margin: 20px auto; /* Add space between button and screen edges */
     }
 }
