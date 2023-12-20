@@ -19,15 +19,13 @@ body {
 
 
 .header {
-    /* position: fixed; */
     position: relative;
 
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -42,8 +40,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -51,7 +48,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -69,7 +65,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -104,9 +99,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -116,8 +109,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -152,78 +144,15 @@ body {
 /* Card Content */
 
 
-/* .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 998px;
-    height: 450px;
-    padding: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.11) rgba(120, 77, 241, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.card h2{
-    margin-bottom: 10px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
 
-
-}
-.card p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    color: #1E1E1E;
-    font-weight: lighter;
-
-} */
-
-
-/* .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 998px;
-    height: 450px;
-    padding: 30px;
-    border: 2px solid linear-gradient( rgba(255, 255, 255, 0.11) rgba(120, 77, 241, 0.2));
-    background-color: linear-gradient( #FFFFFF,#784DF1 );
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.card h2 {
-    margin-bottom: 10px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    line-height: 1; /* Adjust the line height as needed *
-    display: inline-block;
-}
-
-.card p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    color: #1E1E1E;
-    font-weight: lighter;
-    line-height: 1.5; /* Adjust the line height as needed *
-} */
 
 
 .card {
     display: flex;
     flex-flow: row wrap;
-    /* flex-direction: column; */
-    /* align-items: center; */
+
     align-content: space-between;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
     width: 998px;
     height: 450px;
     padding: 75px;
@@ -290,15 +219,7 @@ body {
     /* Show the hover image on hover */
 }
 
-/* section {
-    height: 100vh; /* Full height of the viewport *
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* font-size: 2em; *
-  
-} */
+
 #card-digital {
     height: 100vh;
     /* Full height of the viewport */
@@ -333,7 +254,6 @@ body {
 .client h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 
@@ -341,8 +261,7 @@ body {
 
 .image-row {
     display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
+
     justify-content: center;
     gap: 56px;
     /* Adjust the gap between images */
@@ -354,19 +273,7 @@ body {
     height: auto;
 }
 
-/* .centered-heading {
-    margin-bottom: 10px;
 
-    /* text-align: center; *
-}
-.two-line-heading{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; *
-} */
 .client-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -397,7 +304,6 @@ body {
 
 .portfolio-first-row h2 {
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 }
@@ -420,17 +326,13 @@ body {
 }
 
 .Portfolio-card {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     width: 550px;
     height: 295px;
     background: url('/image/Property\ 1=Rectangle\ 115.jpg') no-repeat;
     background-size: auto;
     background-position: center;
-    /* border: 2px solid #ddd; */
-    /* background:linear-gradient(rgba(255, 255, 255, 1),rgba(72, 69, 210, 1), rgba(255, 255, 255, 0.65)); */
+
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -471,7 +373,6 @@ body {
 
 #services h2 {
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 }
@@ -486,18 +387,7 @@ body {
     border: 2px solid rgba(234, 237, 255, 1), rgba(129, 129, 129, 0.65);
     cursor: pointer;
     transition: flex 0.5s ease;
-    /* overflow: hidden; */
-    /* max-width:128px;  */
-    /* Set your preferred initial width */
-    /* display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin-bottom: 20px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items:start ;
-    justify-content: flex-start;
-    text-align: center; */
+
 
 }
 
@@ -505,16 +395,7 @@ body {
     border: 2px solid, rgba(129, 129, 129, 0.65);
 }
 
-/* .button {
-    display: none;
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-} */
+
 
 .services-card.expanded {
     flex: 0 0 100%;
@@ -538,7 +419,6 @@ span {
     /* Prevent text from wrapping */
     overflow: hidden;
     font-size: 30px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
     margin-left: 45px;
@@ -578,7 +458,6 @@ span {
 
 #testimonials h2 {
     font-size: 80px;
-    /* font-weight: 400; */
     padding: 40px;
 
     color: #4D4D4D;
@@ -586,10 +465,7 @@ span {
 }
 
 .testimonials-card {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
+
     width: 504.5px;
     /* Adjust the width as needed */
     height: 420px;
@@ -598,7 +474,6 @@ span {
     border: 1px solid linear-gradient(rgba(255, 255, 255, 1), rgba(163, 119, 255, 1));
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
     margin: 20px;
     position: relative;
 
@@ -650,17 +525,9 @@ span {
 
 .testimonials-card-img {
     margin-top: 180px;
-    /* margin-right: 80px; */
     width: 243.42px;
     height: 364.5px;
-    /* position: relative; */
-    /* margin-right: 18px; */
-    /* position: absolute;
-    right: -1px;
-    top: -10px;
-    img {
-      max-width: 243.42px;
-    } */
+
 }
 
 .testimonials-play-button {
@@ -675,7 +542,6 @@ span {
     font-size: 20.18px;
     margin-left: 170px;
     margin-top: 170px;
-    /* position: fixed; */
 
 }
 
@@ -701,7 +567,6 @@ span {
     width: 100%;
     height: 208px;
     background: rgba(255, 255, 255, 0.5);
-    /* border: 4px solid rgba(221, 221, 221, 1); */
     border-top: 4px solid rgba(221, 221, 221, 1);
     /* Choose your top border color */
     border-bottom: 4px solid rgba(221, 221, 221, 1);
@@ -747,7 +612,6 @@ span {
     width: 100%;
     background: linear-gradient(rgba(176, 174, 255, 1), rgba(203, 202, 255, 1));
     font-family: 'Bebas Neue', sans-serif;
-    /* overflow: hidden; */
 
 
 
@@ -755,7 +619,6 @@ span {
 
 #our-team h2 {
     font-size: 55px;
-    /* font-weight: 400; */
     padding: 40px;
 
     color: #1E1E1E;
@@ -767,13 +630,10 @@ span {
     width: 1050px;
     height: 557px;
     background: rgba(72, 69, 210, 0.2);
-    /* border: 4px solid rgba(5, 3, 66, 0.24); */
     margin-left: 15%;
     margin-bottom: 3%;
     border-radius: 30px;
-    /* border-top-color: 4px solid rgba(255, 255, 255, 1); */
-    /* border */
-    /* border-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(5, 3, 66, 0.24)); Define the gradient colors and direction */
+
 
 }
 
@@ -800,7 +660,6 @@ span {
     width: 100%;
     background: #E2E5F5;
     font-family: 'Bebas Neue', sans-serif;
-    /* overflow: hidden; */
 
 
 
@@ -808,7 +667,6 @@ span {
 
 #media h2 {
     font-size: 55px;
-    /* font-weight: 400; */
     padding: 40px;
 
     color: #4D4D4D;
@@ -820,13 +678,10 @@ span {
     width: 1050px;
     height: 194px;
     background: rgba(0, 0, 0, 0.6);
-    /* border: 4px solid rgba(5, 3, 66, 0.24); */
     margin-left: 15%;
     margin-bottom: 3%;
     border-radius: 12px;
-    /* border-top-color: 4px solid rgba(255, 255, 255, 1); */
-    /* border */
-    /* border-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(5, 3, 66, 0.24)); Define the gradient colors and direction */
+
 
 }
 
@@ -838,35 +693,42 @@ span {
 
 }
 
-.slick-slide{
+.slick-slide {
     margin: 0 20px;
 }
-.slick-slide img{
+
+.slick-slide img {
     width: 100%;
 }
-.slick-list{
+
+.slick-list {
     position: relative;
     display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.slick-list:focus{
+
+.slick-list:focus {
     outline: none;
 }
-.slick-slide{
+
+.slick-slide {
     display: none;
     float: left;
     height: 100%;
     min-height: 1px;
 }
-.slick-slide img{
+
+.slick-slide img {
     display: block;
 }
-.slick-initialized .slick-slide{
+
+.slick-initialized .slick-slide {
     display: block;
 }
-.slick-loading .slick-slide{
+
+.slick-loading .slick-slide {
     visibility: hidden;
 }
 
@@ -883,7 +745,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: hidden; */
 
 
 
@@ -891,7 +752,6 @@ span {
 
 #build h2 {
     font-size: 55px;
-    /* font-weight: 400; */
     padding: 60px;
 
     color: #FFFFFF;
@@ -947,7 +807,6 @@ span {
 
 #Schedule h2 {
     font-size: 55px;
-    /* font-weight: 400; */
     padding-top: 60px;
 
     color: #FFFFFF;
@@ -967,8 +826,7 @@ span {
 .Schedule-div {
     display: flex;
     flex-flow: column wrap;
-    /* flex-direction: column; */
-    /* align-items: center; */
+
     align-content: space-between;
     justify-content: space-around;
     margin-left: 20%;
@@ -989,8 +847,6 @@ span {
     align-items: center;
     justify-content: center;
 
-    /* min-height: 500px; */
-    /* background: red; */
 }
 
 .schedule-wrapper {
@@ -1027,7 +883,6 @@ header .Schedule-icons div {
     text-align: center;
     line-height: 38px;
     border-radius: 50%;
-    /* background: #f2f2f2; */
 }
 
 header .Schedule-icons div:hover {
@@ -1040,19 +895,15 @@ header .Schedule-icons div:last-child {
 
 .Schedule-date-time {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* flex-wrap: wrap; */
     justify-content: center;
     margin: 5rem;
     gap: 5rem;
 }
 
 .calendar {
-    /* padding: 20px; */
     width: 508px;
     height: 430px;
-    /* margin: 50px; */
 
 }
 
@@ -1100,7 +951,6 @@ header .Schedule-icons div:last-child {
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    /* background: #f2f2f2; */
 }
 
 .days li:hover::before {
@@ -1116,22 +966,17 @@ header .Schedule-icons div:last-child {
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* height: 100vh; */
-    /* margin: 50px; */
+
     width: 528px;
     height: 499px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    /* padding: 20px; */
 
 }
 
 .clock-body h6 {
     font-size: 10px;
-    /* font-weight: 400; */
     padding: 20px;
     margin-right: 55%;
 
@@ -1144,7 +989,6 @@ header .Schedule-icons div:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 20px; */
 
 }
 
@@ -1229,12 +1073,9 @@ header .Schedule-icons div:last-child {
 /* Schedule Form */
 .form-style-9 {
     max-width: 1150px;
-    /* background: #FAFAFA; */
     padding: 30px;
     margin: 50px auto;
-    /* box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35); */
-    /* border-radius: 10px; */
-    /* border: 6px solid #305A72; */
+
 }
 
 .form-style-9 ul {
@@ -1303,11 +1144,8 @@ header .Schedule-icons div:last-child {
 
 .form-style-9 ul li input[type="button"],
 .form-style-9 ul li input[type="submit"] {
-    /* -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	box-shadow: inset 0px 1px 0px 0px #3985B1; */
+
     background-color: #5D70D6;
-    /* border: 1px solid #17445E; */
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
@@ -1323,28 +1161,13 @@ header .Schedule-icons div:last-child {
 
 .form-style-9 ul li input[type="button"]:hover,
 .form-style-9 ul li input[type="submit"]:hover {
-    /* background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%); */
     background-color: #2C2FBE;
 }
 
 
 
 
-/* Footer */
 
-/* #footer-container{
-    width: 100%;
-    height: auto;
-    position: relative;
-    
- 
-
-} */
-/* .header-container{
-    width: 100%;
-    height: auto;
-    position: relative;
-} */
 
 
 
@@ -1445,22 +1268,26 @@ header .Schedule-icons div:last-child {
     .card {
         width: 100%;
         height: auto;
-        padding: 30px; /* Adjust the padding for smaller screens */
+        padding: 30px;
+        /* Adjust the padding for smaller screens */
     }
 
     .card h2 {
-        font-size: 48px; /* Adjust the font size for smaller screens */
+        font-size: 48px;
+        /* Adjust the font size for smaller screens */
     }
 
     .card p {
-        font-size: 20px; /* Adjust the font size for smaller screens */
+        font-size: 20px;
+        /* Adjust the font size for smaller screens */
     }
 
 
 
     /* our client */
     #clients {
-        padding: 20px; /* Adjust the padding for smaller screens */
+        padding: 20px;
+        /* Adjust the padding for smaller screens */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1468,25 +1295,29 @@ header .Schedule-icons div:last-child {
     }
 
     .client h2 {
-        font-size: 60px; /* Adjust the font size for smaller screens */
-        margin-bottom: 15px; /* Adjust the margin for smaller screens */
+        font-size: 60px;
+        /* Adjust the font size for smaller screens */
+        margin-bottom: 15px;
+        /* Adjust the margin for smaller screens */
     }
 
     .image-row {
-        gap: 20px; /* Adjust the gap between images for smaller screens */
-        margin-bottom: 10px; /* Adjust the margin between rows for smaller screens */
-        flex-direction: column; /* Change the direction to column for smaller screens */
-        align-items: center; /* Center items in the column */
-        justify-content: center;
-        gap: 15px; /* Adjust the gap between images for smaller screens */
-    }    /* .client-image-container{
-        display: flex;
+        gap: 20px;
+        /* Adjust the gap between images for smaller screens */
+        margin-bottom: 10px;
+        /* Adjust the margin between rows for smaller screens */
         flex-direction: column;
+        /* Change the direction to column for smaller screens */
         align-items: center;
+        /* Center items in the column */
         justify-content: center;
-    } */
+        gap: 15px;
+        /* Adjust the gap between images for smaller screens */
+    }
+
     .image-row img {
-        max-width: 80%; /* Adjust the max-width of images for smaller screens */
+        max-width: 80%;
+        /* Adjust the max-width of images for smaller screens */
         height: auto;
     }
 
@@ -1511,19 +1342,23 @@ header .Schedule-icons div:last-child {
     }
 
     .Portfolio-card img {
-        border-radius: 8px; /* Reset border-radius for images */
+        border-radius: 8px;
+        /* Reset border-radius for images */
     }
 
 
     /* Services */
 
     #services {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     #services div {
-        flex-direction: column; /* Change to a column layout on smaller screens */
-        align-items: center; /* Center items in the column */
+        flex-direction: column;
+        /* Change to a column layout on smaller screens */
+        align-items: center;
+        /* Center items in the column */
     }
 
     .services-card {
@@ -1534,212 +1369,267 @@ header .Schedule-icons div:last-child {
     }
 
     .services-card h4 {
-        writing-mode: horizontal-tb; /* Horizontal writing mode on smaller screens */
-        text-orientation: mixed; /* Mixed text orientation on smaller screens */
-        transform: rotate(0deg); /* Reset text rotation on smaller screens */
-        margin-left: 0; /* Reset margin-left for horizontal alignment */
+        writing-mode: horizontal-tb;
+        /* Horizontal writing mode on smaller screens */
+        text-orientation: mixed;
+        /* Mixed text orientation on smaller screens */
+        transform: rotate(0deg);
+        /* Reset text rotation on smaller screens */
+        margin-left: 0;
+        /* Reset margin-left for horizontal alignment */
     }
 
     .services-card.expanded {
         flex: 0 0 100%;
-        max-width: 100%; /* Remove the maximum width when expanded on smaller screens */
+        max-width: 100%;
+        /* Remove the maximum width when expanded on smaller screens */
     }
 
     .services-card p,
     .services-card span {
-        display: block; /* Show hidden content on smaller screens */
+        display: block;
+        /* Show hidden content on smaller screens */
     }
 
     /* Testimonials */
 
     #testimonials h2 {
-        font-size: 60px; /* Adjust the font size for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 60px;
+        /* Adjust the font size for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .testimonials-card {
-        width: 100%; /* Set width to 100% for smaller screens */
-        height: auto; /* Adjust height for smaller screens */
-        margin: 10px 0; /* Adjust margin for spacing on smaller screens */
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+        margin: 10px 0;
+        /* Adjust margin for spacing on smaller screens */
     }
 
     .testimonials-card-container {
-        width: 100%; /* Set width to 100% for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .testimonials-card-img {
-        margin-top: 20px; /* Adjust margin-top for spacing on smaller screens */
+        margin-top: 20px;
+        /* Adjust margin-top for spacing on smaller screens */
     }
 
     .testimonials-play-button {
-        margin-left: 0; /* Reset margin-left for positioning on smaller screens */
-        margin-top: 10px; /* Adjust margin-top for positioning on smaller screens */
+        margin-left: 0;
+        /* Reset margin-left for positioning on smaller screens */
+        margin-top: 10px;
+        /* Adjust margin-top for positioning on smaller screens */
     }
 
     .testimonials-card-collection {
-        flex-direction: column; /* Change to a column layout on smaller screens */
+        flex-direction: column;
+        /* Change to a column layout on smaller screens */
     }
 
     .testimonials-questions {
-        height: auto; /* Adjust height for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .testimonials-questions h4 {
-        font-size: 24px; /* Adjust the font size for smaller screens */
+        font-size: 24px;
+        /* Adjust the font size for smaller screens */
     }
 
     .testimonials-questions button {
-        width: 100%; /* Set width to 100% for smaller screens */
+        width: 100%;
+        /* Set width to 100% for smaller screens */
     }
 
     /* Our Team */
     #our-team h2 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .our-team-card {
-        width: 90%; /* Adjust width for smaller screens */
-        height: auto; /* Adjust height for smaller screens */
-        margin: 0 auto; /* Center the card */
-        margin-bottom: 20px; /* Adjust margin for spacing on smaller screens */
-        border-radius: 15px; /* Adjust border-radius for smaller screens */
+        width: 90%;
+        /* Adjust width for smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+        margin: 0 auto;
+        /* Center the card */
+        margin-bottom: 20px;
+        /* Adjust margin for spacing on smaller screens */
+        border-radius: 15px;
+        /* Adjust border-radius for smaller screens */
     }
 
     .our-team-play-button {
-        width: 40px; /* Adjust width for smaller screens */
-        height: 40px; /* Adjust height for smaller screens */
-        font-size: 25px; /* Adjust font size for smaller screens */
-        margin-left: 50%; /* Center the play button horizontally */
-        margin-top: 50%; /* Center the play button vertically */
-        transform: translate(-50%, -50%); /* Center the play button properly */
+        width: 40px;
+        /* Adjust width for smaller screens */
+        height: 40px;
+        /* Adjust height for smaller screens */
+        font-size: 25px;
+        /* Adjust font size for smaller screens */
+        margin-left: 50%;
+        /* Center the play button horizontally */
+        margin-top: 50%;
+        /* Center the play button vertically */
+        transform: translate(-50%, -50%);
+        /* Center the play button properly */
     }
 
     /* Media Coverage */
 
     #media h2 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .media-card {
-        width: 90%; /* Adjust width for smaller screens */
-        height: auto; /* Adjust height for smaller screens */
-        margin: 0 auto; /* Center the card */
-        margin-bottom: 20px; /* Adjust margin for spacing on smaller screens */
-        border-radius: 12px; /* Adjust border-radius for smaller screens */
+        width: 90%;
+        /* Adjust width for smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+        margin: 0 auto;
+        /* Center the card */
+        margin-bottom: 20px;
+        /* Adjust margin for spacing on smaller screens */
+        border-radius: 12px;
+        /* Adjust border-radius for smaller screens */
     }
 
     .media-icon {
-        padding-top: 6%; /* Adjust padding for smaller screens */
-        padding-left: 5%; /* Adjust padding for smaller screens */
-        gap: 3%; /* Adjust gap between icons for smaller screens */
-        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
-        white-space: nowrap; /* Prevent icons from wrapping to the next line */
+        padding-top: 6%;
+        /* Adjust padding for smaller screens */
+        padding-left: 5%;
+        /* Adjust padding for smaller screens */
+        gap: 3%;
+        /* Adjust gap between icons for smaller screens */
+        overflow-x: auto;
+        /* Allow horizontal scrolling on smaller screens */
+        white-space: nowrap;
+        /* Prevent icons from wrapping to the next line */
     }
 
     .slick-slide {
-        margin: 0 10px; /* Adjust margin between slides for smaller screens */
+        margin: 0 10px;
+        /* Adjust margin between slides for smaller screens */
     }
 
     /* Build Something */
     #build h2 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
-        padding: 30px; /* Adjust padding for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
+        padding: 30px;
+        /* Adjust padding for smaller screens */
     }
 
     .build-image-container {
-        width: 80%; /* Adjust width for smaller screens */
-        margin-bottom: 30px; /* Adjust margin for spacing on smaller screens */
+        width: 80%;
+        /* Adjust width for smaller screens */
+        margin-bottom: 30px;
+        /* Adjust margin for spacing on smaller screens */
     }
 
     .build-default-image,
     .build-hover-image {
-        max-width: 100%; /* Make sure images don't overflow their container */
-        height: auto; /* Allow images to scale proportionally */
+        max-width: 100%;
+        /* Make sure images don't overflow their container */
+        height: auto;
+        /* Allow images to scale proportionally */
     }
 
     /* Schedule a call */
     #Schedule h2 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
-        padding-top: 30px; /* Adjust padding for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
+        padding-top: 30px;
+        /* Adjust padding for smaller screens */
     }
 
     .Schedule-topper-text h5 {
-        font-size: 24px; /* Adjust the font size for smaller screens */
-        padding-bottom: 10px; /* Adjust padding for smaller screens */
+        font-size: 24px;
+        /* Adjust the font size for smaller screens */
+        padding-bottom: 10px;
+        /* Adjust padding for smaller screens */
     }
 
     .Schedule-div {
-        margin-left: 5%; /* Adjust margin for smaller screens */
+        margin-left: 5%;
+        /* Adjust margin for smaller screens */
     }
 
     .Schedule-div div {
-        font-size: 14px; /* Adjust the font size for smaller screens */
+        font-size: 14px;
+        /* Adjust the font size for smaller screens */
     }
 
     .schedule-wrapper {
-        width: 100%; /* Adjust width for smaller screens */
+        width: 100%;
+        /* Adjust width for smaller screens */
     }
 
     .calendar,
     .clock-body,
     .form-style-9 {
-        width: 100%; /* Adjust width for smaller screens */
+        width: 100%;
+        /* Adjust width for smaller screens */
     }
 
     .clock-body h6 {
-        margin-right: 0; /* Adjust margin for smaller screens */
+        margin-right: 0;
+        /* Adjust margin for smaller screens */
     }
 
-    /* #time-inputs {
-        flex-direction: column; /* Display inputs in a column for smaller screens *
-        align-items: center;
-    } */
+
 
     #time-inputs input,
     #time-inputs select {
-        width: 100%; /* Adjust width for smaller screens */
-        margin: 5px 0; /* Adjust margin for smaller screens */
+        width: 100%;
+        /* Adjust width for smaller screens */
+        margin: 5px 0;
+        /* Adjust margin for smaller screens */
     }
 
     #clock-container,
     #clock-canvas {
-        width: 100%; /* Adjust width for smaller screens */
-        /* margin: 5px 0; */
-    }
-    /* #clock-canvas {
         width: 100%;
-        height: 100%;
-    } */
+        /* Adjust width for smaller screens */
+    }
+
 
     .clock-bottom {
-        flex-direction: column; /* Display bottom buttons in a column for smaller screens */
+        flex-direction: column;
+        /* Display bottom buttons in a column for smaller screens */
         align-items: center;
     }
 
     .clock-bottom-inner {
-        margin-top: 10px; /* Adjust margin for smaller screens */
+        margin-top: 10px;
+        /* Adjust margin for smaller screens */
     }
 
     .form-style-9 {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-    .clock-body{
-        margin: 0;
-    }
-    /* .calendar,
-    .clock-body {
-        margin: 0; /* Remove margin for smaller screens *
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
-    .calendar {
-        margin-bottom: 20px; /* Add margin for separation *
-    } */
-    
-    .Schedule-date-time{
+    .clock-body {
+        margin: 0;
+    }
+
+
+    .Schedule-date-time {
         flex-direction: column;
         justify-content: center;
         align-items: center;

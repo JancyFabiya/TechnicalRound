@@ -6,10 +6,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     min-height: 100vh;
     margin: 0;
 
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -150,7 +140,6 @@ body {
     background-color: white;
     width: 100%;
     height: auto;
-    /* text-align: center; */
     padding: 40px;
 }
 
@@ -159,7 +148,6 @@ body {
 #clients h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 4%;
 
@@ -167,8 +155,7 @@ body {
 
 .image-row {
     display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
+
     justify-content: center;
     gap: 56px;
     /* Adjust the gap between images */
@@ -180,19 +167,7 @@ body {
     height: auto;
 }
 
-/* .centered-heading {
-    margin-bottom: 10px;
 
-    /* text-align: center; *
-}
-.two-line-heading{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; *
-} */
 .client-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -204,25 +179,27 @@ body {
 
 /* Works Counter */
 
-#works-counter{
+#works-counter {
     width: 100%;
     height: auto;
-    background:#1E1E1E ;
+    background: #1E1E1E;
     padding: 4%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.number-set h3{
+
+.number-set h3 {
     color: #5D70D6;
-    font-family: 'Poppins',sans-serif ;
+    font-family: 'Poppins', sans-serif;
     font-size: 80px;
     font-weight: bolder;
     line-height: 72px;
 }
-.number-set h6{
+
+.number-set h6 {
     color: #D8DEFF;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 20px;
     line-height: 32px;
@@ -231,7 +208,6 @@ body {
 /* Transform your business */
 #trans-busns {
     height: 100vh;
-    /* Full height of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,28 +218,33 @@ body {
     background: url('/image/PropertyDefault.png') no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 
 }
+
 #trans-busns h1 {
-   font-weight: bold;
-   font-size: 64px;
-   line-height: 113%;
-   margin-bottom: 3%; 
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 113%;
+    margin-bottom: 3%;
 }
-.black-word{
+
+.black-word {
     color: #1E1E1E;
 }
-.blue-word{
+
+.blue-word {
     color: #5D70D6;
 }
+
 #trans-busns h4 {
     font-weight: lighter;
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 3%;
 }
-.trans-busns-button{
+
+.trans-busns-button {
     width: 207px;
     height: 59px;
     background: #1E1E1E;
@@ -278,58 +259,53 @@ body {
 
 
 /* Overlapping content */
-.overlap-content{
-    
+.overlap-content {
+
     position: relative;
-    /* margin: 10px 0; */
 
     display: flex;
     flex-direction: column;
 }
-.overlapping{
-   position: relative;
-   /* display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center; */
+
+.overlapping {
+    position: relative;
+
 }
 
 /* Our Services */
 
-#our-services{
+#our-services {
     width: 100%;
     height: auto;
     background: #F5F5F5;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 4%;
-    
-    /* position: absolute;
-    z-index: 2; */
+
+
 }
-.our-services-text{
+
+.our-services-text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.our-services-text h2{
+
+.our-services-text h2 {
     font-weight: bold;
     font-size: 60px;
     line-height: 52px;
     margin-bottom: 3%;
 }
-.our-services-text p{
+
+.our-services-text p {
     font-weight: lighter;
     font-size: 22px;
     line-height: 32px;
     margin-bottom: 3%;
     color: #7A7A7A;
 }
-/* .our-services-cards{
-    display: flex;
-    gap: 4%;
-    margin-bottom: 4%;
-} */
-.our-services-card{
+
+.our-services-card {
     background: white;
     border: 4px silver;
     width: 370px;
@@ -341,7 +317,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-.our-services-card h5{
+
+.our-services-card h5 {
     font-weight: lighter;
     font-size: 22px;
     line-height: 32px;
@@ -349,7 +326,8 @@ body {
     margin-bottom: 5%;
 
 }
-.our-services-card p{
+
+.our-services-card p {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
@@ -358,7 +336,7 @@ body {
 
 }
 
-.our-services-cards{
+.our-services-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +347,7 @@ body {
 
 /* Contact Us Button */
 
-#contact-btn{
+#contact-btn {
     background: white;
     width: 1080px;
     height: 132px;
@@ -378,42 +356,41 @@ body {
     left: 15%;
     z-index: 1;
     margin: auto;
-    /* position: absolute;
-    z-index: 1; */
-    /* margin-left:  12%; */
+
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     top: 0;
     bottom: 8%;
     padding-left: 8%;
     gap: 4%;
 
-    
+
 }
-#contact-btn h4{
-    font-family: 'DM Sans',sans-serif;
+
+#contact-btn h4 {
+    font-family: 'DM Sans', sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
 }
+
 .query-btn,
-.email-btn{
+.email-btn {
     background: #B7B7B7;
     border-radius: 22px;
     border: 1px solid #7A7A7A;
     color: #7A7A7A;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    /* padding: 1%; */
     width: 152px;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.black-btn{
+
+.black-btn {
     width: 152px;
     height: 48px;
     background: #1E1E1E;
@@ -429,13 +406,12 @@ body {
 }
 
 /* Technology We Work On */
-#tech{
-    /* position: absolute;
-    z-index: -1; */
+#tech {
+
     width: 100%;
     height: auto;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 64px;
     font-weight: bold;
     line-height: 72px;
@@ -448,61 +424,49 @@ body {
     margin-bottom: 0;
     margin-top: 0;
 }
-#tech h2{
+
+#tech h2 {
     margin-top: 5%;
 }
-.tech-img{
+
+.tech-img {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.img-container{
+
+.img-container {
     width: 177px;
     height: 80px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    /* background: #7A7A7A; */
-}
-.image{
-   width: 100%;
-   height: 100%;
-   object-fit: cover; 
-   transition: opacity 0.3s ease;
-   /* background: #7A7A7A; */
-}
-/* .image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
 }
 
-
-.default-image,
-.hover-image {
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Preserve aspect ratio while covering the container *
     transition: opacity 0.3s ease;
-    /* Add a smooth transition effect *
-} */
+}
+
 
 
 /* What they say */
-#say{
+#say {
     width: 100%;
     height: auto;
     background: #F5F5F5;
     overflow: hidden;
-   
 
-    
+
+
 }
-#say h2{
-    font-family: 'DM Sans',sans-serif;
+
+#say h2 {
+    font-family: 'DM Sans', sans-serif;
     font-size: 64px;
     font-weight: bold;
     line-height: 72px;
@@ -514,11 +478,8 @@ body {
 }
 
 
-.say-card{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
+.say-card {
+
     width: 504.5px;
     /* Adjust the width as needed */
     height: 420px;
@@ -527,7 +488,6 @@ body {
     border: 1px solid linear-gradient(rgba(255, 255, 255, 1), rgba(163, 119, 255, 1));
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
     margin: 20px;
     position: relative;
 
@@ -579,17 +539,9 @@ body {
 
 .say-card-img {
     margin-top: 180px;
-    /* margin-right: 80px; */
     width: 243.42px;
     height: 364.5px;
-    /* position: relative; */
-    /* margin-right: 18px; */
-    /* position: absolute;
-    right: -1px;
-    top: -10px;
-    img {
-      max-width: 243.42px;
-    } */
+
 }
 
 .say-play-button {
@@ -604,7 +556,6 @@ body {
     font-size: 20.18px;
     margin-left: 170px;
     margin-top: 170px;
-    /* position: fixed; */
 
 }
 
@@ -627,27 +578,29 @@ body {
 }
 
 /* Industries we work in */
-#industries{
-    background:white ;
+#industries {
+    background: white;
     width: 100%;
     height: auto;
 }
-#industries h2{
-    font-family: 'DM Sans',sans-serif;
+
+#industries h2 {
+    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 64px;
     line-height: 72px;
     padding: 4%;
 }
-.industries-grid{
+
+.industries-grid {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
 
-.icon-set{
+.icon-set {
     width: 292px;
     height: 216px;
     border-radius: 20px;
@@ -659,8 +612,9 @@ body {
     justify-content: center;
 
 }
-.icon-set h6{
-    font-family: 'Poppins',sans-serif;
+
+.icon-set h6 {
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 20px;
     margin-top: 3%;
@@ -670,27 +624,30 @@ body {
 
 
 /* why choose us */
-#choose{
+#choose {
     background: #F5F5F5;
     width: 100%;
     height: auto;
     padding: 4%;
 
 }
-#choose h2{
-    font-family: 'DM Sans',sans-serif;
+
+#choose h2 {
+    font-family: 'DM Sans', sans-serif;
     font-size: 64px;
     font-weight: bold;
     line-height: 72px;
 }
-.choose-main{
+
+.choose-main {
     display: grid;
-    grid-template-columns: auto auto  ;
+    grid-template-columns: auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.choose-parts{
+
+.choose-parts {
     width: 522px;
     height: 150px;
     border-radius: 8px;
@@ -700,32 +657,36 @@ body {
     justify-content: center;
     gap: 2%;
 }
-.choose-parts span{
-    font-family: 'DM Sans',sans-serif;
+
+.choose-parts span {
+    font-family: 'DM Sans', sans-serif;
     font-weight: lighter;
     font-size: 32px;
 }
+
 /* build Something */
 
-#build-something{
+#build-something {
     width: 100%;
     height: auto;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 4%;
 }
-#build-something h2{
+
+#build-something h2 {
     font-size: 56px;
     font-weight: bold;
     line-height: 72px;
     color: white;
     margin-bottom: 2%;
 }
-.build-button{
+
+.build-button {
     width: 347px;
     height: 65px;
     border-radius: 8px;
@@ -738,6 +699,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
@@ -882,6 +844,5 @@ body {
 
     #contact-btn {
         width: 100%;
-        /* padding-left: 5%; */
     }
 }

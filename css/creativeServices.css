@@ -6,10 +6,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     min-height: 100vh;
     margin: 0;
 
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -154,9 +144,7 @@ body {
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
-    /* justify-content: center; */
+
     gap: 2%;
     text-transform: uppercase;
 }
@@ -170,15 +158,13 @@ body {
 #cs-heading button {
     width: 505.67px;
     height: 76px;
-    /* padding: 12px,40px,12px,40px; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     background: transparent;
     border-width: 3px;
-    /* border-radius: 12px; */
-    /* border-style: solid; */
+
     border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
     border-image-slice: 1;
     color: #FFFFFF;
@@ -198,7 +184,7 @@ body {
 }
 
 /* OUR WORK */
-#our-work{
+#our-work {
     width: 100%;
     height: auto;
     background: #E2E5F5;
@@ -216,7 +202,6 @@ body {
 
 .our-work-first-row h2 {
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 }
@@ -227,14 +212,16 @@ body {
     color: #1E1E1E;
     margin-top: 45px;
 }
-.our-work-img{
+
+.our-work-img {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3%;
     margin-bottom: 4%;
 }
-.our-work-bottom{
+
+.our-work-bottom {
     background: white;
     padding: 3%;
     display: flex;
@@ -242,13 +229,15 @@ body {
     align-items: center;
     justify-content: center;
 }
-.our-work-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
+
+.our-work-bottom h4 {
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     font-size: 56px;
     color: #4D4D4D;
 }
-.our-work-bottom div{
+
+.our-work-bottom div {
     width: 221px;
     height: 56px;
     border-radius: 8px;
@@ -265,7 +254,7 @@ body {
 
 /* Creative services for you */
 
-#creative-services{
+#creative-services {
     width: 100%;
     height: auto;
     background: #F5F5F5;
@@ -274,26 +263,30 @@ body {
     align-items: center;
     padding: 4%;
 }
-#creative-services h3{
-    font-family: 'BebasNeue',sans-serif;
+
+#creative-services h3 {
+    font-family: 'BebasNeue', sans-serif;
     font-weight: lighter;
     font-size: 64px;
     color: #4D4D4D;
 }
-.icon-set{
+
+.icon-set {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8%;
 }
-.icon-set span{
-    font-family: 'DM Sans',sans-serif;
+
+.icon-set span {
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: lighter;
     line-height: 25px;
     margin-top: 4%;
 }
+
 .creative-services-icons {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -324,7 +317,6 @@ body {
 .client h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 
@@ -332,8 +324,7 @@ body {
 
 .image-row {
     display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
+
     justify-content: center;
     gap: 56px;
     /* Adjust the gap between images */
@@ -345,19 +336,7 @@ body {
     height: auto;
 }
 
-/* .centered-heading {
-    margin-bottom: 10px;
 
-    /* text-align: center; *
-}
-.two-line-heading{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; *
-} */
 .client-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -371,51 +350,58 @@ body {
 
 /* Works Counter */
 
-#works-counter{
+#works-counter {
     width: 100%;
     height: auto;
-    background:#1E1E1E ;
+    background: #1E1E1E;
     padding: 4%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.works-number-set{
+
+.works-number-set {
     display: flex;
     gap: 2%;
 }
-.number-set h3,span{
+
+.number-set h3,
+span {
     color: #5D70D6;
-    font-family: 'Poppins',sans-serif ;
+    font-family: 'Poppins', sans-serif;
     font-size: 80px;
     font-weight: bolder;
     line-height: 72px;
 
 }
-.number-set h6{
+
+.number-set h6 {
     color: #D8DEFF;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 20px;
     line-height: 32px;
 }
- /* testimonials  */
-#testimonials{
+
+/* testimonials  */
+#testimonials {
     width: 100%;
     height: auto;
     background: #DDDDDD;
 
 }
+
 #testimonials h2 {
     font-weight: bold;
     font-size: 60px;
     line-height: 76px;
     text-transform: uppercase;
     margin-bottom: 2%;
-    font-family: 'Bebas Neue',sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     padding: 5%;
     color: #1E1E1E;
 }
+
 .testimonials-card-content {
     width: 100%;
     max-width: 607px;
@@ -424,56 +410,57 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background: #1E1E1E;
-    /* border-width: 3px;
-    border: 2px solid;
-    border-image: linear-gradient(to top,rgba(183, 186, 255, 0.68), rgba(200, 200, 200, 1));
-    border-image-slice: 1; */
+
     padding: 4%;
     margin-bottom: 3%;
-    position: relative; /* Added position relative for absolute positioning */
+    position: relative;
+    /* Added position relative for absolute positioning */
 
 }
-.testimonials-cards{
+
+.testimonials-cards {
     display: flex;
     gap: 2%;
     margin-bottom: 4%;
-    
+
 }
-.testimonials-card-content h4{
-    font-family: 'DM Sans',sans-serif;
+
+.testimonials-card-content h4 {
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
-    /* align-items: center; */
     color: #FFFFFF;
 }
-.testimonials-card-content h6{
-    font-family: 'DM Sans',sans-serif;
+
+.testimonials-card-content h6 {
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
-    /* align-items: center; */
     color: #7A7A7A;
 }
-.testimonials-card-content p{
-    font-family: 'DM Sans',sans-serif;
+
+.testimonials-card-content p {
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 32px;
-    /* align-items: center; */
-    color:#B7B7B7 ;
+    color: #B7B7B7;
 }
-.testimonials-card-content .testimonial-logo{
+
+.testimonials-card-content .testimonial-logo {
     position: absolute;
     font-size: 10rem;
     color: #5D70D6;
     opacity: 0.5;
-    top: 10px; /* Align to the top with some padding */
-    right: 10px; /* Align to the right with some padding */
+    top: 10px;
+    /* Align to the top with some padding */
+    right: 10px;
+    /* Align to the right with some padding */
 
-  
+
 }
 
 .testimonial-title {
@@ -483,42 +470,49 @@ body {
 }
 
 .testimonial-title img {
-    width: 50px; /* Adjust image width as needed */
-    height: 50px; /* Adjust image height as needed */
-    border-radius: 50%; /* Make the image round */
+    width: 50px;
+    /* Adjust image width as needed */
+    height: 50px;
+    /* Adjust image height as needed */
+    border-radius: 50%;
+    /* Make the image round */
     margin-right: 10px;
 }
 
 /* Bring Your Imagination */
 
-#imagination{
+#imagination {
     width: 100%;
     height: auto;
     background: #E2E5F5;
-    
+
     padding: 4%;
 }
-.imgination-row{
+
+.imgination-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.imagination-col h4{
+
+.imagination-col h4 {
     color: #5D70D6;
     text-transform: uppercase;
-    font-family: 'Bebas Neue',sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     font-size: 56px;
     line-height: 72px;
 }
-.imagination-col h6{
+
+.imagination-col h6 {
     color: #1E1E1E;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: lighter;
     font-size: 32px;
     line-height: 107.4%;
 }
+
 /* FAQ */
 
 #FAQ {
@@ -702,19 +696,26 @@ body {
     /* CS Heading */
 
     #cs-heading {
-        padding: 3%; /* Adjust padding for smaller screens */
+        padding: 3%;
+        /* Adjust padding for smaller screens */
     }
 
     #cs-heading h2 {
-        font-size: 36px; /* Adjust font size for smaller screens */
-        line-height: 56px; /* Adjust line height for smaller screens */
+        font-size: 36px;
+        /* Adjust font size for smaller screens */
+        line-height: 56px;
+        /* Adjust line height for smaller screens */
     }
 
     #cs-heading button {
-        width: 100%; /* Make the button full width on smaller screens */
-        max-width: 505.67px; /* Limit the maximum width of the button */
-        font-size: 20px; /* Adjust font size for smaller screens */
-        line-height: 48px; /* Adjust line height for smaller screens */
+        width: 100%;
+        /* Make the button full width on smaller screens */
+        max-width: 505.67px;
+        /* Limit the maximum width of the button */
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+        line-height: 48px;
+        /* Adjust line height for smaller screens */
     }
 
     /* Our Work */
@@ -740,15 +741,19 @@ body {
     }
 
     .our-work-img img {
-        width: 80%; /* Adjust the width of the images */
-        max-width: 300px; /* Set a maximum width if needed */
+        width: 80%;
+        /* Adjust the width of the images */
+        max-width: 300px;
+        /* Set a maximum width if needed */
         margin-bottom: 20px;
     }
-    .our-work-bottom h4{
+
+    .our-work-bottom h4 {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .our-work-bottom div {
         width: 100%;
         max-width: 221px;
@@ -765,30 +770,36 @@ body {
         line-height: 22px;
         margin-top: 2%;
     }
+
     /* Brands (Our Client) */
     .image-row {
-        gap: 10px; /* Adjust the gap between images for even smaller screens */
+        gap: 10px;
+        /* Adjust the gap between images for even smaller screens */
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .client h2 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
     }
 
     /* work count */
 
     #works-counter {
-        flex-direction: column; /* Change to column layout on smaller screens */
+        flex-direction: column;
+        /* Change to column layout on smaller screens */
     }
 
     .number-set {
-        flex: 0 0 100%; /* Take up full width on smaller screens */
+        flex: 0 0 100%;
+        /* Take up full width on smaller screens */
     }
 
-    .number-set h3,span {
+    .number-set h3,
+    span {
         font-size: 40px;
         line-height: 48px;
     }
@@ -798,7 +809,7 @@ body {
         line-height: 18px;
     }
 
-   /* Client Say  */
+    /* Client Say  */
 
     /* Apply styles for screens with a minimum width of 768px */
     #testimonials h2 {
@@ -808,7 +819,7 @@ body {
     }
 
     .testimonials-card-content {
-    
+
         width: 100%;
     }
 
@@ -823,62 +834,63 @@ body {
         margin-right: 0;
     }
 
-    .testimonials-cards{
-    flex-direction: column;
+    .testimonials-cards {
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 2%;
     }
 
-/* Bring your imagination */
+    /* Bring your imagination */
 
-.imgination-row {
-    flex-direction: column;
-    align-items: center;
-}
+    .imgination-row {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.imagination-col h4 {
-    font-size: 40px;
-    line-height: 56px;
-    text-align: center;
+    .imagination-col h4 {
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
 
-}
+    }
 
-.imagination-col h6 {
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-}
+    .imagination-col h6 {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
 
-/* FAQ */
+    /* FAQ */
 
-#FAQ {
-    padding: 10%;
-}
+    #FAQ {
+        padding: 10%;
+    }
 
-#FAQ h1 {
-    font-size: 60px;
-    line-height: 48px;
-}
+    #FAQ h1 {
+        font-size: 60px;
+        line-height: 48px;
+    }
 
-.accordion-button {
-    width: 100%;
-}
+    .accordion-button {
+        width: 100%;
+    }
 
-.accordion {
-    padding: 15px;
-    font-size: 14px;
-}
+    .accordion {
+        padding: 15px;
+        font-size: 14px;
+    }
 
-.panel {
-    padding: 0 15px;
-}
+    .panel {
+        padding: 0 15px;
+    }
 
     /* footer  */
 
     @media (max-width: 768px) {
         .iframe-container {
-            padding-top: 75%; /* Adjust the aspect ratio for smaller screens if needed */
+            padding-top: 75%;
+            /* Adjust the aspect ratio for smaller screens if needed */
         }
     }
 
@@ -886,8 +898,10 @@ body {
 
 
 @media (max-width: 480px) {
+
     /* footer  */
     .iframe-container {
-        padding-top: 100%; /* Adjust the aspect ratio for even smaller screens if needed */
+        padding-top: 100%;
+        /* Adjust the aspect ratio for even smaller screens if needed */
     }
 }

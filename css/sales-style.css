@@ -145,16 +145,17 @@ body {
 }
 
 /* salesforce */
-#salesforce{
+#salesforce {
     width: 100%;
     height: auto;
     background: url('/image/sales.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 4%;
 }
-#salesforce h1{
+
+#salesforce h1 {
     color: #1E1E1E;
     font-size: 56px;
     font-weight: bold;
@@ -162,7 +163,8 @@ body {
     text-align: start;
     margin-bottom: 3%;
 }
-#salesforce p{
+
+#salesforce p {
     color: white;
     font-size: 32px;
     line-height: 42.5px;
@@ -172,7 +174,7 @@ body {
 
 
 /* our services */
-#our-services{
+#our-services {
     width: 100%;
 
     height: auto;
@@ -181,35 +183,41 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
-#our-services h3{
+
+#our-services h3 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
     /* text-align: center; */
 
 }
-.blue-word{
+
+.blue-word {
     color: #4845D2;
 }
-.black-word{
+
+.black-word {
     color: #1E1E1E;
 }
-.services-main{
+
+.services-main {
     display: grid;
-    grid-template-columns: auto auto  auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.bi-parts{
+
+.bi-parts {
     display: flex;
     justify-content: center;
     gap: 5%;
 
 }
-.bi-parts span{
+
+.bi-parts span {
     font-size: 24px;
     font-weight: lighter;
     line-height: 28px;
@@ -219,7 +227,7 @@ body {
 
 /* Blue Part */
 
-#blue-part{
+#blue-part {
     height: auto;
     width: 100%;
     background: #E2E5F5;
@@ -227,15 +235,17 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
-#blue-part h3{
+
+#blue-part h3 {
     color: #1E1E1E;
     font-size: 32px;
     font-weight: bold;
     line-height: 52px;
 }
-.blue-btn{
+
+.blue-btn {
     background: #4845D2;
     color: white;
     display: flex;
@@ -247,7 +257,7 @@ body {
 }
 
 /* Expertise */
-#expertise{
+#expertise {
     height: auto;
     width: 100%;
     background: #F5F5F5;
@@ -256,10 +266,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
-#expertise h3{
+#expertise h3 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
@@ -267,16 +277,18 @@ body {
     color: #1E1E1E;
     margin-bottom: 4%;
 }
-.services-main{
+
+.services-main {
     display: grid;
-    grid-template-columns: auto auto  auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     justify-content: center;
     /* align-items: center; */
     gap: 2%;
     padding: 4%;
     margin-bottom: 4%;
 }
-.bi-parts{
+
+.bi-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,24 +296,27 @@ body {
     gap: 5%;
 
 }
-.bi-parts span{
+
+.bi-parts span {
     font-size: 24px;
     font-weight: lighter;
     line-height: 28px;
     /* text-align: start; */
     color: #000000;
 }
+
 /* Challenges Faced */
 
-#challenges{
+#challenges {
     width: 100%;
     height: auto;
     padding: 5%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background: #F5F5F5;
 
 }
-#challenges h2{
+
+#challenges h2 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
@@ -309,12 +324,14 @@ body {
     color: #1E1E1E;
     margin-bottom: 4%;
 }
-.challenges-main{
+
+.challenges-main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.challenges-parts{
+
+.challenges-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,7 +340,7 @@ body {
 }
 
 /* Our Approach */
-#approach{
+#approach {
     /* background: #F5F5F5; */
     width: 100%;
     height: auto;
@@ -333,33 +350,38 @@ body {
     padding: 4%;
     font-family: 'DM Sans';
 }
-#approach h3{
+
+#approach h3 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 4%;
 }
-.approach-cards{
+
+.approach-cards {
     display: flex;
     gap: 2%;
 }
-.approach-card{
-   width: 246px;
-   height: 299px;
-   border-radius: 8px;
-   background: #F5F5F5;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 3%; 
-   padding: 3%;
+
+.approach-card {
+    width: 246px;
+    height: 299px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    padding: 3%;
 }
-.approach-card h6{
+
+.approach-card h6 {
     font-size: 20px;
     font-weight: bold;
     line-height: 32px;
 }
-.approach-card p{
+
+.approach-card p {
     font-size: 16px;
     font-weight: normal;
     line-height: 21.5px;
@@ -367,39 +389,43 @@ body {
 
 /* What you get */
 
-#get-form{
+#get-form {
     width: 100%;
     height: auto;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 5%;
     background: #E2E5F5;
 
 
 }
-#get-form h2{
+
+#get-form h2 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
     color: #1E1E1E;
     margin-bottom: 4%;
 }
-.challenges-main{
+
+.challenges-main {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-.challenges-parts{
+
+.challenges-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.challenges-parts h6{
-     color: #000000;
-     font-size: 24px;
-     font-weight: lighter;
-     line-height: 40px;
-     text-align: center;
+
+.challenges-parts h6 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
 }
 
 /* Industries we have */
@@ -434,8 +460,7 @@ body {
 
 .default-image,
 .hover-image {
-    /* width: 100%;
-    height: 100%; */
+
     object-fit: cover;
     /* Preserve aspect ratio while covering the container */
     transition: opacity 0.3s ease;
@@ -460,7 +485,8 @@ body {
     overflow: hidden;
     /* border-radius: 50%; */
 }
-.industries-blue-bottom{
+
+.industries-blue-bottom {
     width: 100%;
     height: auto;
     background: #8c9bf0;
@@ -471,14 +497,16 @@ body {
     justify-content: center;
     padding: 3%;
 }
-.industries-blue-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
+
+.industries-blue-bottom h4 {
+    font-family: 'Bebas Neue', sans-serif;
     color: #1E1E1E;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 2%;
 
 }
+
 .industries-blue-bottom div {
     width: 385px;
     height: 66px;
@@ -493,12 +521,11 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1%;
-    /* font-size: 24px; */
-    /* padding: 1%; */
+
 }
 
 /* PBlue Part */
-#Pblue-part{
+#Pblue-part {
     height: auto;
     width: 100%;
     background: #5D70D6;
@@ -507,27 +534,30 @@ body {
     justify-content: space-between;
     padding: 4%;
 }
-#Pblue-part h3{
+
+#Pblue-part h3 {
     color: white;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 36px;
     font-weight: bold;
     line-height: 52px;
     text-align: start;
 }
-.pblue-part{
+
+.pblue-part {
     background: #E2E5F5;
     color: #000000;
     width: 280px;
     height: 64px;
     border-radius: 8px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font: size 28px;
     font-weight: lighter;
     line-height: 72px;
     text-align: center;
 
 }
+
 /* FAQ */
 
 #FAQ {
@@ -599,6 +629,7 @@ body {
     height: 80px;
 
 }
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
@@ -725,8 +756,9 @@ body {
         font-size: 20px;
         line-height: 24px;
     }
+
     /* Blue Part */
-    #blue-part{
+    #blue-part {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -735,44 +767,50 @@ body {
     /* Challenges Faced */
 
     .challenges-main {
-        flex-direction: column; /* Stack challenges-parts vertically on smaller screens */
+        flex-direction: column;
+        /* Stack challenges-parts vertically on smaller screens */
         align-items: center;
     }
 
     /* Our Approach */
 
     .approach-card {
-        width: 100%; /* Make cards take up the full width on smaller screens */
-        margin-bottom: 2%; /* Add some spacing between cards */
-        flex-direction: column; /* Stack challenges-parts vertically on smaller screens */
+        width: 100%;
+        /* Make cards take up the full width on smaller screens */
+        margin-bottom: 2%;
+        /* Add some spacing between cards */
+        flex-direction: column;
+        /* Stack challenges-parts vertically on smaller screens */
         align-items: center;
     }
-    
-            /* Industries we have */
-#industries h3 {
-    font-size: 40px;
-}
 
-.industries-img {
-    grid-template-columns: auto;
-}
+    /* Industries we have */
+    #industries h3 {
+        font-size: 40px;
+    }
 
-.industries-blue-bottom h4 {
-    font-size: 24px;
-}
-/* Pblue part */
-#Pblue-part{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    .industries-img {
+        grid-template-columns: auto;
+    }
 
-/* FAQ */
+    .industries-blue-bottom h4 {
+        font-size: 24px;
+    }
 
-.accordion-button {
-    width: 90%; /* Adjust width for smaller screens */
-}
+    /* Pblue part */
+    #Pblue-part {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* FAQ */
+
+    .accordion-button {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
 }
 
 @media only screen and (max-width: 480px) {

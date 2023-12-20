@@ -6,10 +6,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     min-height: 100vh;
     margin: 0;
 
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -155,7 +145,6 @@ body {
     padding: 5%;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     gap: 2%;
@@ -171,15 +160,13 @@ body {
 #seo-heading button {
     width: 505.67px;
     height: 76px;
-    /* padding: 12px,40px,12px,40px; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     background: transparent;
     border-width: 3px;
-    /* border-radius: 12px; */
-    /* border-style: solid; */
+
     border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
     border-image-slice: 1;
     color: #FFFFFF;
@@ -320,7 +307,6 @@ body {
 .client h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
-    /* font-weight: 400; */
     color: #4D4D4D;
     margin-bottom: 20px;
 
@@ -328,8 +314,7 @@ body {
 
 .image-row {
     display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
+
     justify-content: center;
     gap: 56px;
     /* Adjust the gap between images */
@@ -341,19 +326,7 @@ body {
     height: auto;
 }
 
-/* .centered-heading {
-    margin-bottom: 10px;
 
-    /* text-align: center; *
-}
-.two-line-heading{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: #4D4D4D;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; *
-} */
 .client-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -392,9 +365,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
 
-    /* border-width: 2px; */
-    /* border-radius: 12px; */
-    /* border-style: solid; */
+
     border-image: linear-gradient(to top, #5057FFAD, #5A5A5A);
     border-image-slice: 1;
     padding: 5%;
@@ -434,9 +405,7 @@ body {
     border: 2px solid;
     border-radius: 12px;
 
-    /* border-width: 2px; */
-    /* border-radius: 12px; */
-    /* border-style: solid; */
+
     border-image: linear-gradient(to top, #5057FFAD, #5A5A5A);
     border-image-slice: 1;
 }
@@ -473,8 +442,7 @@ body {
 
 .default-image,
 .hover-image {
-    /* width: 100%;
-    height: 100%; */
+
     object-fit: cover;
     /* Preserve aspect ratio while covering the container */
     transition: opacity 0.3s ease;
@@ -497,7 +465,6 @@ body {
 .image-container {
     position: relative;
     overflow: hidden;
-    /* border-radius: 50%; */
 }
 
 /* FAQ */
@@ -666,79 +633,97 @@ body {
 
     /* SEO Heading */
 
-    #seo-heading{
+    #seo-heading {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     #seo-heading h1 {
-        font-size: 60px; /* Adjust font size for smaller screens */
+        font-size: 60px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
     }
 
     #seo-heading button {
         width: 100%;
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
         line-height: 52px;
     }
+
     /* Outperform */
 
     #outperform h2 {
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
     }
 
     #outperform p {
-        font-size: 10px; /* Adjust font size for smaller screens */
+        font-size: 10px;
+        /* Adjust font size for smaller screens */
         line-height: 26px;
     }
 
     .outperform-button {
-        width: 100%; /* Occupy full width on smaller screens */
-        margin-top: 10px; /* Adjust spacing */
+        width: 100%;
+        /* Occupy full width on smaller screens */
+        margin-top: 10px;
+        /* Adjust spacing */
     }
+
     /* Clients Trust Us */
 
-    #client-trust{
+    #client-trust {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 3%;
     }
+
     .client-trust-column h2 {
         width: 100%;
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
         text-align: center;
 
     }
 
     .client-trust-column p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
         line-height: 26px;
     }
 
     .card-content h3 {
-        font-size: 36px; /* Adjust font size for smaller screens */
+        font-size: 36px;
+        /* Adjust font size for smaller screens */
     }
 
     .card-content p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
     }
-    img{
+
+    img {
         width: 100%;
     }
 
     /* Brands we worked with */
 
     .image-row {
-        gap: 10px; /* Adjust the gap between images for smaller screens */
+        gap: 10px;
+        /* Adjust the gap between images for smaller screens */
     }
 
     .client h2 {
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
     }
+
     .image-row img {
         max-width: 80px;
         height: auto;
@@ -747,47 +732,55 @@ body {
     /* Our SEO Services */
 
     .SEO-services-card-body {
-        max-width: 100%; /* Occupy full width on smaller screens */
+        max-width: 100%;
+        /* Occupy full width on smaller screens */
     }
-    .SEO-services-cards{
+
+    .SEO-services-cards {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-                /* Industries we have */
-#industries h3 {
-    font-size: 40px;
-}
 
-.industries-img {
-    grid-template-columns: auto;
-}
+    /* Industries we have */
+    #industries h3 {
+        font-size: 40px;
+    }
 
-.industries-blue-bottom h4 {
-    font-size: 24px;
-}
-/* FAQ */
+    .industries-img {
+        grid-template-columns: auto;
+    }
 
-.accordion-button {
-    width: 90%; /* Adjust width for smaller screens */
-}
+    .industries-blue-bottom h4 {
+        font-size: 24px;
+    }
+
+    /* FAQ */
+
+    .accordion-button {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
 }
 
 @media only screen and (max-width: 768px) {
-     /* SEO Heading */
+    /* SEO Heading */
 
-     #seo-heading{
+    #seo-heading {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     #seo-heading h1 {
-        font-size: 60px; /* Adjust font size for smaller screens */
+        font-size: 60px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
     }
 
     #seo-heading button {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
         line-height: 52px;
     }
 
@@ -798,39 +791,50 @@ body {
     /* outPerform */
 
     #outperform h2 {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px;
+        /* Adjust font size for smaller screens */
         line-height: 44px;
     }
 
     #outperform p {
-        font-size: 12px; /* Adjust font size for smaller screens */
+        font-size: 12px;
+        /* Adjust font size for smaller screens */
         line-height: 24px;
     }
 
     .outperform-button {
-        width: 100%; /* Occupy full width on smaller screens */
-        margin-top: 10px; /* Adjust spacing */
+        width: 100%;
+        /* Occupy full width on smaller screens */
+        margin-top: 10px;
+        /* Adjust spacing */
     }
+
     /* Brands we worked with */
 
     .image-row {
-        gap: 5px; /* Further adjust the gap between images for smaller screens */
+        gap: 5px;
+        /* Further adjust the gap between images for smaller screens */
     }
 
     .client h2 {
-        font-size: 30px; /* Adjust font size for smaller screens */
+        font-size: 30px;
+        /* Adjust font size for smaller screens */
         line-height: 42px;
     }
+
     /* Our SEO Services */
     #SEO-services h3 {
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
         line-height: 56px;
     }
 
     .SEO-services-card-body {
-        max-width: 100%; /* Occupy full width on smaller screens */
+        max-width: 100%;
+        /* Occupy full width on smaller screens */
     }
-    .SEO-services-cards{
+
+    .SEO-services-cards {
         flex-direction: column;
         align-items: center;
         justify-content: center;

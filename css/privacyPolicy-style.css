@@ -5,14 +5,11 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-body {     
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+body {
+
     min-height: 100vh;
-    margin: 0;   
-   
+    margin: 0;
+
 }
 
 /* Navbar */
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -93,6 +86,7 @@ body {
     cursor: pointer;
     display: none;
 }
+
 /* Style the button and dropdown container */
 .dropdown-container {
     position: relative;
@@ -100,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -112,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -145,10 +136,10 @@ body {
 
 
 
-#policy-headline{
+#policy-headline {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(100,71,196),rgb(162,131,240),rgb(155,117,242));
+    background: linear-gradient(rgb(100, 71, 196), rgb(162, 131, 240), rgb(155, 117, 242));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,14 +147,16 @@ body {
     color: white;
 
 }
-#policy-headline h1{
+
+#policy-headline h1 {
     font-weight: 700;
     font-size: 54px;
     line-height: 83.33px;
     padding-top: 3%;
-    
+
 }
-#policy-headline p{
+
+#policy-headline p {
     font-weight: 500;
     font-size: 28px;
     line-height: 42.5px;
@@ -171,17 +164,17 @@ body {
 }
 
 /* policy-body */
-#policy-body{
+#policy-body {
     width: 100%;
     height: auto;
     background: #E2E5F5;
     display: flex;
-     padding: 5%;
+    padding: 5%;
     gap: 3%;
-    
+
 }
 
-.policy-body-buttons div{
+.policy-body-buttons div {
     width: 308px;
     height: 56px;
     border-radius: 8px;
@@ -192,21 +185,24 @@ body {
     align-items: center;
     padding-left: 6%;
 }
-.policy-body-text h4{
+
+.policy-body-text h4 {
     color: #1E1E1E;
     font-weight: 700;
     font-size: 40px;
     line-height: 42.5px;
     padding-bottom: 2%;
 }
-.policy-body-text h6{
+
+.policy-body-text h6 {
     color: #1E1E1E;
     font-weight: 500;
     font-size: 32px;
     line-height: 42.5px;
     padding-bottom: 2%;
 }
-.policy-body-text p{
+
+.policy-body-text p {
     color: #4D4D4D;
     font-weight: 500;
     font-size: 20px;
@@ -283,12 +279,13 @@ body {
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
     }
+
     .dropdown-container {
         position: relative;
         text-align: center;
         width: 100%;
     }
-   
+
 
     .dropdown-content {
         display: none;
@@ -300,6 +297,7 @@ body {
         z-index: 1;
         border-radius: 4px;
     }
+
     .dropdown-container.active .dropdown-content {
         display: block;
     }
@@ -307,7 +305,8 @@ body {
     .dropdown-content a {
         font-family: 'Lato', sans-serif;
         font-weight: 500;
-        font-size: 1.1rem; /* Adjust the font size as needed */
+        font-size: 1.1rem;
+        /* Adjust the font size as needed */
         color: #4D4D4D;
         padding: 10px 14px;
         text-decoration: none;
@@ -326,19 +325,20 @@ body {
         line-height: 30px;
         padding-bottom: 5%;
     }
-    
+
 
     /* Policy Body */
 
-    #policy-body{
+    #policy-body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .policy-body-buttons{
+    .policy-body-buttons {
         width: 100%;
     }
+
     .policy-body-buttons div {
         width: 100%;
     }
@@ -389,6 +389,5 @@ body {
         font-size: 16px;
         line-height: 26px;
     }
-    
-}
 
+}

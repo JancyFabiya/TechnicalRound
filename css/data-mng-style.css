@@ -6,10 +6,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     min-height: 100vh;
     margin: 0;
 
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -145,24 +135,25 @@ body {
 }
 
 /* 360 data */
-#data{
+#data {
     width: 100%;
     height: auto;
     background: url('/image/dataMng.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 4%;
 
 }
 
-#data h1{
+#data h1 {
     font-weight: bold;
     font-size: 56px;
     line-height: 72px;
     color: #1E1E1E;
 }
-#data p{
+
+#data p {
     color: white;
     font-size: 32px;
     font-weight: lighter;
@@ -170,7 +161,7 @@ body {
 }
 
 /* our services  */
-#our-services{
+#our-services {
     width: 100%;
     height: auto;
     display: flex;
@@ -178,54 +169,62 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
-#our-services h3{
+
+#our-services h3 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
 }
-.blue-word{
+
+.blue-word {
     color: #4845D2;
 }
-.black-word{
+
+.black-word {
     color: #1E1E1E;
 }
-.services-main{
+
+.services-main {
     display: grid;
-    grid-template-columns: auto auto  auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.bi-parts{
+
+.bi-parts {
     display: flex;
     gap: 4%;
     align-items: center;
     justify-content: space-between;
 }
-.bi-parts span{
+
+.bi-parts span {
     font-size: 24px;
     font-weight: lighter;
     line-height: 52px;
 }
 
 /* Experience */
-#experience{
+#experience {
     background: #E2E5F5;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4%;
 }
-#experience h2{
-     color: #1E1E1E;
-     font-size: 36px;
-     font-weight: bold;
-     line-height: 52px;
+
+#experience h2 {
+    color: #1E1E1E;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 52px;
 }
-.experience-btn{
+
+.experience-btn {
     background-color: #4845D2;
     width: 332px;
     height: 64px;
@@ -241,46 +240,50 @@ body {
 
 /* DE & DM */
 
-#de-dm{
+#de-dm {
     width: 100%;
     height: auto;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 
 
 }
-#de-dm h2{
+
+#de-dm h2 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
     color: #1E1E1E;
 }
-.services-main{
+
+.services-main {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-.bi-parts{
+
+.bi-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bi-parts span{
-     color: #000000;
-     font-size: 24px;
-     font-weight: lighter;
-     line-height: 40px;
-     text-align: center;
+
+.bi-parts span {
+    color: #000000;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
 }
+
 /* Technology We Work On */
 
-#tech{
-    /* position: absolute;
-    z-index: -1; */
+#tech {
+
     width: 100%;
     height: auto;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 64px;
     font-weight: bold;
     line-height: 72px;
@@ -293,73 +296,77 @@ body {
     margin-bottom: 0;
     margin-top: 0;
 }
-#tech h2{
+
+#tech h2 {
     margin-top: 5%;
 }
-.tech-img{
+
+.tech-img {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.img-container{
+
+.img-container {
     width: 177px;
     height: 80px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    /* background: #7A7A7A; */
 }
-.image{
-   width: 100%;
-   height: 100%;
-   object-fit: cover; 
-   transition: opacity 0.3s ease;
-   /* background: #7A7A7A; */
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
 
 /* Challenges Faced */
 
 
-#challenges{
+#challenges {
     background: #F5F5F5;
     padding: 4%;
 }
 
 
 /* Gray Part */
-#gray{
+#gray {
     height: auto;
     width: 100%;
     background: #DDDDDD;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#gray h3{
-    color:#1E1E1E ;
+#gray h3 {
+    color: #1E1E1E;
     font-size: 32px;
     font-weight: lighter;
     line-height: 42.5px;
 }
-.gray-btn{
-   width: 262px;
-   height: 48px;
-   border-radius: 15px; 
-   background: #1E1E1E;
-   color: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 24px;
-   font-weight: bold;
+
+.gray-btn {
+    width: 262px;
+    height: 48px;
+    border-radius: 15px;
+    background: #1E1E1E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
 }
+
 /* Industries we have */
 
 #industries {
@@ -369,7 +376,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 5%; */
 }
 
 #industries h3 {
@@ -393,8 +399,7 @@ body {
 
 .default-image,
 .hover-image {
-    /* width: 100%;
-    height: 100%; */
+
     object-fit: cover;
     /* Preserve aspect ratio while covering the container */
     transition: opacity 0.3s ease;
@@ -419,7 +424,8 @@ body {
     overflow: hidden;
     border-radius: 12px;
 }
-.industries-blue-bottom{
+
+.industries-blue-bottom {
     width: 100%;
     height: auto;
     background: #8c9bf0;
@@ -430,14 +436,16 @@ body {
     justify-content: center;
     padding: 3%;
 }
-.industries-blue-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
+
+.industries-blue-bottom h4 {
+    font-family: 'Bebas Neue', sans-serif;
     color: #1E1E1E;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 2%;
 
 }
+
 .industries-blue-bottom div {
     width: 385px;
     height: 66px;
@@ -452,13 +460,12 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1%;
-    /* font-size: 24px; */
-    /* padding: 1%; */
+
 }
 
 /* Blue Part */
 
-#blue-part{
+#blue-part {
     height: auto;
     width: 100%;
     background: #5D70D6;
@@ -467,13 +474,15 @@ body {
     align-items: center;
     padding: 4%;
 }
-#blue-part h3{
+
+#blue-part h3 {
     color: white;
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
 }
-.blue-part{
+
+.blue-part {
     background: #E2E5F5;
     color: #000000;
     display: flex;
@@ -653,115 +662,131 @@ body {
     /* 360 Data */
 
     #data h1 {
-        font-size: 40px; /* Adjust the font size for smaller screens */
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
         line-height: 54px;
     }
 
     #data p {
-        font-size: 24px; /* Adjust the font size for smaller screens */
+        font-size: 24px;
+        /* Adjust the font size for smaller screens */
         line-height: 32px;
     }
 
-/* our services  */
+    /* our services  */
 
-.services-main {
-    grid-template-columns: auto; /* Set to a single column on smaller screens */
-    justify-content: center;
-    gap: 2%;
-    padding: 4%;
-}
+    .services-main {
+        grid-template-columns: auto;
+        /* Set to a single column on smaller screens */
+        justify-content: center;
+        gap: 2%;
+        padding: 4%;
+    }
 
-/* Experience */
-#experience {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center;
-}
+    /* Experience */
+    #experience {
+        flex-direction: column;
+        /* Stack elements vertically */
+        text-align: center;
+    }
 
-.experience-btn {
-    margin-top: 10px; /* Adjust spacing between elements */
-}
+    .experience-btn {
+        margin-top: 10px;
+        /* Adjust spacing between elements */
+    }
 
 
-/* DE & DM */
-#de-dm{
-    text-align: center;
-}
-.services-main {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
-}
+    /* DE & DM */
+    #de-dm {
+        text-align: center;
+    }
 
-.bi-parts {
-    margin-bottom: 20px; /* Add spacing between items on smaller screens */
-}
+    .services-main {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
 
-/* Challenges Faced */
-.services-main {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
-}
+    .bi-parts {
+        margin-bottom: 20px;
+        /* Add spacing between items on smaller screens */
+    }
 
-.bi-parts {
-    margin-bottom: 20px; /* Add spacing between items on smaller screens */
-}
-/* Technology we work on */
+    /* Challenges Faced */
+    .services-main {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
 
-.tech-img {
-    grid-template-columns: auto auto;
-}
-#tech h2{
-    width: 100%;
-    font-size: 42px;
-    text-align: center;
-}
-.img-container{
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-/* Gray Part */
+    .bi-parts {
+        margin-bottom: 20px;
+        /* Add spacing between items on smaller screens */
+    }
 
-#gray h3 {
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-}
+    /* Technology we work on */
 
-.gray-btn {
-    width: 200px;
-    height: 40px;
-    font-size: 18px;
-}
-/* Industries we have */
-#industries h3 {
-    font-size: 40px;
-}
+    .tech-img {
+        grid-template-columns: auto auto;
+    }
 
-.industries-img {
-    grid-template-columns: auto;
-}
+    #tech h2 {
+        width: 100%;
+        font-size: 42px;
+        text-align: center;
+    }
 
-.industries-blue-bottom h4 {
-    font-size: 24px;
-}
+    .img-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
 
-/* blue part */
+    /* Gray Part */
 
-#blue-part {
-    flex-direction: column;
-    text-align: center;
-}
+    #gray h3 {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
 
-#blue-part h3 {
-    margin-bottom: 10px;
-}
+    .gray-btn {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
 
-/* FAQ */
+    /* Industries we have */
+    #industries h3 {
+        font-size: 40px;
+    }
 
-.accordion-button {
-    width: 90%; /* Adjust width for smaller screens */
-}
+    .industries-img {
+        grid-template-columns: auto;
+    }
+
+    .industries-blue-bottom h4 {
+        font-size: 24px;
+    }
+
+    /* blue part */
+
+    #blue-part {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #blue-part h3 {
+        margin-bottom: 10px;
+    }
+
+    /* FAQ */
+
+    .accordion-button {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
 
 }
 
@@ -771,4 +796,3 @@ body {
         grid-template-columns: auto auto auto;
     }
 }
-
