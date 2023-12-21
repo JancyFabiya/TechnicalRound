@@ -144,11 +144,23 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     padding: 5%;
     background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125), rgb(121, 35, 130));
+    animation: color 12s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2%;
     text-transform: uppercase;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100 50%;
+    }
+    10%{
+        background-position: 0 50%;
+    }
 }
 
 #seo-heading h1 {
@@ -164,11 +176,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    background: transparent;
-    border-width: 3px;
-
-    border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
-    border-image-slice: 1;
+   
+    border: 3px solid transparent;
+    background: linear-gradient(135deg,rgb(61, 34, 125), rgb(121, 35, 130)) padding-box,
+    linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198)) border-box;
+    border-radius: 12px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 400;

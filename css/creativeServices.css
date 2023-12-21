@@ -156,17 +156,19 @@ body {
 }
 
 #cs-heading button {
-    width: 505.67px;
-    height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 245px;
+    height: 96px;
+  
     gap: 15px;
-    background: transparent;
+    /* background: transparent;
     border-width: 3px;
 
     border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
-    border-image-slice: 1;
+    border-image-slice: 1; */
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125)) padding-box,
+    linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198)) border-box;
+    border-radius: 12px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 400;
@@ -232,25 +234,29 @@ body {
 
 .our-work-bottom h4 {
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: normal;
-    font-size: 56px;
+    font-weight: 400;
+    font-size: 24px;
     color: #4D4D4D;
 }
 
-.our-work-bottom div {
-    width: 221px;
+.our-work-bottom button {
+    width: 191px;
     height: 56px;
+    border: none;
     border-radius: 8px;
     color: white;
     background: #5D70D6;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2%;
-    gap: 2%;
+    gap: 10%;
     margin-top: 2%;
 }
-
+.our-work-bottom span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Creative services for you */
 

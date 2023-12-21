@@ -6,10 +6,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+
     min-height: 100vh;
     margin: 0;
 
@@ -25,8 +22,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +45,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -68,7 +62,6 @@ body {
 }
 
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +94,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,8 +104,7 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
+
     width: 263.08px;
     height: 170px;
     z-index: 1;
@@ -147,22 +137,24 @@ body {
 
 /* Software and Application */
 
-#software{
+#software {
     width: 100%;
     height: auto;
     background: url('/image/ux.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 4%;
 }
-#software h2{
-font-size: 56px;
-font-weight: bold;
-line-height: 72px;
-color: #1E1E1E;
+
+#software h2 {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 72px;
+    color: #1E1E1E;
 }
-#software p{
+
+#software p {
     font-size: 32px;
     font-weight: lighter;
     line-height: 42.5px;
@@ -170,7 +162,7 @@ color: #1E1E1E;
 }
 
 /* our services */
-#our-services{
+#our-services {
     height: auto;
     width: 100%;
     display: flex;
@@ -178,28 +170,33 @@ color: #1E1E1E;
     align-items: center;
     justify-content: center;
     padding: 4%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
-#our-services h3{
+
+#our-services h3 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
 
 }
-.black-word{
+
+.black-word {
     color: #1E1E1E;
 }
-.blue-word{
+
+.blue-word {
     color: #4845D2;
 }
-.services-main{
+
+.services-main {
     display: grid;
-    grid-template-columns: auto auto  auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
 }
-.bi-parts{
+
+.bi-parts {
     display: flex;
     align-items: center;
     gap: 5%;
@@ -207,7 +204,7 @@ color: #1E1E1E;
 
 /* our Professional */
 
-#professional{
+#professional {
     background: #E2E5F5;
     height: 100%;
     width: auto;
@@ -215,15 +212,17 @@ color: #1E1E1E;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
-#professional h3{
+
+#professional h3 {
     color: #1E1E1E;
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
 }
-.professional-btn{
+
+.professional-btn {
     background: #4845D2;
     width: 332px;
     height: 64px;
@@ -238,35 +237,39 @@ color: #1E1E1E;
 }
 
 /* Seize - Ux Consulting */
-#ux-consulting{
+#ux-consulting {
     width: 100%;
     height: auto;
     padding: 5%;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
 
 }
-#ux-consulting h3{
+
+#ux-consulting h3 {
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
     margin-bottom: 4%;
     color: #1E1E1E;
 }
-.ux-main{
+
+.ux-main {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
 }
-.ux-parts{
+
+.ux-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
-.ux-parts p{
-    color:#000000 ;
+
+.ux-parts p {
+    color: #000000;
     font-size: 24px;
     font-weight: lighter;
     line-height: 52px;
@@ -274,6 +277,7 @@ color: #1E1E1E;
     margin-left: 8%;
 
 }
+
 /* Industries we have */
 
 #industries {
@@ -283,7 +287,6 @@ color: #1E1E1E;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 5%; */
 }
 
 #industries h3 {
@@ -306,8 +309,7 @@ color: #1E1E1E;
 
 .default-image,
 .hover-image {
-    /* width: 100%;
-    height: 100%; */
+
     object-fit: cover;
     /* Preserve aspect ratio while covering the container */
     transition: opacity 0.3s ease;
@@ -330,9 +332,9 @@ color: #1E1E1E;
 .image-container {
     position: relative;
     overflow: hidden;
-    /* border-radius: 50%; */
 }
-.industries-blue-bottom{
+
+.industries-blue-bottom {
     width: 100%;
     height: auto;
     background: #8c9bf0;
@@ -342,8 +344,9 @@ color: #1E1E1E;
     justify-content: space-between;
     padding: 3%;
 }
-.industries-blue-bottom h4{
-    font-family: 'Bebas Neue',sans-serif;
+
+.industries-blue-bottom h4 {
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     font-size: 36px;
     font-weight: 600;
@@ -351,6 +354,7 @@ color: #1E1E1E;
     padding: 4%;
 
 }
+
 .industries-blue-bottom div {
     width: 280px;
     height: 64px;
@@ -364,8 +368,8 @@ color: #1E1E1E;
     font-weight: lighter;
     padding: 1%;
     font-size: 28px;
-    /* padding: 1%; */
 }
+
 /* FAQ */
 
 #FAQ {
@@ -437,6 +441,7 @@ color: #1E1E1E;
     height: 80px;
 
 }
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
@@ -584,27 +589,34 @@ color: #1E1E1E;
 
     /* Seize - Ux Consulting */
     .ux-parts p {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
     }
+
     .ux-main {
         flex-direction: column;
         text-align: center;
     }
+
     /* Industries we have */
 
     .industries-img {
-        grid-template-columns: 1fr; /* Set a single column for smaller screens */
+        grid-template-columns: 1fr;
+        /* Set a single column for smaller screens */
     }
 
     .industries-img .image-container {
-        width: 100%; /* Make each image container take full width */
-        margin-bottom: 10px; /* Add some spacing between stacked images */
+        width: 100%;
+        /* Make each image container take full width */
+        margin-bottom: 10px;
+        /* Add some spacing between stacked images */
     }
 
     #industries h3 {
-        text-align: center; /* Center-align for screens up to 768px */
+        text-align: center;
+        /* Center-align for screens up to 768px */
     }
-  
+
     .industries-blue-bottom {
         flex-direction: column;
         align-items: center;
@@ -612,30 +624,38 @@ color: #1E1E1E;
     }
 
     .industries-blue-bottom div {
-        margin-top: 10px; /* Add space between the divs */
+        margin-top: 10px;
+        /* Add space between the divs */
     }
 
     /* FAQ */
 
     #FAQ {
-        padding: 3%; /* Adjust padding as needed */
+        padding: 3%;
+        /* Adjust padding as needed */
     }
 
     #FAQ h1 {
-        font-size: 60px; /* Adjust font size as needed */
-        line-height: 52px; /* Adjust line height as needed */
+        font-size: 60px;
+        /* Adjust font size as needed */
+        line-height: 52px;
+        /* Adjust line height as needed */
     }
 
     .accordion-button {
-        width: 100%; /* Make the buttons full width in mobile view */
+        width: 100%;
+        /* Make the buttons full width in mobile view */
     }
 
     .accordion {
-        padding: 15px; /* Adjust padding as needed */
+        padding: 15px;
+        /* Adjust padding as needed */
     }
+
     /* footer */
     iframe {
-        height: 300px; /* Adjust the height as needed for smaller screens */
+        height: 300px;
+        /* Adjust the height as needed for smaller screens */
     }
 
 }

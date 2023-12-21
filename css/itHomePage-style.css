@@ -815,34 +815,262 @@ body {
         font-size: 18px;
     }
 
-    .our-services-card {
-        width: 90%;
-        height: auto;
-    }
+    .our-services-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    #contact-btn {
-        width: 90%;
-        padding-left: 5%;
-    }
-
-
-}
-
-@media only screen and (max-width: 480px) {
-    .our-services-text h2 {
-        font-size: 30px;
-    }
-
-    .our-services-text p {
-        font-size: 16px;
     }
 
     .our-services-card {
         width: 100%;
         height: auto;
+        margin-bottom: 3%;
     }
 
-    #contact-btn {
+
+    /* Technology we work  */
+
+    .tech-img {
+        grid-template-columns: auto auto;
+    }
+
+    #tech h2 {
         width: 100%;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .img-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Contact Us Button */
+
+    #contact-btn {
+
+        /* width: 70%; Adjust width for smaller screens */
+        height: 90px;
+        left: 0;
+        /* Adjust left position for smaller screens */
+        padding-left: 8%;
+        /* Adjust padding for smaller screens */
+        top: -6%;
+        bottom: 8%;
+
+    }
+
+    #contact-btn h4 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+        text-align: center;
+        line-height: 18px;
+        /* Adjust line height for smaller screens */
+    }
+
+    .query-btn,
+    .email-btn,
+    .black-btn {
+        width: 100%;
+        /* Make the buttons full-width for smaller screens */
+        height: 38px;
+        margin-left: 0;
+        /* Remove left margin for smaller screens */
+        margin-top: 10px;
+        /* Add some top margin for spacing */
+        font-size: 12px;
+    }
+
+    .black-btn {
+        margin-right: 1%;
+    }
+
+    /* What they Say */
+
+    #say h2 {
+        font-size: 40px;
+        /* Adjust the font size for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .say-card {
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+        margin: 10px 5px;
+        /* Adjust margin for spacing on smaller screens */
+    }
+
+    .say-card-container {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .say-card-texting {
+        width: 100%;
+        text-align: center;
+    }
+
+    .say-card-img {
+        margin-top: 20px;
+        /* Adjust margin for spacing */
+        width: 100%;
+        height: auto;
+    }
+
+
+    .say-play-button {
+        margin: 20px 0;
+        /* Adjust margin for spacing */
+    }
+
+    /* Industries we work in */
+    #industries {
+        width: 100%;
+        height: auto;
+    }
+
+    #industries h2 {
+        font-size: 39px;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, auto);
+        /* Two columns on larger screens */
+        margin-bottom: 3%;
+    }
+
+    .icon-set {
+        width: 192px;
+        height: 116px;
+    }
+
+    /* Why Choose Us */
+    #choose h2 {
+        font-size: 40px;
+    }
+
+    .choose-main {
+        grid-template-columns: repeat(2, auto);
+        /* Two columns on larger screens */
+    }
+
+    .choose-parts {
+        width: 100%;
+        padding: 3%;
+
+    }
+
+    .choose-parts span {
+        font-size: 20px;
+
+    }
+
+     /* Our Clients  */
+
+     .client h2 {
+        font-size: 40px;
+    }
+
+
+
+    .client-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .client {
+        align-items: center;
+    }
+
+    /* Works Counter */
+
+    #works-counter {
+        width: 100%;
+        flex-direction: column; /* Change flex direction to column */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* build Something */
+    #build-something h2{
+        text-align: center;
+       
     }
 }
+
+    @media only screen and (max-width: 480px) {
+        .our-services-text h2 {
+            font-size: 30px;
+        }
+
+        .our-services-text p {
+            font-size: 16px;
+        }
+
+        .our-services-card {
+            width: 100%;
+            height: auto;
+        }
+
+        #contact-btn {
+            width: 100%;
+        }
+    }
+
+ /* @media only screen and (min-width: 1024px) {
+ /* Contact Us Button *
+
+ #contact-btn {
+
+    /* width: 70%; Adjust width for smaller screens *
+    height: 90px;
+    left: 0;
+    /* Adjust left position for smaller screens *
+    padding-left: 8%;
+    /* Adjust padding for smaller screens *
+    top: -6%;
+    bottom: 8%;
+
+}
+
+#contact-btn h4 {
+    font-size: 20px;
+    /* Adjust font size for smaller screens *
+    text-align: center;
+    line-height: 18px;
+    /* Adjust line height for smaller screens *
+}
+
+.query-btn,
+.email-btn,
+.black-btn {
+    width: 100%;
+    /* Make the buttons full-width for smaller screens *
+    height: 38px;
+    margin-left: 0;
+    /* Remove left margin for smaller screens *
+    margin-top: 10px;
+    /* Add some top margin for spacing *
+    font-size: 12px;
+}
+
+.black-btn {
+    margin-right: 1%;
+}
+} */

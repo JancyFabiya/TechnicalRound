@@ -164,11 +164,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    background: transparent;
-    border-width: 3px;
-
-    border-image: linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198));
-    border-image-slice: 1;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, rgb(35, 45, 131), rgb(61, 34, 125)) padding-box,
+    linear-gradient(to right, rgb(91, 79, 192), rgb(187, 187, 198)) border-box;
+    border-radius: 12px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 400;

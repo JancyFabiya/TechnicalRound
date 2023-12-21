@@ -239,19 +239,19 @@ body {
     background-color: #F5F5F5;
     width: 100%;
     height: auto;
-    text-align: center;
-    padding: 40px;
+    text-align: start;
+    padding: 4%;
 }
 
-.client {
+/* .client {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-}
+} */
 
-.client h2 {
+#clients h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
     color: #4D4D4D;
@@ -401,6 +401,11 @@ body {
     flex: 0 0 100%;
     max-width: 617px;
     /* Remove the maximum width when expanded */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 4%;
+    text-align: start;
 }
 
 .services-card p,
@@ -438,13 +443,28 @@ span {
 
 }
 
-.services-card.expanded p,
-.services-card.expanded span {
+.services-card.expanded p {
 
-    display: block;
+    display: inline-block;
+    white-space: normal; /* Allow line breaks in the paragraph */
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27.5px;
+    color: #4D4D4D;
+    margin-left:-5% ;
+
 
 }
+.services-card.expanded span{
+    display: inline-block;
 
+    font-family: 'Bebas Neue',sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 72px;
+    margin-top: 9%;
+}
 /* Testimonials */
 #testimonials {
     height: auto;
@@ -1285,41 +1305,20 @@ header .Schedule-icons div:last-child {
 
 
     /* our client */
-    #clients {
-        padding: 20px;
-        /* Adjust the padding for smaller screens */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+      /* Adjustments for screens smaller than 768px */
+  #clients h2 {
+    font-size: 40px; /* Reduce the font size for the title */
+  }
 
-    .client h2 {
-        font-size: 60px;
-        /* Adjust the font size for smaller screens */
-        margin-bottom: 15px;
-        /* Adjust the margin for smaller screens */
-    }
+  .image-row {
+    gap: 10px; /* Further reduce the gap between images */
+    flex-direction: column; /* Arrange images in a single column */
+    align-items: center; /* Center images on smaller screens */
+  }
 
-    .image-row {
-        gap: 20px;
-        /* Adjust the gap between images for smaller screens */
-        margin-bottom: 10px;
-        /* Adjust the margin between rows for smaller screens */
-        flex-direction: column;
-        /* Change the direction to column for smaller screens */
-        align-items: center;
-        /* Center items in the column */
-        justify-content: center;
-        gap: 15px;
-        /* Adjust the gap between images for smaller screens */
-    }
-
-    .image-row img {
-        max-width: 80%;
-        /* Adjust the max-width of images for smaller screens */
-        height: auto;
-    }
+  .client-image-container {
+    margin-top: 0; /* Remove top margin for tighter spacing */
+  }
 
     /* portfolio */
     .portfolio-first-row {
@@ -1328,6 +1327,10 @@ header .Schedule-icons div:last-child {
         text-align: center;
     }
 
+    .portfolio-first-row h2{
+    font-size: 40px; /* Reduce the font size for the title */
+
+    }
     .portfolio-first-row span {
         margin-top: 20px;
     }
@@ -1339,6 +1342,7 @@ header .Schedule-icons div:last-child {
 
     .Portfolio-card {
         width: 100%;
+        height: 165px;
     }
 
     .Portfolio-card img {
@@ -1361,6 +1365,10 @@ header .Schedule-icons div:last-child {
         /* Center items in the column */
     }
 
+    #services h2{
+    font-size: 40px; /* Reduce the font size for the title */
+
+    }
     .services-card {
         width: 100%;
         height: auto;
@@ -1369,6 +1377,7 @@ header .Schedule-icons div:last-child {
     }
 
     .services-card h4 {
+        font-size: 20px;
         writing-mode: horizontal-tb;
         /* Horizontal writing mode on smaller screens */
         text-orientation: mixed;
@@ -1387,14 +1396,14 @@ header .Schedule-icons div:last-child {
 
     .services-card p,
     .services-card span {
-        display: block;
+        display: none;
         /* Show hidden content on smaller screens */
     }
 
     /* Testimonials */
 
     #testimonials h2 {
-        font-size: 60px;
+        font-size: 40px;
         /* Adjust the font size for smaller screens */
         padding: 20px;
         /* Adjust padding for smaller screens */
@@ -1405,33 +1414,37 @@ header .Schedule-icons div:last-child {
         /* Set width to 100% for smaller screens */
         height: auto;
         /* Adjust height for smaller screens */
-        margin: 10px 0;
+        margin: 10px 5px;
         /* Adjust margin for spacing on smaller screens */
     }
 
     .testimonials-card-container {
         width: 100%;
-        /* Set width to 100% for smaller screens */
         padding: 20px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .testimonials-card-img {
-        margin-top: 20px;
-        /* Adjust margin-top for spacing on smaller screens */
-    }
-
-    .testimonials-play-button {
-        margin-left: 0;
-        /* Reset margin-left for positioning on smaller screens */
-        margin-top: 10px;
-        /* Adjust margin-top for positioning on smaller screens */
-    }
-
-    .testimonials-card-collection {
+        height: auto;
         flex-direction: column;
-        /* Change to a column layout on smaller screens */
-    }
+        align-items: center;
+        justify-content: center;
+      }
+      .testimonials-card-texting {
+        width: 100%;
+        text-align: center;
+      }
+      .testimonials-card-img {
+        margin-top: 20px; /* Adjust margin for spacing */
+        width: 100%;
+        height: auto;
+      }
+     
+
+      .testimonials-play-button {
+        margin: 20px 0; /* Adjust margin for spacing */
+      }
+
+    /* .testimonials-card-collection {
+        flex-direction: column;
+        /* Change to a column layout on smaller screens *
+    } */
 
     .testimonials-questions {
         height: auto;
@@ -1452,38 +1465,22 @@ header .Schedule-icons div:last-child {
 
     /* Our Team */
     #our-team h2 {
-        font-size: 40px;
-        /* Adjust the font size for smaller screens */
-        padding: 20px;
-        /* Adjust padding for smaller screens */
+        font-size: 40px; /* Adjusted font size for smaller screens */
+        padding: 20px; /* Adjusted padding for smaller screens */
     }
 
     .our-team-card {
         width: 90%;
-        /* Adjust width for smaller screens */
-        height: auto;
-        /* Adjust height for smaller screens */
-        margin: 0 auto;
-        /* Center the card */
-        margin-bottom: 20px;
-        /* Adjust margin for spacing on smaller screens */
-        border-radius: 15px;
-        /* Adjust border-radius for smaller screens */
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .our-team-play-button {
-        width: 40px;
-        /* Adjust width for smaller screens */
-        height: 40px;
-        /* Adjust height for smaller screens */
-        font-size: 25px;
-        /* Adjust font size for smaller screens */
-        margin-left: 50%;
-        /* Center the play button horizontally */
-        margin-top: 50%;
-        /* Center the play button vertically */
-        transform: translate(-50%, -50%);
-        /* Center the play button properly */
+        font-size: 25px; /* Adjusted font size for smaller screens */
+        margin-left: 40%; /* Adjusted margin-left for smaller screens */
+        transform: translateX(-50%); /* Center the play button horizontally */
+        transform: translateY(350%); /* Center the play button horizontally */
+
     }
 
     /* Media Coverage */
