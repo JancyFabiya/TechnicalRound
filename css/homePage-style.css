@@ -7,133 +7,50 @@
 
 body {
 
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
+    overflow: hidden; /* Hide the scrollbar */
+
 
 }
 
 /* Navbar */
 
 
-.header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-
+nav {
+    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
+
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    padding: 10px;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    z-index: -1;
-}
-
-.header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
-    transition: .5s;
-}
-
-.header:hover::after {
-    left: 100%;
-}
-
-.logo {
-    width: 143px;
-    height: 76px;
-}
-
-.navbar a {
+nav a {
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
     font-weight: 400;
+    padding: 10px;
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+
 }
 
-.navbar a:hover {
+.nav a:hover {
     color: #5D70D6;
     text-decoration: underline;
 }
-
-#check {
-    display: none;
-}
-
-.icons {
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: rgba(30, 30, 30, 1);
-    cursor: pointer;
-    display: none;
-}
-
-
-
-/* Style the button and dropdown container */
-.dropdown-container {
-    position: relative;
+.logo {
     display: inline-block;
+    width: 143px;
+    height: 76px;
 }
 
-.dropdown-button {
 
-    border: none;
-    cursor: pointer;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #E2E5F5;
-
-    width: 263.08px;
-    height: 170px;
-    z-index: 1;
-    border-radius: 4px;
-
-}
-
-/* Style the dropdown links inside the container */
-.dropdown-content a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    size: 20px;
-    color: #4D4D4D;
-    padding: 10px 14px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color on hover */
-.dropdown-content a:hover {
-    color: #5D70D6;
-    text-decoration: underline;
-}
-
-/* Show the dropdown content when the button is clicked */
-.dropdown-container.active .dropdown-content {
-    display: block;
-}
 
 
 /* animation */
@@ -182,3 +99,36 @@ body {
 .main-home {
     display: flex;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+    /* Adjust the navigation layout for smaller screens */
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Adjust individual navigation items for spacing */
+    nav a {
+        margin: 5px;
+    }
+
+    /* Additional styles for smaller screens */
+    .canva-anim1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .digital-marketing h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Change the alignment to column direction for smaller screens */
+    .main-home {
+        flex-direction: column;
+    }
+}
+
+
+

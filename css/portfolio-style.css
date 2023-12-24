@@ -152,7 +152,8 @@ body {
 }
 
 #portfolio h1 {
-    font-size: 80px;
+    font-weight: 400;
+    font-size: 100px;
     line-height: 72px;
     margin-bottom: 4%;
 }

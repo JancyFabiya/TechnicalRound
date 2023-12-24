@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 }
 
 /* Navbar */
-
 
 .header {
     position: relative;
@@ -65,6 +64,8 @@ body {
 }
 
 .navbar a {
+    font-family: 'DM Sans', sans-serif;
+
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -154,21 +155,25 @@ body {
     align-content: space-between;
     justify-content: space-around;
     width: 998px;
-    height: 450px;
+    height: 557px;
     padding: 75px;
-    border: 2px solid linear-gradient(rgba(255, 255, 255, 0.11) rgba(120, 77, 241, 0.2));
-    background-color: linear-gradient(#FFFFFF, #784DF1);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(120, 77, 241, 0.2)) padding-box,
+        linear-gradient(to top, rgba(255, 255, 255, 0.11), rgba(120, 77, 241, 0.2)) border-box;
+    border-radius: 40px;
+    /* background-color: linear-gradient(#FFFFFF, #784DF1); */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* text-align: center; */
 }
 
-.card h2 {
-    margin-bottom: 10px;
+.card h1 {
+    /* margin-bottom: 10px; */
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
+    font-size: 150px;
+    font-weight: 400;
     color: #4D4D4D;
-    line-height: 1;
+    line-height: 131.55px;
     /* Adjust the line height as needed */
     display: inline-block;
     text-align: start;
@@ -178,10 +183,18 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     color: #1E1E1E;
-    font-weight: lighter;
-    line-height: 1.5;
+    line-height: 42px;
     /* Adjust the line height as needed */
     text-align: start;
+}
+
+.bold-text-span {
+    font-weight: 800;
+}
+
+sss .normal-text-span {
+    font-weight: 400;
+
 }
 
 .frame1 {
@@ -253,7 +266,9 @@ body {
 
 #clients h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 72px;
     color: #4D4D4D;
     margin-bottom: 20px;
 
@@ -271,6 +286,8 @@ body {
 .image-row img {
     max-width: 100%;
     height: auto;
+    transition: opacity 0.3s ease;
+
 }
 
 
@@ -282,28 +299,64 @@ body {
 
 }
 
+.defaultImage,
+.hoverImage {
+
+    object-fit: cover;
+    /* Preserve aspect ratio while covering the container */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+.hoverImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Initially hide the hover image */
+}
+
+.imageContainer:hover .hoverImage {
+    opacity: 1;
+    /* Show the hover image on hover */
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
 /* Portfolio */
 
 #Portfolio {
     height: auto;
     width: 100%;
     background-color: #E2E5F5;
-    padding: 4%;
+    padding-left: 4%;
+    padding-right: 3%;
     font-family: 'Bebas Neue', sans-serif;
 
 
 }
+.see,
+.see_icon{
+    display: inline-block;
+}
 
 .portfolio-first-row {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
 
 
-    /* flex-direction: column; */
 }
 
 .portfolio-first-row h2 {
-    font-size: 80px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 72px;
     color: #4D4D4D;
     margin-bottom: 20px;
 }
@@ -320,27 +373,53 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 20px;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 72px;
     color: #4D4D4D;
+    margin-bottom: 4%;
 
 }
 
 .Portfolio-card {
 
-    width: 550px;
-    height: 295px;
-    background: url('/image/Property\ 1=Rectangle\ 115.jpg') no-repeat;
-    background-size: auto;
-    background-position: center;
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(72, 69, 210, 1),rgba(255, 255, 255, 0.65));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:3px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); */
 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+
+
+    width: 550px;
+    height: 331px;
+    /* border: 3px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(72, 69, 210, 1),rgba(255, 255, 255, 0.65)) padding-box,
+    linear-gradient(to top, rgba(255, 255, 255, 1), rgba(72, 69, 210, 1),rgba(255, 255, 255, 0.65)) border-box;
+    border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1); */
+
+    /* box-shadow: inset -3px -3px 7px #ffffff,
+          inset 3px 3px 5px #ceced1; */
+    background: url('/image/Rectangle\ 115.png') no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    object-fit: cover;
+
+
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* text-align: center; */
 }
 
 .Portfolio-card:hover {
-    background: url('/image/Rectangle\ 306.jpg') no-repeat;
-    background-size: auto;
+    background: url('/image/Rectangle\ 306.png') no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -348,6 +427,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
+    align-items: center;
     /* Optional: Rounded corners for the top */
 }
 
@@ -382,17 +462,26 @@ body {
     width: 128px;
     height: 518px;
     margin-right: 20px;
-    background-color: rgba(93, 112, 214, 0.2);
+    /* background-color: rgba(93, 112, 214, 0.2);
     border-radius: 8px;
-    border: 2px solid rgba(234, 237, 255, 1), rgba(129, 129, 129, 0.65);
+    border: 2px solid rgba(234, 237, 255, 1), rgba(129, 129, 129, 0.65); */
     cursor: pointer;
     transition: flex 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, rgba(234, 237, 255, 1), rgba(93, 112, 214, 0.2)) padding-box,
+        linear-gradient(to top, rgba(234, 237, 255, 1), rgba(129, 129, 129, 0.65)) border-box;
+    border-radius: 20px;
 
 
 }
 
 .services-card:hover {
-    border: 2px solid, rgba(129, 129, 129, 0.65);
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, rgba(93, 112, 214, 0.2), rgba(234, 237, 255, 1)) padding-box,
+        linear-gradient(to bottom, rgba(234, 237, 255, 1), rgba(129, 129, 129, 0.65)) border-box;
 }
 
 
@@ -403,12 +492,20 @@ body {
     /* Remove the maximum width when expanded */
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 4%;
-    text-align: start;
+    /* align-items: start; */
+    padding-left: 4%;
+    padding-top: 2%;
+    /* text-align: start; */
 }
 
+/* .start-align h4{
+    text-align: start;
+} */
+/* .center-align{
+    text-align: center;
+} */
 .services-card p,
+.center-align,
 span {
     display: none;
 }
@@ -423,17 +520,20 @@ span {
     white-space: nowrap;
     /* Prevent text from wrapping */
     overflow: hidden;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 72px;
     color: #4D4D4D;
     margin-bottom: 20px;
-    margin-left: 45px;
-    display: flex;
+    /* margin-left: 45px; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .services-card.expanded h4 {
+    width: 100%;
     writing-mode: horizontal-tb;
     /* Horizontal writing mode on hover */
     text-orientation: mixed;
@@ -446,38 +546,50 @@ span {
 .services-card.expanded p {
 
     display: inline-block;
-    white-space: normal; /* Allow line breaks in the paragraph */
-    font-family: 'DM Sans',sans-serif;
+    white-space: normal;
+    /* Allow line breaks in the paragraph */
+    font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 27.5px;
     color: #4D4D4D;
-    margin-left:-5% ;
+    /* margin-left:-5% ; */
 
 
 }
-.services-card.expanded span{
+
+.services-card.expanded .center-align,
+.services-card.expanded span {
     display: inline-block;
 
-    font-family: 'Bebas Neue',sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 72px;
     margin-top: 9%;
+    color: #4D4D4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+ 
+
 /* Testimonials */
 #testimonials {
     height: auto;
     width: 100%;
     background-color: #E2E5F5;
-    font-family: 'Manrope', sans-serif;
     overflow: hidden;
 
 
 }
 
 #testimonials h2 {
-    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 72px;
     padding: 40px;
 
     color: #4D4D4D;
@@ -519,6 +631,8 @@ span {
 }
 
 .testimonials-content {
+    font-family: 'Manrope', sans-serif;
+
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 400;
@@ -532,15 +646,20 @@ span {
 }
 
 .testimonials-mini-heading {
-    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.86px;
     color: #333;
     margin-bottom: 10px;
 }
 
 .testimonials-card-texting h6 {
+    font-family: 'Manrope', sans-serif;
     color: rgba(128, 128, 128, 1);
     font-size: 10px;
-    font-weight: lighter;
+    font-weight: 400;
+    line-height: 13.66px;
 }
 
 .testimonials-card-img {
@@ -601,9 +720,10 @@ span {
 }
 
 .testimonials-questions h4 {
-    font-weight: bold;
-    font-size: 26px;
-    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 72px;
     color: #4D4D4D;
     text-transform: uppercase;
 }
@@ -611,12 +731,14 @@ span {
 .testimonials-questions button {
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 52px;
     background-color: #1E1E1E;
     color: white;
     gap: 10px;
     width: 209px;
     height: 48px;
-    border-radius: 25px;
+    border-radius: 100px;
 }
 
 .testimonials-questions button:hover {
@@ -638,7 +760,8 @@ span {
 }
 
 #our-team h2 {
-    font-size: 55px;
+    font-size: 100px;
+    font-weight: 400;
     padding: 40px;
 
     color: #1E1E1E;
@@ -686,7 +809,9 @@ span {
 }
 
 #media h2 {
-    font-size: 55px;
+    font-size: 100px;
+    line-height: 72px;
+    font-weight: 400;
     padding: 40px;
 
     color: #4D4D4D;
@@ -701,7 +826,7 @@ span {
     margin-left: 15%;
     margin-bottom: 3%;
     border-radius: 12px;
-
+    overflow: hidden; /* Add this line to clip the animation outside the media-card */
 
 }
 
@@ -711,9 +836,26 @@ span {
     display: flex;
     gap: 3%;
 
-}
+    animation: scroll 40s linear infinite; /* Adjust the duration and steps according to your preference */
 
-.slick-slide {
+
+}
+@keyframes scroll{
+    0%{
+      transform: translateX(0);
+  
+    }
+    /* 100%{
+      transform: translateX(calc(250px * 9));
+  
+    } */
+    100%{
+      transform: translateX(calc(-250px * 9));
+  
+    }
+    
+  }
+/* .slick-slide {
     margin: 0 20px;
 }
 
@@ -750,7 +892,7 @@ span {
 
 .slick-loading .slick-slide {
     visibility: hidden;
-}
+} */
 
 
 /* Build Something */
@@ -771,7 +913,9 @@ span {
 }
 
 #build h2 {
-    font-size: 55px;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 72px;
     padding: 60px;
 
     color: #FFFFFF;
@@ -826,7 +970,9 @@ span {
 }
 
 #Schedule h2 {
-    font-size: 55px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 72px;
     padding-top: 60px;
 
     color: #FFFFFF;
@@ -837,6 +983,8 @@ span {
 
 #Schedule h5 {
     font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
     font-family: 'Poppins', sans-serif;
     color: #E2E5F5;
     font-weight: normal;
@@ -854,9 +1002,10 @@ span {
 
 .Schedule-div div {
     color: #E2E5F5;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
+    line-height: 36px;
     gap: 5px;
 
 
@@ -884,8 +1033,9 @@ span {
 }
 
 header .schedule-current-date {
-    font-size: 1.45rem;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 header .Schedule-icons {
@@ -894,14 +1044,16 @@ header .Schedule-icons {
 }
 
 header .Schedule-icons div {
+    font-family: 'Inter', sans-serif;
     height: 38px;
     width: 38px;
     color: #878787;
-    font-size: 1.9rem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
     margin: 0px;
     cursor: pointer;
     text-align: center;
-    line-height: 38px;
     border-radius: 50%;
 }
 
@@ -1096,12 +1248,14 @@ header .Schedule-icons div:last-child {
     padding: 30px;
     margin: 50px auto;
 
+
 }
 
 .form-style-9 ul {
     padding: 0;
     margin: 0;
     list-style: none;
+
 }
 
 .form-style-9 ul li {
@@ -1133,8 +1287,9 @@ header .Schedule-icons div:last-child {
 
 .form-style-9 ul li .field-split {
     width: 49%;
-    height: 38px;
+    height: 64px;
     border-radius: 5px;
+    margin-bottom: 3%;
 
 }
 
@@ -1158,7 +1313,7 @@ header .Schedule-icons div:last-child {
 
 .form-style-9 ul li textarea {
     width: 100%;
-    height: 135px;
+    height: 235px;
     border-radius: 5px;
 }
 
@@ -1172,11 +1327,40 @@ header .Schedule-icons div:last-child {
     padding: 8px 18px;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    width: 158px;
-    height: 44px;
-    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 218px;
+    height: 64px;
+    border-radius: 10px;
 
+}
+
+.field-style::placeholder {
+    color: #E2E5F5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+
+/* Style the placeholder text */
+.select2-container .select2-selection__placeholder {
+    color: #E2E5F5;
+    font-style: italic;
+}
+
+/* Style the selected option text */
+.select2-container .select2-selection__rendered {
+    color: #E2E5F5;
+}
+
+/* Style the dropdown arrow */
+.select2-container .select2-selection__arrow {
+    color: #E2E5F5;
+
+    /* Add styles for the dropdown arrow if needed */
 }
 
 .form-style-9 ul li input[type="button"]:hover,
@@ -1305,20 +1489,25 @@ header .Schedule-icons div:last-child {
 
 
     /* our client */
-      /* Adjustments for screens smaller than 768px */
-  #clients h2 {
-    font-size: 40px; /* Reduce the font size for the title */
-  }
+    /* Adjustments for screens smaller than 768px */
+    #clients h2 {
+        font-size: 40px;
+        /* Reduce the font size for the title */
+    }
 
-  .image-row {
-    gap: 10px; /* Further reduce the gap between images */
-    flex-direction: column; /* Arrange images in a single column */
-    align-items: center; /* Center images on smaller screens */
-  }
+    .image-row {
+        gap: 10px;
+        /* Further reduce the gap between images */
+        flex-direction: column;
+        /* Arrange images in a single column */
+        align-items: center;
+        /* Center images on smaller screens */
+    }
 
-  .client-image-container {
-    margin-top: 0; /* Remove top margin for tighter spacing */
-  }
+    .client-image-container {
+        margin-top: 0;
+        /* Remove top margin for tighter spacing */
+    }
 
     /* portfolio */
     .portfolio-first-row {
@@ -1327,10 +1516,12 @@ header .Schedule-icons div:last-child {
         text-align: center;
     }
 
-    .portfolio-first-row h2{
-    font-size: 40px; /* Reduce the font size for the title */
+    .portfolio-first-row h2 {
+        font-size: 40px;
+        /* Reduce the font size for the title */
 
     }
+
     .portfolio-first-row span {
         margin-top: 20px;
     }
@@ -1365,10 +1556,12 @@ header .Schedule-icons div:last-child {
         /* Center items in the column */
     }
 
-    #services h2{
-    font-size: 40px; /* Reduce the font size for the title */
+    #services h2 {
+        font-size: 40px;
+        /* Reduce the font size for the title */
 
     }
+
     .services-card {
         width: 100%;
         height: auto;
@@ -1425,21 +1618,25 @@ header .Schedule-icons div:last-child {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
-      .testimonials-card-texting {
+    }
+
+    .testimonials-card-texting {
         width: 100%;
         text-align: center;
-      }
-      .testimonials-card-img {
-        margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .testimonials-card-img {
+        margin-top: 20px;
+        /* Adjust margin for spacing */
         width: 100%;
         height: auto;
-      }
-     
+    }
 
-      .testimonials-play-button {
-        margin: 20px 0; /* Adjust margin for spacing */
-      }
+
+    .testimonials-play-button {
+        margin: 20px 0;
+        /* Adjust margin for spacing */
+    }
 
     /* .testimonials-card-collection {
         flex-direction: column;
@@ -1465,8 +1662,10 @@ header .Schedule-icons div:last-child {
 
     /* Our Team */
     #our-team h2 {
-        font-size: 40px; /* Adjusted font size for smaller screens */
-        padding: 20px; /* Adjusted padding for smaller screens */
+        font-size: 40px;
+        /* Adjusted font size for smaller screens */
+        padding: 20px;
+        /* Adjusted padding for smaller screens */
     }
 
     .our-team-card {
@@ -1476,10 +1675,14 @@ header .Schedule-icons div:last-child {
     }
 
     .our-team-play-button {
-        font-size: 25px; /* Adjusted font size for smaller screens */
-        margin-left: 40%; /* Adjusted margin-left for smaller screens */
-        transform: translateX(-50%); /* Center the play button horizontally */
-        transform: translateY(350%); /* Center the play button horizontally */
+        font-size: 25px;
+        /* Adjusted font size for smaller screens */
+        margin-left: 40%;
+        /* Adjusted margin-left for smaller screens */
+        transform: translateX(-50%);
+        /* Center the play button horizontally */
+        transform: translateY(350%);
+        /* Center the play button horizontally */
 
     }
 

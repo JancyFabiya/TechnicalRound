@@ -69,81 +69,81 @@ prevNextIcon.forEach(icon => {
 
 // Dynamic Clock
 
-const canvas = document.getElementById('clock-canvas');
-const context = canvas.getContext('2d');
-const needle = document.getElementById('needle');
-const hourInput = document.getElementById('hour');
-const minuteInput = document.getElementById('minute');
-const periodInput = document.getElementById('period');
+// const canvas = document.getElementById('clock-canvas');
+// const context = canvas.getContext('2d');
+// const needle = document.getElementById('needle');
+// const hourInput = document.getElementById('hour');
+// const minuteInput = document.getElementById('minute');
+// const periodInput = document.getElementById('period');
 
-function drawClock() {
-  const centerX = canvas.width / 2;
-  const centerY = canvas.height / 2;
-  const radius = canvas.width / 2 - 10;
+// function drawClock() {
+//   const centerX = canvas.width / 2;
+//   const centerY = canvas.height / 2;
+//   const radius = canvas.width / 2 - 10;
 
-  context.clearRect(0, 0, canvas.width, canvas.height);
+//   context.clearRect(0, 0, canvas.width, canvas.height);
 
-  for (let i = 1; i <= 12; i++) {
-    const angle = (i - 3) * (Math.PI * 2) / 12;
-    const x = centerX + Math.cos(angle) * radius;
-    const y = centerY + Math.sin(angle) * radius;
+//   for (let i = 1; i <= 12; i++) {
+//     const angle = (i - 3) * (Math.PI * 2) / 12;
+//     const x = centerX + Math.cos(angle) * radius;
+//     const y = centerY + Math.sin(angle) * radius;
 
-    context.fillStyle = '#21212114';
-    context.beginPath();
-    context.arc(x, y, 20, 0, Math.PI * 2);
-    context.fill();
+//     context.fillStyle = '#21212114';
+//     context.beginPath();
+//     context.arc(x, y, 20, 0, Math.PI * 2);
+//     context.fill();
 
-    context.fillStyle = '#000';
-    context.textAlign = 'center';
-    context.textBaseline = 'middle';
-    context.font = 'bold 16px Arial';  // Adjusted font size for better visibility
-    context.fillText(i, x, y);
-  }
-}
+//     context.fillStyle = '#000';
+//     context.textAlign = 'center';
+//     context.textBaseline = 'middle';
+//     context.font = 'bold 16px Arial';  // Adjusted font size for better visibility
+//     context.fillText(i, x, y);
+//   }
+// }
 
 
-function updateNeedle(hour, minute) {
-  const degrees = (hour % 12) * 30 + minute / 60 * 30;
-  needle.style.transform = `translate(-50%, -100%) rotate(${degrees}deg)`;
-}
+// function updateNeedle(hour, minute) {
+//   const degrees = (hour % 12) * 30 + minute / 60 * 30;
+//   needle.style.transform = `translate(-50%, -100%) rotate(${degrees}deg)`;
+// }
 
-function updateClockFromNeedle() {
-  const centerX = canvas.width / 2;
-  const centerY = canvas.height / 2;
-  const mouseX = event.clientX - canvas.getBoundingClientRect().left - centerX;
-  const mouseY = event.clientY - canvas.getBoundingClientRect().top - centerY;
-  const angle = Math.atan2(mouseY, mouseX);
-  let degrees = (angle * 180) / Math.PI;
+// function updateClockFromNeedle() {
+//   const centerX = canvas.width / 2;
+//   const centerY = canvas.height / 2;
+//   const mouseX = event.clientX - canvas.getBoundingClientRect().left - centerX;
+//   const mouseY = event.clientY - canvas.getBoundingClientRect().top - centerY;
+//   const angle = Math.atan2(mouseY, mouseX);
+//   let degrees = (angle * 180) / Math.PI;
 
-  if (degrees < 0) {
-    degrees += 360;
-  }
+//   if (degrees < 0) {
+//     degrees += 360;
+//   }
 
-  const hour = Math.floor((degrees + 15) / 30) + 1;
-  const minute = Math.floor(((degrees % 30) * 2) % 60);
-  const period = degrees < 180 ? 'AM' : 'PM';
+//   const hour = Math.floor((degrees + 15) / 30) + 1;
+//   const minute = Math.floor(((degrees % 30) * 2) % 60);
+//   const period = degrees < 180 ? 'AM' : 'PM';
 
-  hourInput.value = hour.toString().padStart(2, '0');
-  minuteInput.value = minute.toString().padStart(2, '0');
-  periodInput.value = period;
+//   hourInput.value = hour.toString().padStart(2, '0');
+//   minuteInput.value = minute.toString().padStart(2, '0');
+//   periodInput.value = period;
 
-  updateNeedle(hour, minute);
-}
+//   updateNeedle(hour, minute);
+// }
 
-// Add event listeners
-document.getElementById('hour').addEventListener('input', updateClock);
-document.getElementById('minute').addEventListener('input', updateClock);
-document.getElementById('period').addEventListener('change', updateClock);
+// // Add event listeners
+// document.getElementById('hour').addEventListener('input', updateClock);
+// document.getElementById('minute').addEventListener('input', updateClock);
+// document.getElementById('period').addEventListener('change', updateClock);
 
-needle.addEventListener('mousedown', () => {
-  document.addEventListener('mousemove', updateClockFromNeedle);
-  document.addEventListener('mouseup', () => {
-    document.removeEventListener('mousemove', updateClockFromNeedle);
-    updateClock();
-  });
-});
+// needle.addEventListener('mousedown', () => {
+//   document.addEventListener('mousemove', updateClockFromNeedle);
+//   document.addEventListener('mouseup', () => {
+//     document.removeEventListener('mousemove', updateClockFromNeedle);
+//     updateClock();
+//   });
+// });
 
-// Initial draw
-drawClock();
-updateClock();
+// // Initial draw
+// drawClock();
+// updateClock();
 
