@@ -249,7 +249,10 @@ sss .normal-text-span {
 
 /* Our Clients */
 #clients {
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background: url('/image/ourClients.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: auto;
     text-align: start;
@@ -333,7 +336,10 @@ sss .normal-text-span {
 #Portfolio {
     height: auto;
     width: 100%;
-    background-color: #E2E5F5;
+    /* background-color: #E2E5F5; */
+    background: url('/image/portfolio.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-left: 4%;
     padding-right: 3%;
     font-family: 'Bebas Neue', sans-serif;
@@ -436,7 +442,10 @@ sss .normal-text-span {
 #services {
     height: auto;
     width: 100%;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background: url('/image/services.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 40px;
     font-family: 'Bebas Neue', sans-serif;
 
@@ -579,7 +588,10 @@ span {
 #testimonials {
     height: auto;
     width: 100%;
-    background-color: #E2E5F5;
+    /* background-color: #E2E5F5; */
+    background: url('/image/testimonials.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 
 
@@ -752,7 +764,10 @@ span {
 #our-team {
     height: auto;
     width: 100%;
-    background: linear-gradient(rgba(176, 174, 255, 1), rgba(203, 202, 255, 1));
+    /* background: linear-gradient(rgba(176, 174, 255, 1), rgba(203, 202, 255, 1)); */
+    background: url('/image/team.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: 'Bebas Neue', sans-serif;
 
 
@@ -801,7 +816,10 @@ span {
 #media {
     height: auto;
     width: 100%;
-    background: #E2E5F5;
+    /* background: #E2E5F5; */
+    background: url('/image/mediaCoverage.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: 'Bebas Neue', sans-serif;
 
 
@@ -957,7 +975,10 @@ span {
 /* Schedule a call */
 
 #Schedule {
-    background: #1E1E1E;
+    /* background: #1E1E1E; */
+    background: url('/image/schedule.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: auto;
 
