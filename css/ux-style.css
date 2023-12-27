@@ -105,8 +105,8 @@ body {
     position: absolute;
     background-color: #E2E5F5;
 
-    width: 263.08px;
-    height: 170px;
+    width: 265px;
+    height: 245px;
     z-index: 1;
     border-radius: 4px;
 
@@ -116,9 +116,10 @@ body {
 .dropdown-content a {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    size: 20px;
+    font-size: 20px;
+    line-height: 24px;
     color: #4D4D4D;
-    padding: 10px 14px;
+    padding: 2%;
     text-decoration: none;
     display: block;
 }
@@ -149,14 +150,14 @@ body {
 
 #software h2 {
     font-size: 56px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 72px;
     color: #1E1E1E;
 }
 
 #software p {
     font-size: 32px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 42.5px;
     color: white;
 }
@@ -165,18 +166,20 @@ body {
 #our-services {
     height: auto;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     padding: 4%;
     font-family: 'DM Sans', sans-serif;
 }
 
 #our-services h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
+    text-align: center;
+    margin-bottom: 4%;
 
 }
 
@@ -188,18 +191,45 @@ body {
     color: #4845D2;
 }
 
-.services-main {
+/* .services-main {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2%;
     padding: 4%;
+} */
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2%;
+    padding: 4%;
+    margin-bottom: 4%;
+
+
+
+}
+.second-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2%;
+    margin-bottom: 4%;
+
+
 }
 
 .bi-parts {
     display: flex;
     align-items: center;
-    gap: 5%;
+    gap: 13px;
+}
+.bi-parts span{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    text-align: center;
 }
 
 /* our Professional */
@@ -218,7 +248,7 @@ body {
 #professional h3 {
     color: #1E1E1E;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
 }
 
@@ -229,13 +259,17 @@ body {
     border-radius: 8px;
     color: white;
     font-size: 28px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.professional-btn:hover {
+    cursor: pointer;
+    background: #1E1E1E;
+    color: #E2E5F5;
+}
 /* Seize - Ux Consulting */
 #ux-consulting {
     width: 100%;
@@ -247,7 +281,7 @@ body {
 
 #ux-consulting h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
     margin-bottom: 4%;
     color: #1E1E1E;
@@ -256,7 +290,7 @@ body {
 .ux-main {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 5%;
 }
 
@@ -271,10 +305,14 @@ body {
 .ux-parts p {
     color: #000000;
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 52px;
+    letter-spacing: -0.4px;
+    text-align: start;
     margin-top: 4%;
     margin-left: 8%;
+    width: 425px;
+    height: 208px;
 
 }
 
@@ -290,10 +328,10 @@ body {
 }
 
 #industries h3 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: #4D4D4D;
-    font-weight: 400;
-    font-size: 64px;
+    font-weight: 700;
+    font-size: 40px;
 
 }
 
@@ -346,10 +384,12 @@ body {
 }
 
 .industries-blue-bottom h4 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: white;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-transform: capitalize;
     margin-bottom: 2%;
     padding: 4%;
 
@@ -367,7 +407,10 @@ body {
     justify-content: center;
     font-weight: lighter;
     padding: 1%;
+    font-family: 'Poppins',sans-serif;
     font-size: 28px;
+    font-weight: 500;
+    line-height: 72px;
 }
 
 /* FAQ */
@@ -384,10 +427,10 @@ body {
 }
 
 #FAQ h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 72px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 52px;
     margin-bottom: 5%;
     color: #4D4D4D;
 }

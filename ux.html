@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/ux-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:ital@1&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -68,36 +71,39 @@
             <span class="black-word">Services</span>
         </h3>
         <div class="services-main">
-            <div class="bi-parts">
-                <iconify-icon icon="tabler:search" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+            <div class="first-row">
+                <div class="bi-parts">
+                    <iconify-icon icon="tabler:search" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>User Research and Personas</span>
+                    <span>User Research and Personas</span>
+                </div>
+
+                <div class="bi-parts">
+                    <iconify-icon icon="codicon:graph" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+
+                    <span>Information Architecture</span>
+                </div>
+
+                <div class="bi-parts">
+                    <iconify-icon icon="fa:mobile" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+
+                    <span>Mobile App UX</span>
+                </div>
             </div>
+            <div class="second-row">
 
-            <div class="bi-parts">
-                <iconify-icon icon="codicon:graph" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+                <div class="bi-parts">
+                    <iconify-icon icon="mynaui:bounding-box" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Information Architecture</span>
+                    <span>Wireframe designs</span>
+                </div>
+
+                <div class="bi-parts">
+                    <iconify-icon icon="mingcute:web-line" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+
+                    <span>Web design </span>
+                </div>
             </div>
-
-            <div class="bi-parts">
-                <iconify-icon icon="fa:mobile" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-
-                <span>Mobile App UX</span>
-            </div>
-
-            <div class="bi-parts">
-                <iconify-icon icon="mynaui:bounding-box" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-
-                <span>Wireframe designs</span>
-            </div>
-
-            <div class="bi-parts">
-                <iconify-icon icon="mingcute:web-line" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-
-                <span>Web design </span>
-            </div>
-
 
         </div>
 
@@ -107,7 +113,9 @@
 
     <section id="professional">
         <h3>Our professional team understands your user needs</h3>
-        <div class="professional-btn">Connect Now</div>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="professional-btn">Connect Now</div>
+        </a>
     </section>
 
     <!-- Seize - Ux Consulting -->
@@ -167,8 +175,10 @@
 
         <div class="industries-blue-bottom">
             <h4>Let Us Help You In Your UX Journey</h4>
+            <a href="contactUs.html" style="text-decoration: none;">
             <div>Let’s Connect!
             </div>
+        </a>
         </div>
     </section>
 
@@ -236,7 +246,31 @@
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- NavBar dropdown -->
+    <script>
+        function toggleDropdown() {
+            var dropdownContainer = document.querySelector('.dropdown-container');
+            dropdownContainer.classList.toggle('active');
+        }
 
+        // service Card
+        function toggleCard(card) {
+            // Toggle the 'expanded' class on the clicked card
+            card.classList.toggle('expanded');
+
+            // Close other expanded cards
+            document.querySelectorAll('.card').forEach(function (otherCard) {
+                if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                    otherCard.classList.remove('expanded');
+                }
+            });
+        }
+
+        function handleButtonClick(button) {
+            // Handle the button click action here
+            alert('Button clicked!');
+        }
+    </script>
 </body>
 
 </html>

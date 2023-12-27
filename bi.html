@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/bi-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:ital@1&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -73,38 +76,38 @@
             <div class="bi-parts">
                 <iconify-icon icon="teenyicons:message-tick-outline"
                     style="color: #4845d2;font-size: 35px;"></iconify-icon>
-                <span>BI Consulting</span>
+                <span class="bi-parts-span">BI Consulting</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="codicon:graph" style="color: #4845d2;font-size: 35px;"></iconify-icon>
 
-                <span>Data Visualization</span>
+                <span class="bi-parts-span">Data Visualization</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="carbon:data-base" style="color: #4845d2;font-size: 35px;"></iconify-icon>
-                <span>Enterprise Data Warehouse</span>
+                <span class="bi-parts-span">Enterprise Data <br>Warehouse</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="codicon:arrow-swap" style="color: #4845d2;font-size: 35px;"></iconify-icon>
 
-                <span>Data Migration</span>
+                <span class="bi-parts-span">Data Migration</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="material-symbols-light:lock-outline"
                     style="color: #4845d2;font-size: 35px;"></iconify-icon>
 
-                <span>Data Governance</span>
+                <span class="bi-parts-span">Data Governance</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="fluent:window-settings-20-regular"
                     style="color: #4845d2;font-size: 35px;"></iconify-icon>
 
-                <span>Support and Maintenance</span>
+                <span class="bi-parts-span">Support and <br>Maintenance</span>
             </div>
         </div>
 
@@ -114,7 +117,9 @@
 
     <section id="trns-business">
         <h3>Transform your business with BI & Data Analytics</h3>
-        <div class="trns-button">Connect Now</div>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="trns-button">Connect Now</div>
+        </a>
 
     </section>
 
@@ -123,33 +128,38 @@
         <h3>Challenges Faced By Stakeholders
         </h3>
         <div class="challenges-main">
-            <div class="challenges-parts">
-                <iconify-icon icon="mdi:arrow-decision" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+            <div class="first-row">
+                <div class="challenges-parts">
+                    <iconify-icon icon="mdi:arrow-decision" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Limited Decision-Making Insight</span>
+                    <span>Limited Decision-Making <br>Insight</span>
+                </div>
+
+                <div class="challenges-parts">
+                    <iconify-icon icon="clarity:blocks-group-solid"
+                        style="color: #4845d2;font-size: 40px;"></iconify-icon>
+
+                    <span>Inefficient Resource <br>Allocation</span>
+                </div>
+
+                <div class="challenges-parts">
+                    <iconify-icon icon="ant-design:sound-filled" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+                    <span>Ineffective Marketing <br>and Sales Strategies</span>
+                </div>
             </div>
+            <div class="second-row">
+                <div class="challenges-parts">
+                    <iconify-icon icon="material-symbols:settings"
+                        style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-            <div class="challenges-parts">
-                <iconify-icon icon="clarity:blocks-group-solid" style="color: #4845d2;font-size: 40px;"></iconify-icon>
+                    <span>Limited Operational<br> Efficiency</span>
+                </div>
 
-                <span>Inefficient Resource Allocation</span>
-            </div>
+                <div class="challenges-parts">
+                    <iconify-icon icon="foundation:graph-bar" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-            <div class="challenges-parts">
-                <iconify-icon icon="ant-design:sound-filled" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <span>Ineffective Marketing and Sales Strategies</span>
-            </div>
-
-            <div class="challenges-parts">
-                <iconify-icon icon="material-symbols:settings" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-
-                <span>Limited Operational Efficiency</span>
-            </div>
-
-            <div class="challenges-parts">
-                <iconify-icon icon="foundation:graph-bar" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-
-                <span>Limited Competitive Intelligence</span>
+                    <span>Limited Competitive<br> Intelligence</span>
+                </div>
             </div>
         </div>
 
@@ -234,8 +244,10 @@
 
         <div class="industries-blue-bottom">
             <h4>Let Us Help You In Your & Data Analytics<br> Business Intelligence Journey</h4>
-            <div>Let’s Connect!
-            </div>
+            <a href="contactUs.html" style="text-decoration: none;">
+                <div>Let’s Connect!
+                </div>
+            </a>
         </div>
     </section>
 
@@ -291,7 +303,31 @@
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- NavBar dropdown -->
+    <script>
+        function toggleDropdown() {
+            var dropdownContainer = document.querySelector('.dropdown-container');
+            dropdownContainer.classList.toggle('active');
+        }
 
+        // service Card
+        function toggleCard(card) {
+            // Toggle the 'expanded' class on the clicked card
+            card.classList.toggle('expanded');
+
+            // Close other expanded cards
+            document.querySelectorAll('.card').forEach(function (otherCard) {
+                if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                    otherCard.classList.remove('expanded');
+                }
+            });
+        }
+
+        function handleButtonClick(button) {
+            // Handle the button click action here
+            alert('Button clicked!');
+        }
+    </script>
 </body>
 
 </html>

@@ -891,7 +891,7 @@ body {
 
 #build-something h2 {
     font-size: 56px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 72px;
     color: white;
     margin-bottom: 2%;
@@ -904,13 +904,17 @@ body {
     background: #E2E5F5;
     color: #000000;
     font-size: 28px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.build-button:hover {
+    cursor: pointer;
+    background:#1E1E1E ;
+    color: #E2E5F5;
+}
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
