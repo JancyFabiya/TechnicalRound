@@ -191,8 +191,7 @@ body {
 .bold-text-span {
     font-weight: 800;
 }
-
-sss .normal-text-span {
+ .normal-text-span {
     font-weight: 400;
 
 }
@@ -1535,31 +1534,35 @@ header .Schedule-icons div:last-child {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 1%;
     }
 
     .portfolio-first-row h2 {
         font-size: 40px;
-        /* Reduce the font size for the title */
-
+        margin-bottom: 10px; /* Adjust spacing */
     }
 
     .portfolio-first-row span {
-        margin-top: 20px;
+        margin-top: 20px; /* Adjust spacing */
     }
 
     .portfolio-card-rows {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 5%; /* Adjust spacing */
+        margin-bottom: 50%; 
+
     }
 
     .Portfolio-card {
         width: 100%;
-        height: 165px;
+        height: auto; /* Adjust height for responsive design */
+
     }
 
     .Portfolio-card img {
         border-radius: 8px;
-        /* Reset border-radius for images */
+        max-width: 100%; /* Ensure images don't overflow */
+        height: auto;
     }
 
 
@@ -1756,7 +1759,7 @@ header .Schedule-icons div:last-child {
     }
 
     .build-image-container {
-        width: 80%;
+        width: 50%;
         /* Adjust width for smaller screens */
         margin-bottom: 30px;
         /* Adjust margin for spacing on smaller screens */
