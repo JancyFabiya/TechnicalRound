@@ -273,7 +273,53 @@ body {
 .terms a:first-child {
     margin-right: 35px;
 }
+.logo-container {
+    width: 177px;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
 
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo-container .defaultLogo,
+.logo-container .hLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+
+}
+
+.logo-container .defaultLogo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.logo-container .hLogo {
+    opacity: 0;
+    z-index: 1;
+}
+
+.logo-container:hover .defaultLogo {
+    opacity: 0;
+    z-index: 1;
+}
+
+.logo-container:hover .hLogo {
+    opacity: 1;
+    z-index: 1;
+}
 @media (max-width: 1690px) {
     .footer {
         padding: 50px 5% 40px;

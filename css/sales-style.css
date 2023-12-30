@@ -25,8 +25,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 1.3rem 10%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
     display: flex;
     justify-content: space-between;
@@ -41,8 +40,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #FFFFFF;
-    backdrop-filter: blur(50px); */
+
     z-index: -1;
 }
 
@@ -50,7 +48,6 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    /* left: 0; */
     left: -100%;
     width: 100%;
     height: 100%;
@@ -62,13 +59,66 @@ body {
     left: 100%;
 }
 
-.logo {
+/* .logo {
     width: 143px;
     height: 76px;
 }
+.DefaultLogo,
+.HoverLogo{
+    width: 100%;
+} */
 
+.logo {
+    /* display: flex;
+    align-items: center; */
+    width: 143px;
+    height: 76px;
+    position: relative;
+    display: inline-block;
+}
+
+.logo img {
+    /* width: 100%;
+    height: auto; */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.DefaultLogo{
+    width: 143px;
+    height: 76px;
+}
+.DefaultLogo,
+.HoverLogo{
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+
+}
+.logo .HoverLogo {
+    /* opacity: 0;
+    z-index: 2; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.logo:hover .DefaultLogo {
+    opacity: 0;
+}
+
+.logo:hover .HoverLogo {
+    /* cursor: pointer; */
+    opacity: 1;
+}
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+} */
 .navbar a {
-    /* font-size: 24px; */
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -101,9 +151,7 @@ body {
 }
 
 .dropdown-button {
-    /* padding: 10px; */
-    /* background-color: #3498db; */
-    /* color: rgba(226, 229, 245, 1); */
+
     border: none;
     cursor: pointer;
 }
@@ -113,10 +161,9 @@ body {
     display: none;
     position: absolute;
     background-color: #E2E5F5;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    /* min-width: 160px; */
-    width: 263.08px;
-    height: 170px;
+
+    width: 265px;
+    height: 245px;
     z-index: 1;
     border-radius: 4px;
 
@@ -126,9 +173,10 @@ body {
 .dropdown-content a {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    size: 20px;
+    font-size: 20px;
+    line-height: 24px;
     color: #4D4D4D;
-    padding: 10px 14px;
+    padding: 2%;
     text-decoration: none;
     display: block;
 }
@@ -144,6 +192,9 @@ body {
     display: block;
 }
 
+
+
+
 /* salesforce */
 #salesforce {
     width: 100%;
@@ -157,8 +208,8 @@ body {
 
 #salesforce h1 {
     color: #1E1E1E;
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 64px;
+    font-weight: 700;
     line-height: 72px;
     text-align: start;
     margin-bottom: 3%;
@@ -168,7 +219,7 @@ body {
     color: white;
     font-size: 32px;
     line-height: 42.5px;
-    font-weight: lighter;
+    font-weight: 500;
     text-align: start;
 }
 
@@ -178,19 +229,20 @@ body {
     width: 100%;
 
     height: auto;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     padding: 4%;
     font-family: 'DM Sans', sans-serif;
 }
 
 #our-services h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
-    /* text-align: center; */
+    letter-spacing: -0.4px;
+    text-align: center;
 
 }
 
@@ -205,24 +257,27 @@ body {
 .services-main {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
-    gap: 2%;
-    padding: 4%;
+    justify-content: space-evenly
+    ;
+    /* gap: 2%; */
+    /* padding: 4%; */
+    margin-top: 4%;
 }
 
 .bi-parts {
     display: flex;
-    justify-content: center;
-    gap: 5%;
+    /* justify-content: center; */
+    margin-bottom: 8%;
 
 }
 
-.bi-parts span {
+.bi-parts div {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 28px;
-    /* text-align: start; */
+    text-align: start;
     color: #000000;
+    margin-left: 8%;
 }
 
 /* Blue Part */
@@ -232,7 +287,7 @@ body {
     width: 100%;
     background: #E2E5F5;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 4%;
     font-family: 'DM Sans', sans-serif;
@@ -240,68 +295,78 @@ body {
 
 #blue-part h3 {
     color: #1E1E1E;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 700;
     line-height: 52px;
 }
 
 .blue-btn {
     background: #4845D2;
     color: white;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 332px;
     height: 64px;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 72px;
+    text-align: center;
 }
-
+.blue-btn:hover {
+    cursor: pointer;
+    background: black;
+}
 /* Expertise */
 #expertise {
     height: auto;
     width: 100%;
     background: #F5F5F5;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     padding: 4%;
     font-family: 'DM Sans', sans-serif;
 }
 
 #expertise h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
     text-align: center;
     color: #1E1E1E;
     margin-bottom: 4%;
 }
 
-.services-main {
+.expertise-main {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    justify-content: center;
+    justify-content: space-around;
     /* align-items: center; */
-    gap: 2%;
+    gap: 1%;
     padding: 4%;
     margin-bottom: 4%;
 }
 
-.bi-parts {
+.expertise-parts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    /* gap: 5%; */
+    margin-top: 10%;
 
 }
-
-.bi-parts span {
-    font-size: 24px;
-    font-weight: lighter;
+/* .expertise-parts .icons {
+    align-tracks: ;
+} */
+.expertise-parts div {
+    font-size: 20px;
+    font-weight: 400;
     line-height: 28px;
-    /* text-align: start; */
+    text-align: center;
     color: #000000;
 }
 
@@ -318,7 +383,7 @@ body {
 
 #challenges h2 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
     text-align: start;
     color: #1E1E1E;
@@ -332,13 +397,18 @@ body {
 }
 
 .challenges-parts {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     gap: 3%;
 }
-
+.challenges-parts h6{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
 /* Our Approach */
 #approach {
     /* background: #F5F5F5; */
@@ -348,12 +418,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 4%;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans',sans-serif;
 }
 
 #approach h3 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4px;
     margin-bottom: 4%;
 }
 
@@ -377,14 +449,16 @@ body {
 
 .approach-card h6 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 32px;
+    text-align: center;
 }
 
 .approach-card p {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 21.5px;
+    text-align: center;
 }
 
 /* What you get */
@@ -401,7 +475,7 @@ body {
 
 #get-form h2 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 52px;
     color: #1E1E1E;
     margin-bottom: 4%;
@@ -422,8 +496,8 @@ body {
 
 .challenges-parts h6 {
     color: #000000;
-    font-size: 24px;
-    font-weight: lighter;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 40px;
     text-align: center;
 }
@@ -531,28 +605,30 @@ body {
     background: #5D70D6;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 4%;
 }
 
 #Pblue-part h3 {
     color: white;
     font-family: 'DM Sans', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 700;
     line-height: 52px;
+    letter-spacing: 1px;
     text-align: start;
 }
 
 .pblue-part {
+    cursor: pointer;
     background: #E2E5F5;
     color: #000000;
     width: 280px;
     height: 64px;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
-    font: size 28px;
-    font-weight: lighter;
+    font-size: 28px;
+    font-weight: 500;
     line-height: 72px;
     text-align: center;
 
@@ -596,7 +672,7 @@ body {
     transition: 0.4s;
 }
 
-.active,
+.actives,
 .accordion:hover {
     background-color: transparent;
 }
@@ -610,7 +686,7 @@ body {
     margin-left: 5px;
 }
 
-.active:after {
+.actives:after {
     content: '\02C5';
     /* Unicode character for Modifier Letter Down Arrowhead */
 }

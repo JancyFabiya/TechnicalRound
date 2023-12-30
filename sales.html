@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="css/sales-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js" defer></script>
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:ital@1&family=Poppins:wght@200;300;400;600;800&display=swap"
-         rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:wght@1&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
 
+    <!-- Navbar -->
+
     <header class="header">
-        <a class="logo" href="#"><img src="image/Group 1000006598.jpg"></a>
+        <a class="logo" href="homePage.html">
+            <img src="image/blackLogo.png" alt="" class="DefaultLogo">
+            <img src="image/Group 1000006598.jpg" class="HoverLogo">
+        </a>
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="#" style="--i:0;">Home</a>
-            <div class="dropdown-container" onclick="toggleDropdown()">
+            <a href="itHomePage.html" style="--i:0;">Home</a>
+            <div class="dropdown-container" onclick="toggle_Dropdown()">
 
                 <a href="#" style="--i:1;" class="dropdown-button">Services<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
@@ -47,7 +52,7 @@
             <a href="it-portfolio.html" style="--i:3;">Portfolio</a>
             <a href="#industries" style="--i:4;">Industries</a>
 
-            <a href="#" style="--i:4;">Contact Us</a>
+            <a href="contactUs.html" style="--i:4;">Contact Us</a>
 
         </nav>
     </header>
@@ -71,48 +76,48 @@
         <div class="services-main">
             <div class="bi-parts">
                 <iconify-icon icon="gridicons:speaker" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <span>Salesforce Development</span>
+                <div>Salesforce Development</div>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="typcn:tick" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <span>Salesforce Implementation</span>
+                <div>Salesforce Implementation</div>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="fluent:people-checkmark-24-regular"
                     style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Salesforce Customization</span>
+                <div>Salesforce Customization</div>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="lets-icons:sort-arrow-light" style="color: #4845d2; font-size: 40px;"
                     rotate="90deg"></iconify-icon>
 
-                <span>Salesforce Migration</span>
+                <div>Salesforce Migration</div>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="ic:outline-headset" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Salesforce Integration</span>
+                <div>Salesforce Integration</div>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="mdi:file-minus-outline" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <span>Salesforce Support & Maintenance</span>
+                <div>Salesforce Support & Maintenance</div>
             </div>
             <div class="bi-parts">
                 <iconify-icon icon="ph:eye-light" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Salesforce Appexchange</span>
+                <div>Salesforce Appexchange</div>
             </div>
             <div class="bi-parts">
                 <iconify-icon icon="fluent:cloud-error-28-regular"
                     style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <span>Salesforce Community Cloud</span>
+                <div>Salesforce Community Cloud</div>
             </div>
         </div>
 
@@ -124,150 +129,150 @@
         <h3>
             Salesforce Expertise We Offer
         </h3>
-        <div class="services-main">
-            <div class="bi-parts">
+        <div class="expertise-main">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="material-symbols:cloud-outline"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Sales Cloud</span>
+                <div>Sales Cloud</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="material-symbols:settings"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Service Cloud</span>
+                <div>Service <br>Cloud</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="lets-icons:sound-max"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Marketing Cloud</span>
+                <div>Marketing <br>Cloud</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="ri:file-cloud-line"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
 
                 </div>
-                <span>Experience Cloud</span>
+                <div>Experience <br>Cloud</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="material-symbols:file-open-outline"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Platform</span>
+                <div>Platform</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="mingcute:camera-line"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Financial Service Cloud</span>
+                <div>Financial <br>Service Cloud</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="simple-icons:mulesoft"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Mulesoft</span>
+                <div>Mulesoft</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="carbon:search"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Einstein Analytics</span>
+                <div>Einstein <br>Analytics</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="carbon:white-paper"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>CPQ & Billing</span>
+                <div>CPQ & Billing</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="ion:logo-tableau"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Tableau</span>
+                <div>Tableau</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="carbon:ibm-cloud-pak-integration"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Integration</span>
+                <div>Integration</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="solar:code-circle-linear"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Product Development</span>
+                <div>Product<br> Development</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="solar:code-circle-linear"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>App Exchange</span>
+                <div>App <br>Exchange</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="material-symbols-light:heart-check-outline"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Non Profit Success Pack</span>
+                <div>Non Profit<br> Success Pack</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="ion:cube-sharp"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Datorama</span>
+                <div>Datorama</div>
             </div>
 
-            <div class="bi-parts">
+            <div class="expertise-parts">
                 <div class="icon">
                     <iconify-icon icon="solar:chat-square-code-linear"
-                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 4%;"></iconify-icon>
+                        style="color: #4845d2;font-size: 40px;background: #DDDDDD;border-radius: 100%;padding: 50%;"></iconify-icon>
 
                 </div>
-                <span>Apex</span>
+                <div>Apex</div>
             </div>
         </div>
 
@@ -275,8 +280,10 @@
 
     <!-- Blue Part -->
     <section id="blue-part">
-        <h3>Wherever you are on your Salesforce journey, we are here for you!</h3>
-        <div class="blue-btn">Let’s Connect!</div>
+        <h3>Wherever you are on your Salesforce <br>journey, we are here for you!</h3>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="blue-btn">Let’s Connect!</div>
+        </a>
 
     </section>
 
@@ -287,17 +294,17 @@
             <div class="challenges-parts">
                 <iconify-icon icon="ri:file-2-line" style="color: #4845d2;font-size: 40px;"></iconify-icon>
 
-                <h6>Data Inaccuracy and Inconsistency</h6>
+                <h6>Data Inaccuracy and <br>Inconsistency</h6>
             </div>
 
             <div class="challenges-parts">
                 <iconify-icon icon="iconamoon:cloud-error-light" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <h6>Limited Data Accessibility</h6>
+                <h6>Limited Data <br>Accessibility</h6>
             </div>
 
             <div class="challenges-parts">
                 <iconify-icon icon="mingcute:wallet-2-line" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <h6>Lack of Scalability and Flexibility</h6>
+                <h6>Lack of Scalability and<br> Flexibility</h6>
             </div>
         </div>
     </section>
@@ -350,7 +357,7 @@
             <div class="challenges-parts">
                 <iconify-icon icon="fluent:clipboard-task-list-rtl-24-regular"
                     style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <h6>Improved data quality and accuracy</h6>
+                <h6>Improved data quality and<br> accuracy</h6>
             </div>
 
             <div class="challenges-parts">
@@ -361,7 +368,7 @@
             <div class="challenges-parts">
                 <iconify-icon icon="carbon:flow-data" style="color: #4845d2;font-size: 40px;"
                     rotate="90deg"></iconify-icon>
-                <h6>Scalable - future ready applications</h6>
+                <h6>Scalable - future ready <br>applications</h6>
             </div>
 
             <div class="challenges-parts">
@@ -410,10 +417,10 @@
 
     <!-- Blue Part -->
     <section id="Pblue-part">
-        <h3>Let Us Help You In Your Web Development & Mobile App Development JourneyLet Us Help You In Your Sales Force
-            Journey</h3>
-        <div class="pblue-part">Let’s Connect! </div>
-
+        <h3>Let Us Help You In Your Sales Force <br> Journey</h3>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="pblue-part">Let’s Connect! </div>
+        </a>
     </section>
     <!-- FAQ -->
     <section id="FAQ">
@@ -472,7 +479,7 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
+                this.classList.toggle("actives");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
@@ -485,31 +492,31 @@
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<!-- NavBar dropdown -->
-<script>
-    function toggleDropdown() {
-        var dropdownContainer = document.querySelector('.dropdown-container');
-        dropdownContainer.classList.toggle('active');
-    }
+    <!-- NavBar dropdown -->
+    <script>
+        function toggle_Dropdown() {
+            var dropdownContainer = document.querySelector('.dropdown-container');
+            dropdownContainer.classList.toggle('active');
+        }
 
-    // service Card
-    function toggleCard(card) {
-        // Toggle the 'expanded' class on the clicked card
-        card.classList.toggle('expanded');
+        // service Card
+        function toggleCard(card) {
+            // Toggle the 'expanded' class on the clicked card
+            card.classList.toggle('expanded');
 
-        // Close other expanded cards
-        document.querySelectorAll('.card').forEach(function (otherCard) {
-            if (otherCard !== card && otherCard.classList.contains('expanded')) {
-                otherCard.classList.remove('expanded');
-            }
-        });
-    }
+            // Close other expanded cards
+            document.querySelectorAll('.card').forEach(function (otherCard) {
+                if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                    otherCard.classList.remove('expanded');
+                }
+            });
+        }
 
-    function handleButtonClick(button) {
-        // Handle the button click action here
-        alert('Button clicked!');
-    }
-</script>
+        function handleButtonClick(button) {
+            // Handle the button click action here
+            alert('Button clicked!');
+        }
+    </script>
 </body>
 
 </html>

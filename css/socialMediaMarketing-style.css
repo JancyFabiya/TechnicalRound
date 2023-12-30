@@ -14,13 +14,12 @@ body {
 
 /* Navbar */
 
-
 .header {
     position: relative;
+
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%;
     padding: 1.3rem 10%;
 
     box-shadow: 6px 6px 6px rgba(147, 147, 147, 0.05);
@@ -37,7 +36,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
 
     z-index: -1;
 }
@@ -58,11 +56,54 @@ body {
 }
 
 .logo {
+    /* display: flex;
+    align-items: center; */
+    width: 143px;
+    height: 76px;
+    position: relative;
+    display: inline-block;
+}
+
+.logo img {
+    /* width: 100%;
+    height: auto; */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.DefaultLogo{
     width: 143px;
     height: 76px;
 }
+.DefaultLogo,
+.HoverLogo{
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+
+}
+.logo .HoverLogo {
+    /* opacity: 0;
+    z-index: 2; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.logo:hover .DefaultLogo {
+    opacity: 0;
+}
+
+.logo:hover .HoverLogo {
+    /* cursor: pointer; */
+    opacity: 1;
+}
 
 .navbar a {
+    font-family: 'DM Sans', sans-serif;
+
     font-size: 1.15rem;
     color: rgba(30, 30, 30, 1);
     text-decoration: none;
@@ -87,6 +128,8 @@ body {
     cursor: pointer;
     display: none;
 }
+
+
 
 /* Style the button and dropdown container */
 .dropdown-container {
@@ -658,7 +701,7 @@ body {
     transition: 0.4s;
 }
 
-.active,
+.actives,
 .accordion:hover {
     background-color: transparent;
 }
@@ -672,7 +715,7 @@ body {
     margin-left: 5px;
 }
 
-.active:after {
+.actives:after {
     content: '\02C5';
     /* Unicode character for Modifier Letter Down Arrowhead */
 }

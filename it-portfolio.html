@@ -7,28 +7,31 @@
     <title>Seize the ads</title>
     <link rel="stylesheet" href="css/it-portfolio-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="script.js" defer></script>
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:ital@1&family=Poppins:wght@200;300;400;600;800&display=swap"
-         rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:wght@1&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
 
+    <!-- Navbar -->
     <header class="header">
-        <a class="logo" href="#"><img src="image/Group 1000006598.jpg"></a>
+        <a class="logo" href="homePage.html">
+            <img src="image/blackLogo.png" alt="" class="DefaultLogo">
+            <img src="image/Group 1000006598.jpg" class="HoverLogo">
+        </a>
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="#" style="--i:0;">Home</a>
-            <div class="dropdown-container" onclick="toggleDropdown()">
+            <a href="itHomePage.html" style="--i:0;">Home</a>
+            <div class="dropdown-container" onclick="toggle_Dropdown()">
 
                 <a href="#" style="--i:1;" class="dropdown-button">Services<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
@@ -42,12 +45,12 @@
 
                 </div>
             </div>
-            <a href="aboutus.html" style="--i:2;">About Us</a>
+            <a href="aboutus.html" style="--i:2;">Why Us</a>
 
             <a href="it-portfolio.html" style="--i:3;">Portfolio</a>
-            <a href="#industries" style="--i:4;">Industries</a>
+            <a href="itHomePage.html#industries" style="--i:4;">Industries</a>
 
-            <a href="#" style="--i:4;">Contact Us</a>
+            <a href="contactUs.html" style="--i:4;">Contact Us</a>
 
         </nav>
     </header>
@@ -69,13 +72,53 @@
 
         </div>
         <div class="prjt-img">
-            <img src="image/Rectangle 130.jpg" alt="">
-            <img src="image/Rectangle 134.jpg" alt="">
-            <img src="image/Rectangle 129.jpg" alt="">
-            <img src="image/Rectangle 133.jpg" alt="">
-            <img src="image/Rectangle 131.jpg" alt="">
-            <img src="image/Rectangle 132.jpg" alt="">
+            <div class="prjt-img-hover">
+                <img src="image/Rectangle 130.jpg" alt="" class="defaulImg">
+                <div class="description">
+                    <h6>Project 1</h6>
+                    <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+                </div>
+            </div>
+            <div class="prjt-img-hover">
 
+            <img src="image/Rectangle 134.jpg" alt="" class="defaulImg">
+            <div class="description">
+                <h6>Project 2</h6>
+                <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+            </div>
+        </div>
+        <div class="prjt-img-hover">
+
+            <img src="image/Rectangle 129.jpg" alt="" class="defaulImg">
+            <div class="description">
+                <h6>Project 3</h6>
+                <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+            </div>
+        </div>
+        <div class="prjt-img-hover">
+
+            <img src="image/Rectangle 133.jpg" alt="" class="defaulImg">
+            <div class="description">
+                <h6>Project 4</h6>
+                <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+            </div>
+        </div>
+        <div class="prjt-img-hover">
+
+            <img src="image/Rectangle 131.jpg" alt="" class="defaulImg">
+            <div class="description">
+                <h6>Project 5</h6>
+                <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+            </div>
+        </div>
+        <div class="prjt-img-hover">
+
+            <img src="image/Rectangle 132.jpg" alt="" class="defaulImg">
+            <div class="description">
+                <h6>Project 6</h6>
+                <p>It’s more than work for us. We not only promise prompt delivery, but also make sure we come with innovative solutions at every step. </p>
+            </div>
+        </div>
         </div>
 
 
@@ -84,31 +127,31 @@
 
     <!-- Footer -->
     <iframe src="/includes/footer.html" width="100%" height="448px" frameborder="0"></iframe>
-<!-- NavBar dropdown -->
-<script>
-    function toggleDropdown() {
-        var dropdownContainer = document.querySelector('.dropdown-container');
-        dropdownContainer.classList.toggle('active');
-    }
+    <!-- NavBar dropdown -->
+    <script>
+        function toggle_Dropdown() {
+            var dropdownContainer = document.querySelector('.dropdown-container');
+            dropdownContainer.classList.toggle('active');
+        }
 
-    // service Card
-    function toggleCard(card) {
-        // Toggle the 'expanded' class on the clicked card
-        card.classList.toggle('expanded');
+        // service Card
+        function toggleCard(card) {
+            // Toggle the 'expanded' class on the clicked card
+            card.classList.toggle('expanded');
 
-        // Close other expanded cards
-        document.querySelectorAll('.card').forEach(function (otherCard) {
-            if (otherCard !== card && otherCard.classList.contains('expanded')) {
-                otherCard.classList.remove('expanded');
-            }
-        });
-    }
+            // Close other expanded cards
+            document.querySelectorAll('.card').forEach(function (otherCard) {
+                if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                    otherCard.classList.remove('expanded');
+                }
+            });
+        }
 
-    function handleButtonClick(button) {
-        // Handle the button click action here
-        alert('Button clicked!');
-    }
-</script>
+        function handleButtonClick(button) {
+            // Handle the button click action here
+            alert('Button clicked!');
+        }
+    </script>
 </body>
 
 </html>

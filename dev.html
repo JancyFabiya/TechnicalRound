@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="css/dev-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js" defer></script>
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:ital@1&family=Poppins:wght@200;300;400;600;800&display=swap"
-         rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz@9..40&family=Lato:wght@1&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
 
+    <!-- Navbar -->
+
     <header class="header">
-        <a class="logo" href="#"><img src="image/Group 1000006598.jpg"></a>
+        <a class="logo" href="homePage.html">
+            <img src="image/blackLogo.png" alt="" class="DefaultLogo">
+            <img src="image/Group 1000006598.jpg" class="HoverLogo">
+        </a>
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="#" style="--i:0;">Home</a>
-            <div class="dropdown-container" onclick="toggleDropdown()">
+            <a href="itHomePage.html" style="--i:0;">Home</a>
+            <div class="dropdown-container" onclick="toggle_Dropdown()">
 
                 <a href="#" style="--i:1;" class="dropdown-button">Services<i class='bx bx-chevron-down'></i></a>
                 <div class="dropdown-content">
@@ -47,7 +52,7 @@
             <a href="it-portfolio.html" style="--i:3;">Portfolio</a>
             <a href="#industries" style="--i:4;">Industries</a>
 
-            <a href="#" style="--i:4;">Contact Us</a>
+            <a href="contactUs.html" style="--i:4;">Contact Us</a>
 
         </nav>
     </header>
@@ -71,34 +76,34 @@
         <div class="services-main">
             <div class="bi-parts">
                 <iconify-icon icon="ant-design:android-filled" style="color: #4845d2;font-size: 40px;"></iconify-icon>
-                <span>Android App Development</span>
+                <span class="bi-parts-span">Android App <br>Development</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="material-symbols:flutter" style="color: #4845d2;font-size: 40px"></iconify-icon>
 
-                <span>Flutter App Development</span>
+                <span class="bi-parts-span">Flutter App <br>Development</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="ic:baseline-apple" style="color: #4845d2;font-size: 40px"></iconify-icon>
 
-                <span>iOS App Development</span>
+                <span class="bi-parts-span">iOS App <br>Development</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="tabler:brand-react-native" style="color: #4845d2;font-size: 40px"></iconify-icon>
-                <span>React Native App Development</span>
+                <span class="bi-parts-span">React Native App<br> Development</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="simple-icons:pwa" style="color: #4845d2;font-size: 40px"></iconify-icon>
-                <span>Progressive web app development</span>
+                <span class="bi-parts-span">Progressive web <br>app development</span>
             </div>
 
             <div class="bi-parts">
                 <iconify-icon icon="icon-park-outline:api-app" style="color: #4845d2;font-size: 40px"></iconify-icon>
-                <span>Hybrid mobile app development</span>
+                <span class="bi-parts-span">Hybrid mobile app<br> development</span>
             </div>
         </div>
 
@@ -108,16 +113,18 @@
     <!-- blue-part -->
 
     <section id="blue-part">
-        <h3>Want to utilize the power of domain specific expertise for building Web Applications?</h3>
-        <div class="blue-btn">
-            Connect Now
-        </div>
+        <h3>Want to utilize the power of domain specific<br> expertise for building Web Applications?</h3>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="blue-btn">
+                Connect Now
+            </div>
+        </a>
 
     </section>
 
     <!-- Mobile App -->
     <section id="mobile-app">
-        <h2>Why Do You Need Mobile App Development Services ?</h2>
+        <h2>Why Do You Need Mobile App Development<br> Services ?</h2>
 
         <div class="mobile-main">
             <div class="mobile-parts">
@@ -206,7 +213,9 @@
     <!-- PBlue Part -->
     <section id="Pblue-part">
         <h3>Let Us Help You In Your Web Development & Mobile App Development Journey</h3>
-        <div class="pblue-part">Let’s Connect! </div>
+        <a href="contactUs.html" style="text-decoration: none;">
+            <div class="pblue-part">Let’s Connect! </div>
+        </a>
 
     </section>
     <!-- FAQ -->
@@ -258,7 +267,7 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
+                this.classList.toggle("actives");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
@@ -271,9 +280,11 @@
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
     <!-- NavBar dropdown -->
     <script>
-        function toggleDropdown() {
+        function toggle_Dropdown() {
             var dropdownContainer = document.querySelector('.dropdown-container');
             dropdownContainer.classList.toggle('active');
         }
